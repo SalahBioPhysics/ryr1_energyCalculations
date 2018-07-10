@@ -1,0 +1,2 @@
+July 10th, 2018.
+This file contains the binding energies for each frame
