@@ -29,7 +29,7 @@ The output files are head3.lst and fort.38.
 
 ## fort.38
 This file gives the occupancy of each conformer at differernt ph/eh/ch values.  In our case, we are using chemical titration (ch). The plot below shows the Ca+2 titration carve of frame01.
-![Ca+2 titration carve ](presentation/_CADMG5104_002.png) 
+![Ca+2 titration carve](presentation/CADMG5104_002.png) 
 
 
  
