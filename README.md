@@ -1,5 +1,5 @@
 # ryr1
-Ryanodine Receptor is a Ca+2 channel involved in skeletal muscle excitation and contraction.
+Ryanodine Receptor is a Ca+2 channel involved in skeletal muscle excitation and contraction [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5142848/).
 
 Here, we are calculating the energy landscapes using MCCE. Calculations are done on two datasets.  One with the RyR1 macromolecules in equilibrium with a thermal bath without any activating ligands and the other in equilibrium with both a thermal bath and a reservoir of ligands, specifically calcium, ATP, and caffeine. This pooling of data allows both species to be described in terms of the same set of mutually orthogonal conformational coordinates.
 
