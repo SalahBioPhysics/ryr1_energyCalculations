@@ -8,4 +8,24 @@ These PDB files were prepared by Danya Ben Hail.  There are 50 files labeled fra
 
 ![ryr1(blue). Input pdb(black)](presentation/img01.png)
 
-   
+The output files are head3.lst and fort.38.  head3.lst gives the different energies per conformer
+* iConf:conformer ID
+* CONFORMER: conformer name
+* FL: flag| f means the conformer is on, t means the conformer is off.
+* occ: occupancy
+* crg: charge
+* Em0: Em in solution
+* pKa0: pka in solution
+* ne: # of electrons
+* nH: # of protons
+* vdw0: self vdW energy + implicit vdW energy (favorable) with solvent (water)
+* vdw1:backbone vdW
+* tors: torsion energy
+* epol: backbone electrostatic interaction
+* dsolv: desolvation energy 
+* extra: extra energy term (This is the value we change when we want to calculate titration curve for the ligand)
+* history: to keep track of the conformer
+  
+
+
+ 
