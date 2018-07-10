@@ -8,7 +8,8 @@ These PDB files were prepared by Danya Ben Hail.  There are 50 files labeled fra
 
 ![ryr1(blue). Input pdb(black)](presentation/img01.png)
 
-The output files are head3.lst and fort.38.  head3.lst gives the different energies per conformer
+The output files are head3.lst and fort.38. 
+## head3.lst
 * iConf:conformer ID
 * CONFORMER: conformer name
 * FL: flag| f means the conformer is on, t means the conformer is off.
@@ -25,7 +26,10 @@ The output files are head3.lst and fort.38.  head3.lst gives the different energ
 * dsolv: desolvation energy 
 * extra: extra energy term (This is the value we change when we want to calculate titration curve for the ligand)
 * history: to keep track of the conformer
-  
+
+## fort.38
+This file gives the occupancy of each conformer at differernt ph/eh/ch values.  In our case, we are using chemical titration (ch). The plot below shows the Ca+2 titration carve of frame01.
+![Ca+2 titration carve ](presentation/_CADMG5104_002.png) 
 
 
  
