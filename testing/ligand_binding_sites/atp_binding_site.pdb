@@ -1,0 +1,1600 @@
+REMARK   3
+REMARK   3 REFINEMENT.
+REMARK   3   PROGRAM     : PHENIX (1.11.1_2575: phenix.real_space_refine)
+REMARK   3   AUTHORS     : Adams,Afonine,Bunkoczi,Burnley,Chen,Dar,Davis,
+REMARK   3               : Draizen,Echols,Gildea,Gros,Grosse-Kunstleve,Headd,
+REMARK   3               : Hintze,Hung,Ioerger,Liebschner,McCoy,McKee,Moriarty,
+REMARK   3               : Oeffner,Poon,Read,Richardson,Richardson,Sacchettini,
+REMARK   3               : Sauter,Sobolev,Storoni,Terwilliger,Williams,Zwart
+REMARK   3
+REMARK   3
+REMARK   3  SCATTERING TABLE: N_GAUSSIAN
+REMARK   3
+REMARK   3  REFINEMENT TARGET: REAL-SPACE (WEIGHTED MAP SUM AT ATOM CENTERS)
+REMARK   3
+REMARK   3  MODEL TO MAP FIT.
+REMARK   3    CC(ACROSS WHOLE MAP VOLUME):        0.6229
+REMARK   3    CC(ONLY ACROSS ATOMS IN THE MODEL): 0.6224
+REMARK   3
+REMARK   3  FSC(MODEL, MAP):
+REMARK   3   Overall (entire box):   0.8160
+REMARK   3   Around atoms (masked):  0.9292
+REMARK   3   Bin# Resolution (A)     CC   CC(masked)
+REMARK   3    1: 421.680-18.672   0.8333  0.9838
+REMARK   3    2:  18.636-14.798   0.8724  0.9509
+REMARK   3    3:  14.789-12.927   0.8699  0.9576
+REMARK   3    4:  12.921-11.745   0.8689  0.9576
+REMARK   3    5:  11.741-10.910   0.8332  0.9501
+REMARK   3    6:  10.902-10.260   0.8031  0.9456
+REMARK   3    7:  10.257-9.751    0.7850  0.9422
+REMARK   3    8:   9.746-9.322    0.7373  0.9291
+REMARK   3    9:   9.318-8.964    0.7079  0.9200
+REMARK   3   10:   8.962-8.655    0.6725  0.9094
+REMARK   3   11:   8.651-8.383    0.6222  0.8998
+REMARK   3   12:   8.382-8.144    0.5858  0.8868
+REMARK   3   13:   8.142-7.929    0.5817  0.8776
+REMARK   3   14:   7.928-7.736    0.5367  0.8640
+REMARK   3   15:   7.734-7.561    0.5006  0.8517
+REMARK   3   16:   7.559-7.399    0.4612  0.8497
+REMARK   3   17:   7.398-7.251    0.4115  0.8330
+REMARK   3   18:   7.249-7.114    0.4028  0.8138
+REMARK   3   19:   7.113-6.987    0.3545  0.7932
+REMARK   3   20:   6.986-6.869    0.3425  0.7899
+REMARK   3   21:   6.868-6.758    0.3011  0.7703
+REMARK   3   22:   6.757-6.654    0.3079  0.7712
+REMARK   3   23:   6.653-6.556    0.3100  0.7723
+REMARK   3   24:   6.555-6.464    0.2817  0.7601
+REMARK   3   25:   6.463-6.377    0.2915  0.7482
+REMARK   3   26:   6.376-6.294    0.2440  0.7506
+REMARK   3   27:   6.293-6.215    0.2575  0.7543
+REMARK   3   28:   6.214-6.140    0.2442  0.7420
+REMARK   3   29:   6.140-6.069    0.2189  0.7309
+REMARK   3   30:   6.068-6.000    0.2117  0.7247
+REMARK   3
+REMARK   3  PER ATOM MAP CC HISTOGRAM
+REMARK   3   -0.9306 - -0.7382:   0.25 %
+REMARK   3   -0.7382 - -0.5457:   1.19 %
+REMARK   3   -0.5457 - -0.3532:   2.73 %
+REMARK   3   -0.3532 - -0.1607:   5.18 %
+REMARK   3   -0.1607 - 0.0318 :   7.83 %
+REMARK   3    0.0318 - 0.2243 :  11.36 %
+REMARK   3    0.2243 - 0.4167 :  15.60 %
+REMARK   3    0.4167 - 0.6092 :  20.60 %
+REMARK   3    0.6092 - 0.8017 :  23.59 %
+REMARK   3    0.8017 - 0.9942 :  11.67 %
+REMARK   3
+REMARK   3  RESTRAINTS LIBRARY
+REMARK   3    GEOSTD + MON.LIB.
+REMARK   3  
+REMARK   3  DEVIATIONS FROM IDEAL VALUES.
+REMARK   3                 RMSD     MAX  COUNT
+REMARK   3   BOND      :  0.007   1.004 123731
+REMARK   3   ANGLE     :  1.047  21.280 168731
+REMARK   3   CHIRALITY :  0.053   0.349  19720
+REMARK   3   PLANARITY :  0.007   0.095  22197
+REMARK   3   DIHEDRAL  : 10.118 179.996  73779
+REMARK   3   MIN NONBONDED DISTANCE : 2.127 
+REMARK   3  
+REMARK   3  MOLPROBITY STATISTICS.
+REMARK   3   ALL-ATOM CLASHSCORE : 9.80
+REMARK   3   RAMACHANDRAN PLOT:
+REMARK   3     OUTLIERS : 0.18  %
+REMARK   3     ALLOWED  : 12.17 %
+REMARK   3     FAVORED  : 87.65 %
+REMARK   3   ROTAMER OUTLIERS : 0.58 %
+REMARK   3   CBETA DEVIATIONS : 0
+REMARK   3   PEPTIDE PLANE:
+REMARK   3     CIS-PROLINE     : 4
+REMARK   3     CIS-GENERAL     : 0
+REMARK   3     TWISTED PROLINE : 16
+REMARK   3     TWISTED GENERAL : 60
+REMARK   3
+HELIX    1   1 ASP B   61  CYS B   65  1                                   5
+HELIX    2   2 VAL B   75  LEU B   82  1                                   8
+HELIX    3   3 ALA B  251  HIS B  255  1                                   5
+HELIX    4   4 PRO B  364  LEU B  369  1                                   6
+HELIX    5   5 GLN B  395  ASP B  419  1                                  25
+HELIX    6   6 ILE B  438  PHE B  452  1                                  15
+HELIX    7   7 GLN B  460  LEU B  477  1                                  18
+HELIX    8   8 LEU B  484  LEU B  494  1                                  11
+HELIX    9   9 ALA B  511  LEU B  529  1                                  19
+HELIX   10  10 ARG B  534  LEU B  539  1                                   6
+HELIX   11  11 ASN B  543  LEU B  551  1                                   9
+HELIX   12  12 GLY B  559  LEU B  568  1                                  10
+HELIX   13  13 SER B  571  ASN B  576  1                                   6
+HELIX   14  14 GLU B  580  HIS B  593  1                                  14
+HELIX   15  15 HIS B  597  VAL B  608  1                                  12
+HELIX   16  16 VAL B  614  LEU B  625  1                                  12
+HELIX   17  17 PRO B  864  GLU B  888  1                                  25
+HELIX   18  18 PRO B  914  ALA B  934  1                                  21
+HELIX   19  19 ALA B  980  VAL B 1001  1                                  22
+HELIX   20  20 ASP B 1028  TYR B 1049  1                                  22
+HELIX   21  21 GLU B 1078  THR B 1082  1                                   5
+HELIX   22  22 LEU B 1575  PHE B 1580  1                                   6
+HELIX   23  23 ARG B 1623  ALA B 1627  1                                   5
+HELIX   24  24 GLU B 1652  CYS B 1674  1                                  23
+HELIX   25  25 ASN B 1678  ALA B 1684  1                                   7
+HELIX   26  26 GLN B 1691  ASP B 1700  1                                  10
+HELIX   27  27 ALA B 1709  MET B 1730  1                                  22
+HELIX   28  28 THR B 1739  ALA B 1744  1                                   6
+HELIX   29  29 PRO B 1803  GLN B 1824  1                                  22
+HELIX   30  30 SER B 1833  PHE B 1838  1                                   6
+HELIX   31  31 PRO B 1840  MET B 1851  1                                  12
+HELIX   32  32 GLY B 1855  LEU B 1863  1                                   9
+HELIX   33  33 ILE B 1866  PHE B 1871  1                                   6
+HELIX   34  34 GLU B 1933  ALA B 1978  1                                  46
+HELIX   35  35 ALA B 1989  ARG B 1999  1                                  11
+HELIX   36  36 PRO B 2001  ASP B 2014  1                                  14
+HELIX   37  37 GLN B 2029  CYS B 2042  1                                  14
+HELIX   38  38 SER B 2093  GLU B 2108  1                                  16
+HELIX   39  39 SER B 2113  GLN B 2127  1                                  15
+HELIX   40  40 ASP B 2129  ALA B 2137  1                                   9
+HELIX   41  41 SER B 2148  LEU B 2166  1                                  19
+HELIX   42  42 GLY B 2171  ASN B 2187  1                                  17
+HELIX   43  43 LYS B 2189  GLY B 2216  1                                  28
+HELIX   44  44 MET B 2228  ILE B 2242  1                                  15
+HELIX   45  45 GLN B 2245  GLY B 2262  1                                  18
+HELIX   46  46 THR B 2271  SER B 2279  1                                   9
+HELIX   47  47 ASP B 2294  GLY B 2306  1                                  13
+HELIX   48  48 CYS B 2310  ALA B 2315  1                                   6
+HELIX   49  49 CYS B 2326  PHE B 2337  1                                  12
+HELIX   50  50 ALA B 2350  ILE B 2358  1                                   9
+HELIX   51  51 LYS B 2360  PHE B 2364  1                                   5
+HELIX   52  52 GLY B 2375  ASP B 2393  1                                  19
+HELIX   53  53 LEU B 2418  CYS B 2436  1                                  19
+HELIX   54  54 GLU B 2449  VAL B 2461  1                                  13
+HELIX   55  55 LEU B 2466  SER B 2471  1                                   6
+HELIX   56  56 UNK B 2500  UNK B 2509  1                                  10
+HELIX   57  57 UNK B 2516  UNK B 2530  1                                  15
+HELIX   58  58 UNK B 2542  UNK B 2548  1                                   7
+HELIX   59  59 UNK B 2551  UNK B 2557  1                                   7
+HELIX   60  60 UNK B 2566  UNK B 2581  1                                  16
+HELIX   61  61 UNK B 2587  UNK B 2604  1                                  18
+HELIX   62  62 UNK B 2610  UNK B 2618  1                                   9
+HELIX   63  63 UNK B 2626  UNK B 2641  1                                  16
+HELIX   64  64 UNK B 2650  UNK B 2666  1                                  17
+HELIX   65  65 UNK B 2675  UNK B 2680  1                                   6
+HELIX   66  66 UNK B 2683  UNK B 2688  1                                   6
+HELIX   67  67 GLU B 2741  VAL B 2745  1                                   5
+HELIX   68  68 PRO B 2748  ASN B 2773  1                                  26
+HELIX   69  69 PRO B 2793  PHE B 2797  1                                   5
+HELIX   70  70 LYS B 2800  TYR B 2805  1                                   6
+HELIX   71  71 ILE B 2809  GLU B 2820  1                                  12
+HELIX   72  72 SER B 2868  GLU B 2895  1                                  28
+HELIX   73  73 PRO B 2907  LEU B 2911  1                                   5
+HELIX   74  74 LYS B 2914  MET B 2932  1                                  19
+HELIX   75  75 UNK B 2950  UNK B 2976  1                                  27
+HELIX   76  76 UNK B 2999  UNK B 3015  1                                  17
+HELIX   77  77 UNK B 3017  UNK B 3022  1                                   6
+HELIX   78  78 UNK B 3025  UNK B 3041  1                                  17
+HELIX   79  79 UNK B 3050  UNK B 3063  1                                  14
+HELIX   80  80 UNK B 3141  UNK B 3162  1                                  22
+HELIX   81  81 UNK B 3175  UNK B 3190  1                                  16
+HELIX   82  82 UNK B 3198  UNK B 3212  1                                  15
+HELIX   83  83 UNK B 3224  UNK B 3230  1                                   7
+HELIX   84  84 UNK B 3248  UNK B 3254  1                                   7
+HELIX   85  85 UNK B 3271  UNK B 3285  1                                  15
+HELIX   86  86 UNK B 3305  UNK B 3310  1                                   6
+HELIX   87  87 UNK B 3315  UNK B 3331  1                                  17
+HELIX   88  88 UNK B 3344  UNK B 3354  1                                  11
+HELIX   89  89 UNK B 3361  UNK B 3388  1                                  28
+HELIX   90  90 UNK B 3399  UNK B 3431  1                                  33
+HELIX   91  91 UNK B 3437  UNK B 3443  1                                   7
+HELIX   92  92 UNK B 3445  UNK B 3450  1                                   6
+HELIX   93  93 UNK B 3457  UNK B 3468  1                                  12
+HELIX   94  94 UNK B 3513  UNK B 3517  1                                   5
+HELIX   95  95 UNK B 3522  UNK B 3527  1                                   6
+HELIX   96  96 UNK B 3551  UNK B 3560  1                                  10
+HELIX   97  97 UNK B 3574  UNK B 3583  1                                  10
+HELIX   98  98 UNK B 3588  UNK B 3608  1                                  21
+HELIX   99  99 PRO B 3645  SER B 3656  1                                  12
+HELIX  100 100 ASP B 3671  GLN B 3683  1                                  13
+HELIX  101 101 ASP B 3696  ALA B 3709  1                                  14
+HELIX  102 102 ASP B 3719  GLY B 3738  1                                  20
+HELIX  103 103 SER B 3752  MET B 3782  1                                  31
+HELIX  104 104 GLY B 3791  LEU B 3805  1                                  15
+HELIX  105 105 ASN B 3809  LYS B 3824  1                                  16
+HELIX  106 106 PHE B 3828  THR B 3838  1                                  11
+HELIX  107 107 ASP B 3843  GLU B 3854  1                                  12
+HELIX  108 108 PHE B 3880  LEU B 3891  1                                  12
+HELIX  109 109 ASP B 3898  THR B 3905  1                                   8
+HELIX  110 110 ASN B 3914  TYR B 3937  1                                  24
+HELIX  111 111 GLU B 3944  GLN B 3970  1                                  27
+HELIX  112 112 CYS B 3973  PHE B 3996  1                                  24
+HELIX  113 113 HIS B 3998  ASP B 4006  1                                   9
+HELIX  114 114 GLN B 4009  GLU B 4032  1                                  24
+HELIX  115 115 MET B 4039  VAL B 4072  1                                  34
+HELIX  116 116 SER B 4074  ASP B 4079  1                                   6
+HELIX  117 117 LYS B 4090  GLN B 4100  1                                  11
+HELIX  118 118 THR B 4104  SER B 4115  1                                  12
+HELIX  119 119 ASN B 4124  VAL B 4154  1                                  31
+HELIX  120 120 ASP B 4157  ARG B 4175  1                                  19
+HELIX  121 121 GLU B 4199  GLU B 4224  1                                  26
+HELIX  122 122 ALA B 4228  GLN B 4250  1                                  23
+HELIX  123 123 UNK B 4321  UNK B 4337  1                                  17
+HELIX  124 124 GLY B 4542  TYR B 4580  1                                  39
+HELIX  125 125 LEU B 4643  PHE B 4683  1                                  41
+HELIX  126 126 ASP B 4696  LEU B 4706  1                                  11
+HELIX  127 127 PHE B 4719  HIS B 4728  1                                  10
+HELIX  128 128 GLY B 4733  LEU B 4741  1                                   9
+HELIX  129 129 THR B 4751  GLU B 4755  1                                   5
+HELIX  130 130 ASP B 4772  GLY B 4802  1                                  31
+HELIX  131 131 ALA B 4810  TYR B 4863  1                                  54
+HELIX  132 132 ASP B 4878  GLY B 4890  1                                  13
+HELIX  133 133 TYR B 4909  ILE B 4925  1                                  17
+HELIX  134 134 ILE B 4927  ASP B 4953  1                                  27
+HELIX  135 135 GLY B 4964  THR B 4970  1                                   7
+HELIX  136 136 HIS B 4973  THR B 4979  1                                   7
+HELIX  137 137 ALA B 4986  ASN B 4997  1                                  12
+HELIX  138 138 THR B 5004  ARG B 5017  1                                  14
+HELIX  139 139 ASP G   61  CYS G   65  1                                   5
+HELIX  140 140 VAL G   75  LEU G   82  1                                   8
+HELIX  141 141 ALA G  251  HIS G  255  1                                   5
+HELIX  142 142 PRO G  364  LEU G  369  1                                   6
+HELIX  143 143 GLN G  395  ASP G  419  1                                  25
+HELIX  144 144 ILE G  438  PHE G  452  1                                  15
+HELIX  145 145 GLN G  460  LEU G  477  1                                  18
+HELIX  146 146 LEU G  484  LEU G  494  1                                  11
+HELIX  147 147 ALA G  511  LEU G  529  1                                  19
+HELIX  148 148 ARG G  534  LEU G  539  1                                   6
+HELIX  149 149 ASN G  543  LEU G  551  1                                   9
+HELIX  150 150 GLY G  559  LEU G  568  1                                  10
+HELIX  151 151 SER G  571  ASN G  576  1                                   6
+HELIX  152 152 GLU G  580  HIS G  593  1                                  14
+HELIX  153 153 HIS G  597  VAL G  608  1                                  12
+HELIX  154 154 VAL G  614  LEU G  625  1                                  12
+HELIX  155 155 PRO G  864  GLU G  888  1                                  25
+HELIX  156 156 PRO G  914  ALA G  934  1                                  21
+HELIX  157 157 ALA G  980  VAL G 1001  1                                  22
+HELIX  158 158 ASP G 1028  TYR G 1049  1                                  22
+HELIX  159 159 GLU G 1078  THR G 1082  1                                   5
+HELIX  160 160 LEU G 1575  PHE G 1580  1                                   6
+HELIX  161 161 ARG G 1623  ALA G 1627  1                                   5
+HELIX  162 162 GLU G 1652  CYS G 1674  1                                  23
+HELIX  163 163 ASN G 1678  ALA G 1684  1                                   7
+HELIX  164 164 GLN G 1691  ASP G 1700  1                                  10
+HELIX  165 165 ALA G 1709  MET G 1730  1                                  22
+HELIX  166 166 THR G 1739  ALA G 1744  1                                   6
+HELIX  167 167 PRO G 1803  GLN G 1824  1                                  22
+HELIX  168 168 SER G 1833  PHE G 1838  1                                   6
+HELIX  169 169 PRO G 1840  MET G 1851  1                                  12
+HELIX  170 170 GLY G 1855  LEU G 1863  1                                   9
+HELIX  171 171 ILE G 1866  PHE G 1871  1                                   6
+HELIX  172 172 GLU G 1933  ALA G 1978  1                                  46
+HELIX  173 173 ALA G 1989  ARG G 1999  1                                  11
+HELIX  174 174 PRO G 2001  ASP G 2014  1                                  14
+HELIX  175 175 GLN G 2029  CYS G 2042  1                                  14
+HELIX  176 176 SER G 2093  GLU G 2108  1                                  16
+HELIX  177 177 SER G 2113  GLN G 2127  1                                  15
+HELIX  178 178 ASP G 2129  ALA G 2137  1                                   9
+HELIX  179 179 SER G 2148  LEU G 2166  1                                  19
+HELIX  180 180 GLY G 2171  ASN G 2187  1                                  17
+HELIX  181 181 LYS G 2189  GLY G 2216  1                                  28
+HELIX  182 182 MET G 2228  ILE G 2242  1                                  15
+HELIX  183 183 GLN G 2245  GLY G 2262  1                                  18
+HELIX  184 184 THR G 2271  SER G 2279  1                                   9
+HELIX  185 185 ASP G 2294  GLY G 2306  1                                  13
+HELIX  186 186 CYS G 2310  ALA G 2315  1                                   6
+HELIX  187 187 CYS G 2326  PHE G 2337  1                                  12
+HELIX  188 188 ALA G 2350  ILE G 2358  1                                   9
+HELIX  189 189 LYS G 2360  PHE G 2364  1                                   5
+HELIX  190 190 GLY G 2375  ASP G 2393  1                                  19
+HELIX  191 191 LEU G 2418  CYS G 2436  1                                  19
+HELIX  192 192 GLU G 2449  VAL G 2461  1                                  13
+HELIX  193 193 LEU G 2466  SER G 2471  1                                   6
+HELIX  194 194 UNK G 2500  UNK G 2509  1                                  10
+HELIX  195 195 UNK G 2516  UNK G 2530  1                                  15
+HELIX  196 196 UNK G 2542  UNK G 2548  1                                   7
+HELIX  197 197 UNK G 2551  UNK G 2557  1                                   7
+HELIX  198 198 UNK G 2566  UNK G 2581  1                                  16
+HELIX  199 199 UNK G 2587  UNK G 2604  1                                  18
+HELIX  200 200 UNK G 2610  UNK G 2618  1                                   9
+HELIX  201 201 UNK G 2626  UNK G 2641  1                                  16
+HELIX  202 202 UNK G 2650  UNK G 2666  1                                  17
+HELIX  203 203 UNK G 2675  UNK G 2680  1                                   6
+HELIX  204 204 UNK G 2683  UNK G 2688  1                                   6
+HELIX  205 205 GLU G 2741  VAL G 2745  1                                   5
+HELIX  206 206 PRO G 2748  ASN G 2773  1                                  26
+HELIX  207 207 PRO G 2793  PHE G 2797  1                                   5
+HELIX  208 208 LYS G 2800  TYR G 2805  1                                   6
+HELIX  209 209 ILE G 2809  GLU G 2820  1                                  12
+HELIX  210 210 SER G 2868  GLU G 2895  1                                  28
+HELIX  211 211 PRO G 2907  LEU G 2911  1                                   5
+HELIX  212 212 LYS G 2914  MET G 2932  1                                  19
+HELIX  213 213 UNK G 2950  UNK G 2976  1                                  27
+HELIX  214 214 UNK G 2999  UNK G 3015  1                                  17
+HELIX  215 215 UNK G 3017  UNK G 3022  1                                   6
+HELIX  216 216 UNK G 3025  UNK G 3041  1                                  17
+HELIX  217 217 UNK G 3050  UNK G 3063  1                                  14
+HELIX  218 218 UNK G 3141  UNK G 3162  1                                  22
+HELIX  219 219 UNK G 3175  UNK G 3190  1                                  16
+HELIX  220 220 UNK G 3198  UNK G 3212  1                                  15
+HELIX  221 221 UNK G 3224  UNK G 3230  1                                   7
+HELIX  222 222 UNK G 3248  UNK G 3254  1                                   7
+HELIX  223 223 UNK G 3271  UNK G 3285  1                                  15
+HELIX  224 224 UNK G 3301  UNK G 3310  1                                  10
+HELIX  225 225 UNK G 3315  UNK G 3331  1                                  17
+HELIX  226 226 UNK G 3344  UNK G 3354  1                                  11
+HELIX  227 227 UNK G 3361  UNK G 3388  1                                  28
+HELIX  228 228 UNK G 3399  UNK G 3431  1                                  33
+HELIX  229 229 UNK G 3437  UNK G 3443  1                                   7
+HELIX  230 230 UNK G 3445  UNK G 3450  1                                   6
+HELIX  231 231 UNK G 3457  UNK G 3468  1                                  12
+HELIX  232 232 UNK G 3513  UNK G 3517  1                                   5
+HELIX  233 233 UNK G 3522  UNK G 3527  1                                   6
+HELIX  234 234 UNK G 3551  UNK G 3560  1                                  10
+HELIX  235 235 UNK G 3574  UNK G 3583  1                                  10
+HELIX  236 236 UNK G 3588  UNK G 3608  1                                  21
+HELIX  237 237 PRO G 3645  SER G 3656  1                                  12
+HELIX  238 238 ASP G 3671  GLN G 3683  1                                  13
+HELIX  239 239 ASP G 3696  ALA G 3709  1                                  14
+HELIX  240 240 ASP G 3719  GLY G 3738  1                                  20
+HELIX  241 241 SER G 3752  MET G 3782  1                                  31
+HELIX  242 242 GLY G 3791  LEU G 3805  1                                  15
+HELIX  243 243 ASN G 3809  LYS G 3824  1                                  16
+HELIX  244 244 PHE G 3828  THR G 3838  1                                  11
+HELIX  245 245 ASP G 3843  GLU G 3854  1                                  12
+HELIX  246 246 PHE G 3880  LEU G 3891  1                                  12
+HELIX  247 247 ASP G 3898  THR G 3905  1                                   8
+HELIX  248 248 ASN G 3914  TYR G 3937  1                                  24
+HELIX  249 249 GLU G 3944  GLN G 3970  1                                  27
+HELIX  250 250 CYS G 3973  PHE G 3996  1                                  24
+HELIX  251 251 HIS G 3998  ASP G 4006  1                                   9
+HELIX  252 252 GLN G 4009  GLU G 4032  1                                  24
+HELIX  253 253 MET G 4039  VAL G 4072  1                                  34
+HELIX  254 254 SER G 4074  ASP G 4079  1                                   6
+HELIX  255 255 LYS G 4090  GLN G 4100  1                                  11
+HELIX  256 256 THR G 4104  SER G 4115  1                                  12
+HELIX  257 257 ASN G 4124  VAL G 4154  1                                  31
+HELIX  258 258 ASP G 4157  ARG G 4175  1                                  19
+HELIX  259 259 GLU G 4199  GLU G 4224  1                                  26
+HELIX  260 260 ALA G 4228  GLN G 4250  1                                  23
+HELIX  261 261 UNK G 4321  UNK G 4337  1                                  17
+HELIX  262 262 GLY G 4542  TYR G 4580  1                                  39
+HELIX  263 263 LEU G 4643  PHE G 4683  1                                  41
+HELIX  264 264 ASP G 4696  LEU G 4706  1                                  11
+HELIX  265 265 PHE G 4719  HIS G 4728  1                                  10
+HELIX  266 266 GLY G 4733  LEU G 4741  1                                   9
+HELIX  267 267 THR G 4751  GLU G 4755  1                                   5
+HELIX  268 268 ASP G 4772  GLY G 4802  1                                  31
+HELIX  269 269 ALA G 4810  TYR G 4863  1                                  54
+HELIX  270 270 ASP G 4878  GLY G 4890  1                                  13
+HELIX  271 271 TYR G 4909  ILE G 4925  1                                  17
+HELIX  272 272 ILE G 4927  ASP G 4953  1                                  27
+HELIX  273 273 GLY G 4964  THR G 4970  1                                   7
+HELIX  274 274 HIS G 4973  THR G 4979  1                                   7
+HELIX  275 275 ALA G 4986  ASN G 4997  1                                  12
+HELIX  276 276 THR G 5004  ARG G 5017  1                                  14
+HELIX  277 277 ASP I   61  CYS I   65  1                                   5
+HELIX  278 278 VAL I   75  LEU I   82  1                                   8
+HELIX  279 279 ALA I  251  HIS I  255  1                                   5
+HELIX  280 280 PRO I  364  LEU I  369  1                                   6
+HELIX  281 281 GLN I  395  ASP I  419  1                                  25
+HELIX  282 282 ILE I  438  PHE I  452  1                                  15
+HELIX  283 283 GLN I  460  LEU I  477  1                                  18
+HELIX  284 284 LEU I  484  LEU I  494  1                                  11
+HELIX  285 285 ALA I  511  LEU I  529  1                                  19
+HELIX  286 286 ARG I  534  LEU I  539  1                                   6
+HELIX  287 287 ASN I  543  LEU I  551  1                                   9
+HELIX  288 288 GLY I  559  LEU I  568  1                                  10
+HELIX  289 289 SER I  571  ASN I  576  1                                   6
+HELIX  290 290 GLU I  580  HIS I  593  1                                  14
+HELIX  291 291 HIS I  597  VAL I  608  1                                  12
+HELIX  292 292 VAL I  614  LEU I  625  1                                  12
+HELIX  293 293 PRO I  864  GLU I  888  1                                  25
+HELIX  294 294 PRO I  914  ALA I  934  1                                  21
+HELIX  295 295 ALA I  980  VAL I 1001  1                                  22
+HELIX  296 296 ASP I 1028  TYR I 1049  1                                  22
+HELIX  297 297 GLU I 1078  THR I 1082  1                                   5
+HELIX  298 298 LEU I 1575  PHE I 1580  1                                   6
+HELIX  299 299 ARG I 1623  ALA I 1627  1                                   5
+HELIX  300 300 GLU I 1652  CYS I 1674  1                                  23
+HELIX  301 301 ASN I 1678  ALA I 1684  1                                   7
+HELIX  302 302 GLN I 1691  ASP I 1700  1                                  10
+HELIX  303 303 ALA I 1709  MET I 1730  1                                  22
+HELIX  304 304 THR I 1739  ALA I 1744  1                                   6
+HELIX  305 305 PRO I 1803  GLN I 1824  1                                  22
+HELIX  306 306 SER I 1833  PHE I 1838  1                                   6
+HELIX  307 307 PRO I 1840  MET I 1851  1                                  12
+HELIX  308 308 GLY I 1855  LEU I 1863  1                                   9
+HELIX  309 309 ILE I 1866  PHE I 1871  1                                   6
+HELIX  310 310 GLU I 1933  ALA I 1978  1                                  46
+HELIX  311 311 ALA I 1989  ARG I 1999  1                                  11
+HELIX  312 312 PRO I 2001  ASP I 2014  1                                  14
+HELIX  313 313 GLN I 2029  CYS I 2042  1                                  14
+HELIX  314 314 SER I 2093  GLU I 2108  1                                  16
+HELIX  315 315 SER I 2113  GLN I 2127  1                                  15
+HELIX  316 316 ASP I 2129  ALA I 2137  1                                   9
+HELIX  317 317 SER I 2148  LEU I 2166  1                                  19
+HELIX  318 318 GLY I 2171  ASN I 2187  1                                  17
+HELIX  319 319 LYS I 2189  GLY I 2216  1                                  28
+HELIX  320 320 MET I 2228  ILE I 2242  1                                  15
+HELIX  321 321 GLN I 2245  GLY I 2262  1                                  18
+HELIX  322 322 THR I 2271  SER I 2279  1                                   9
+HELIX  323 323 ASP I 2294  GLY I 2306  1                                  13
+HELIX  324 324 CYS I 2310  ALA I 2315  1                                   6
+HELIX  325 325 CYS I 2326  PHE I 2337  1                                  12
+HELIX  326 326 ALA I 2350  ILE I 2358  1                                   9
+HELIX  327 327 LYS I 2360  PHE I 2364  1                                   5
+HELIX  328 328 GLY I 2375  ASP I 2393  1                                  19
+HELIX  329 329 LEU I 2418  CYS I 2436  1                                  19
+HELIX  330 330 GLU I 2449  VAL I 2461  1                                  13
+HELIX  331 331 LEU I 2466  SER I 2471  1                                   6
+HELIX  332 332 UNK I 2500  UNK I 2509  1                                  10
+HELIX  333 333 UNK I 2516  UNK I 2530  1                                  15
+HELIX  334 334 UNK I 2542  UNK I 2548  1                                   7
+HELIX  335 335 UNK I 2551  UNK I 2557  1                                   7
+HELIX  336 336 UNK I 2566  UNK I 2581  1                                  16
+HELIX  337 337 UNK I 2587  UNK I 2604  1                                  18
+HELIX  338 338 UNK I 2610  UNK I 2618  1                                   9
+HELIX  339 339 UNK I 2626  UNK I 2641  1                                  16
+HELIX  340 340 UNK I 2650  UNK I 2666  1                                  17
+HELIX  341 341 UNK I 2675  UNK I 2680  1                                   6
+HELIX  342 342 UNK I 2683  UNK I 2688  1                                   6
+HELIX  343 343 GLU I 2741  VAL I 2745  1                                   5
+HELIX  344 344 PRO I 2748  ASN I 2773  1                                  26
+HELIX  345 345 PRO I 2793  PHE I 2797  1                                   5
+HELIX  346 346 LYS I 2800  TYR I 2805  1                                   6
+HELIX  347 347 ILE I 2809  GLU I 2820  1                                  12
+HELIX  348 348 SER I 2868  GLU I 2895  1                                  28
+HELIX  349 349 PRO I 2907  LEU I 2911  1                                   5
+HELIX  350 350 LYS I 2914  MET I 2932  1                                  19
+HELIX  351 351 UNK I 2950  UNK I 2976  1                                  27
+HELIX  352 352 UNK I 2999  UNK I 3015  1                                  17
+HELIX  353 353 UNK I 3017  UNK I 3022  1                                   6
+HELIX  354 354 UNK I 3025  UNK I 3041  1                                  17
+HELIX  355 355 UNK I 3050  UNK I 3063  1                                  14
+HELIX  356 356 UNK I 3141  UNK I 3162  1                                  22
+HELIX  357 357 UNK I 3175  UNK I 3190  1                                  16
+HELIX  358 358 UNK I 3198  UNK I 3212  1                                  15
+HELIX  359 359 UNK I 3224  UNK I 3230  1                                   7
+HELIX  360 360 UNK I 3248  UNK I 3254  1                                   7
+HELIX  361 361 UNK I 3271  UNK I 3285  1                                  15
+HELIX  362 362 UNK I 3305  UNK I 3310  1                                   6
+HELIX  363 363 UNK I 3315  UNK I 3331  1                                  17
+HELIX  364 364 UNK I 3344  UNK I 3354  1                                  11
+HELIX  365 365 UNK I 3361  UNK I 3388  1                                  28
+HELIX  366 366 UNK I 3399  UNK I 3431  1                                  33
+HELIX  367 367 UNK I 3437  UNK I 3443  1                                   7
+HELIX  368 368 UNK I 3445  UNK I 3450  1                                   6
+HELIX  369 369 UNK I 3457  UNK I 3468  1                                  12
+HELIX  370 370 UNK I 3513  UNK I 3517  1                                   5
+HELIX  371 371 UNK I 3522  UNK I 3527  1                                   6
+HELIX  372 372 UNK I 3551  UNK I 3560  1                                  10
+HELIX  373 373 UNK I 3574  UNK I 3583  1                                  10
+HELIX  374 374 UNK I 3588  UNK I 3608  1                                  21
+HELIX  375 375 PRO I 3645  SER I 3656  1                                  12
+HELIX  376 376 ASP I 3671  GLN I 3683  1                                  13
+HELIX  377 377 ASP I 3696  ALA I 3709  1                                  14
+HELIX  378 378 ASP I 3719  GLY I 3738  1                                  20
+HELIX  379 379 SER I 3752  MET I 3782  1                                  31
+HELIX  380 380 GLY I 3791  LEU I 3805  1                                  15
+HELIX  381 381 ASN I 3809  LYS I 3824  1                                  16
+HELIX  382 382 PHE I 3828  THR I 3838  1                                  11
+HELIX  383 383 ASP I 3843  GLU I 3854  1                                  12
+HELIX  384 384 PHE I 3880  LEU I 3891  1                                  12
+HELIX  385 385 ASP I 3898  THR I 3905  1                                   8
+HELIX  386 386 ASN I 3914  TYR I 3937  1                                  24
+HELIX  387 387 GLU I 3944  GLN I 3970  1                                  27
+HELIX  388 388 CYS I 3973  PHE I 3996  1                                  24
+HELIX  389 389 HIS I 3998  ASP I 4006  1                                   9
+HELIX  390 390 GLN I 4009  GLU I 4032  1                                  24
+HELIX  391 391 MET I 4039  VAL I 4072  1                                  34
+HELIX  392 392 SER I 4074  ASP I 4079  1                                   6
+HELIX  393 393 LYS I 4090  GLN I 4100  1                                  11
+HELIX  394 394 THR I 4104  SER I 4115  1                                  12
+HELIX  395 395 ASN I 4124  VAL I 4154  1                                  31
+HELIX  396 396 ASP I 4157  ARG I 4175  1                                  19
+HELIX  397 397 GLU I 4199  GLU I 4224  1                                  26
+HELIX  398 398 ALA I 4228  GLN I 4250  1                                  23
+HELIX  399 399 UNK I 4321  UNK I 4337  1                                  17
+HELIX  400 400 GLY I 4542  TYR I 4580  1                                  39
+HELIX  401 401 LEU I 4643  PHE I 4683  1                                  41
+HELIX  402 402 ASP I 4696  LEU I 4706  1                                  11
+HELIX  403 403 PHE I 4719  HIS I 4728  1                                  10
+HELIX  404 404 GLY I 4733  LEU I 4741  1                                   9
+HELIX  405 405 THR I 4751  GLU I 4755  1                                   5
+HELIX  406 406 ASP I 4772  GLY I 4802  1                                  31
+HELIX  407 407 ALA I 4810  TYR I 4863  1                                  54
+HELIX  408 408 ASP I 4878  GLY I 4890  1                                  13
+HELIX  409 409 TYR I 4909  ILE I 4925  1                                  17
+HELIX  410 410 ILE I 4927  ASP I 4953  1                                  27
+HELIX  411 411 GLY I 4964  THR I 4970  1                                   7
+HELIX  412 412 HIS I 4973  THR I 4979  1                                   7
+HELIX  413 413 ALA I 4986  ASN I 4997  1                                  12
+HELIX  414 414 THR I 5004  ARG I 5017  1                                  14
+HELIX  415 415 ASP E   61  CYS E   65  1                                   5
+HELIX  416 416 VAL E   75  LEU E   82  1                                   8
+HELIX  417 417 ALA E  251  HIS E  255  1                                   5
+HELIX  418 418 PRO E  364  LEU E  369  1                                   6
+HELIX  419 419 GLN E  395  ASP E  419  1                                  25
+HELIX  420 420 ILE E  438  PHE E  452  1                                  15
+HELIX  421 421 GLN E  460  LEU E  477  1                                  18
+HELIX  422 422 LEU E  484  LEU E  494  1                                  11
+HELIX  423 423 ALA E  511  LEU E  529  1                                  19
+HELIX  424 424 ARG E  534  LEU E  539  1                                   6
+HELIX  425 425 ASN E  543  LEU E  551  1                                   9
+HELIX  426 426 GLY E  559  LEU E  568  1                                  10
+HELIX  427 427 SER E  571  ASN E  576  1                                   6
+HELIX  428 428 GLU E  580  HIS E  593  1                                  14
+HELIX  429 429 HIS E  597  VAL E  608  1                                  12
+HELIX  430 430 VAL E  614  LEU E  625  1                                  12
+HELIX  431 431 PRO E  864  GLU E  888  1                                  25
+HELIX  432 432 PRO E  914  ALA E  934  1                                  21
+HELIX  433 433 ALA E  980  VAL E 1001  1                                  22
+HELIX  434 434 ASP E 1028  TYR E 1049  1                                  22
+HELIX  435 435 GLU E 1078  THR E 1082  1                                   5
+HELIX  436 436 LEU E 1575  PHE E 1580  1                                   6
+HELIX  437 437 ARG E 1623  ALA E 1627  1                                   5
+HELIX  438 438 GLU E 1652  CYS E 1674  1                                  23
+HELIX  439 439 ASN E 1678  ALA E 1684  1                                   7
+HELIX  440 440 GLN E 1691  ASP E 1700  1                                  10
+HELIX  441 441 ALA E 1709  MET E 1730  1                                  22
+HELIX  442 442 THR E 1739  ALA E 1744  1                                   6
+HELIX  443 443 PRO E 1803  GLN E 1824  1                                  22
+HELIX  444 444 SER E 1833  PHE E 1838  1                                   6
+HELIX  445 445 PRO E 1840  MET E 1851  1                                  12
+HELIX  446 446 GLY E 1855  LEU E 1863  1                                   9
+HELIX  447 447 ILE E 1866  PHE E 1871  1                                   6
+HELIX  448 448 GLU E 1933  ALA E 1978  1                                  46
+HELIX  449 449 ALA E 1989  ARG E 1999  1                                  11
+HELIX  450 450 PRO E 2001  ASP E 2014  1                                  14
+HELIX  451 451 GLN E 2029  CYS E 2042  1                                  14
+HELIX  452 452 SER E 2093  GLU E 2108  1                                  16
+HELIX  453 453 SER E 2113  GLN E 2127  1                                  15
+HELIX  454 454 ASP E 2129  ALA E 2137  1                                   9
+HELIX  455 455 SER E 2148  LEU E 2166  1                                  19
+HELIX  456 456 GLY E 2171  ASN E 2187  1                                  17
+HELIX  457 457 LYS E 2189  GLY E 2216  1                                  28
+HELIX  458 458 MET E 2228  ILE E 2242  1                                  15
+HELIX  459 459 GLN E 2245  GLY E 2262  1                                  18
+HELIX  460 460 THR E 2271  SER E 2279  1                                   9
+HELIX  461 461 ASP E 2294  GLY E 2306  1                                  13
+HELIX  462 462 CYS E 2310  ALA E 2315  1                                   6
+HELIX  463 463 CYS E 2326  PHE E 2337  1                                  12
+HELIX  464 464 ALA E 2350  ILE E 2358  1                                   9
+HELIX  465 465 LYS E 2360  PHE E 2364  1                                   5
+HELIX  466 466 GLY E 2375  ASP E 2393  1                                  19
+HELIX  467 467 LEU E 2418  CYS E 2436  1                                  19
+HELIX  468 468 GLU E 2449  VAL E 2461  1                                  13
+HELIX  469 469 LEU E 2466  SER E 2471  1                                   6
+HELIX  470 470 UNK E 2500  UNK E 2509  1                                  10
+HELIX  471 471 UNK E 2516  UNK E 2530  1                                  15
+HELIX  472 472 UNK E 2542  UNK E 2548  1                                   7
+HELIX  473 473 UNK E 2551  UNK E 2557  1                                   7
+HELIX  474 474 UNK E 2566  UNK E 2581  1                                  16
+HELIX  475 475 UNK E 2587  UNK E 2604  1                                  18
+HELIX  476 476 UNK E 2610  UNK E 2618  1                                   9
+HELIX  477 477 UNK E 2626  UNK E 2641  1                                  16
+HELIX  478 478 UNK E 2650  UNK E 2666  1                                  17
+HELIX  479 479 UNK E 2675  UNK E 2680  1                                   6
+HELIX  480 480 UNK E 2683  UNK E 2688  1                                   6
+HELIX  481 481 GLU E 2741  VAL E 2745  1                                   5
+HELIX  482 482 PRO E 2748  ASN E 2773  1                                  26
+HELIX  483 483 PRO E 2793  PHE E 2797  1                                   5
+HELIX  484 484 LYS E 2800  TYR E 2805  1                                   6
+HELIX  485 485 ILE E 2809  GLU E 2820  1                                  12
+HELIX  486 486 SER E 2868  GLU E 2895  1                                  28
+HELIX  487 487 PRO E 2907  LEU E 2911  1                                   5
+HELIX  488 488 LYS E 2914  MET E 2932  1                                  19
+HELIX  489 489 UNK E 2950  UNK E 2976  1                                  27
+HELIX  490 490 UNK E 2999  UNK E 3015  1                                  17
+HELIX  491 491 UNK E 3017  UNK E 3022  1                                   6
+HELIX  492 492 UNK E 3025  UNK E 3041  1                                  17
+HELIX  493 493 UNK E 3050  UNK E 3063  1                                  14
+HELIX  494 494 UNK E 3141  UNK E 3162  1                                  22
+HELIX  495 495 UNK E 3175  UNK E 3190  1                                  16
+HELIX  496 496 UNK E 3198  UNK E 3212  1                                  15
+HELIX  497 497 UNK E 3224  UNK E 3230  1                                   7
+HELIX  498 498 UNK E 3248  UNK E 3254  1                                   7
+HELIX  499 499 UNK E 3271  UNK E 3285  1                                  15
+HELIX  500 500 UNK E 3305  UNK E 3310  1                                   6
+HELIX  501 501 UNK E 3315  UNK E 3331  1                                  17
+HELIX  502 502 UNK E 3344  UNK E 3354  1                                  11
+HELIX  503 503 UNK E 3361  UNK E 3388  1                                  28
+HELIX  504 504 UNK E 3399  UNK E 3431  1                                  33
+HELIX  505 505 UNK E 3437  UNK E 3443  1                                   7
+HELIX  506 506 UNK E 3445  UNK E 3450  1                                   6
+HELIX  507 507 UNK E 3457  UNK E 3468  1                                  12
+HELIX  508 508 UNK E 3513  UNK E 3517  1                                   5
+HELIX  509 509 UNK E 3522  UNK E 3527  1                                   6
+HELIX  510 510 UNK E 3551  UNK E 3560  1                                  10
+HELIX  511 511 UNK E 3574  UNK E 3583  1                                  10
+HELIX  512 512 UNK E 3588  UNK E 3608  1                                  21
+HELIX  513 513 PRO E 3645  SER E 3656  1                                  12
+HELIX  514 514 ASP E 3671  GLN E 3683  1                                  13
+HELIX  515 515 ASP E 3696  ALA E 3709  1                                  14
+HELIX  516 516 ASP E 3719  GLY E 3738  1                                  20
+HELIX  517 517 SER E 3752  MET E 3782  1                                  31
+HELIX  518 518 GLY E 3791  LEU E 3805  1                                  15
+HELIX  519 519 ASN E 3809  LYS E 3824  1                                  16
+HELIX  520 520 PHE E 3828  THR E 3838  1                                  11
+HELIX  521 521 ASP E 3843  GLU E 3854  1                                  12
+HELIX  522 522 PHE E 3880  LEU E 3891  1                                  12
+HELIX  523 523 ASP E 3898  THR E 3905  1                                   8
+HELIX  524 524 ASN E 3914  TYR E 3937  1                                  24
+HELIX  525 525 GLU E 3944  GLN E 3970  1                                  27
+HELIX  526 526 CYS E 3973  PHE E 3996  1                                  24
+HELIX  527 527 HIS E 3998  ASP E 4006  1                                   9
+HELIX  528 528 GLN E 4009  GLU E 4032  1                                  24
+HELIX  529 529 MET E 4039  VAL E 4072  1                                  34
+HELIX  530 530 SER E 4074  ASP E 4079  1                                   6
+HELIX  531 531 LYS E 4090  GLN E 4100  1                                  11
+HELIX  532 532 THR E 4104  SER E 4115  1                                  12
+HELIX  533 533 ASN E 4124  VAL E 4154  1                                  31
+HELIX  534 534 ASP E 4157  ARG E 4175  1                                  19
+HELIX  535 535 GLU E 4199  GLU E 4224  1                                  26
+HELIX  536 536 ALA E 4228  GLN E 4250  1                                  23
+HELIX  537 537 UNK E 4321  UNK E 4337  1                                  17
+HELIX  538 538 GLY E 4542  TYR E 4580  1                                  39
+HELIX  539 539 LEU E 4643  PHE E 4683  1                                  41
+HELIX  540 540 ASP E 4696  LEU E 4706  1                                  11
+HELIX  541 541 PHE E 4719  HIS E 4728  1                                  10
+HELIX  542 542 GLY E 4733  LEU E 4741  1                                   9
+HELIX  543 543 THR E 4751  GLU E 4755  1                                   5
+HELIX  544 544 ASP E 4772  GLY E 4802  1                                  31
+HELIX  545 545 ALA E 4810  TYR E 4863  1                                  54
+HELIX  546 546 ASP E 4878  GLY E 4890  1                                  13
+HELIX  547 547 TYR E 4909  ILE E 4925  1                                  17
+HELIX  548 548 ILE E 4927  ASP E 4953  1                                  27
+HELIX  549 549 GLY E 4964  THR E 4970  1                                   7
+HELIX  550 550 HIS E 4973  THR E 4979  1                                   7
+HELIX  551 551 ALA E 4986  ASN E 4997  1                                  12
+HELIX  552 552 THR E 5004  ARG E 5017  1                                  14
+HELIX  553 553 SER F   39  ASN F   43  1                                   5
+HELIX  554 554 ILE F   56  GLN F   65  1                                  10
+HELIX  555 555 THR F   77  ALA F   81  1                                   5
+HELIX  556 556 SER A   39  ASN A   43  1                                   5
+HELIX  557 557 ILE A   56  GLN A   65  1                                  10
+HELIX  558 558 THR A   77  ALA A   81  1                                   5
+HELIX  559 559 SER H   39  ASN H   43  1                                   5
+HELIX  560 560 ILE H   56  GLN H   65  1                                  10
+HELIX  561 561 THR H   77  ALA H   81  1                                   5
+HELIX  562 562 SER J   39  ASN J   43  1                                   5
+HELIX  563 563 ILE J   56  GLN J   65  1                                  10
+HELIX  564 564 THR J   77  ALA J   81  1                                   5
+SHEET    1   1 1 GLU B  19  VAL B  20  0
+SHEET    2   2 1 GLN B  23  THR B  27  0
+SHEET    3   3 1 GLN B  32  GLY B  41  0
+SHEET    4   4 1 ASN B  44  PRO B  51  0
+SHEET    5   5 1 PHE B  67  THR B  68  0
+SHEET    6   6 1 GLN B  71  SER B  74  0
+SHEET    7   7 1 HIS B 105  LEU B 108  0
+SHEET    8   8 1 TRP B 147  THR B 149  0
+SHEET    9   9 1 HIS B 151  PRO B 152  0
+SHEET   10  10 1 LEU B 169  ILE B 170  0
+SHEET   11  11 1 HIS B 181  THR B 184  0
+SHEET   12  12 1 LEU B 189  ASP B 192  0
+SHEET   13  13 1 VAL B 219  PHE B 223  0
+SHEET   14  14 1 CYS B 230  ILE B 233  0
+SHEET   15  15 1 VAL B 245  GLU B 248  0
+SHEET   16  16 1 TRP B 260  PRO B 264  0
+SHEET   17  17 1 LEU B 280  HIS B 284  0
+SHEET   18  18 1 TYR B 290  ALA B 292  0
+SHEET   19  19 1 VAL B 300  VAL B 302  0
+SHEET   20  20 1 PHE B 314  ARG B 317  0
+SHEET   21  21 1 PHE B 347  HIS B 350  0
+SHEET   22  22 1 THR B 358  TYR B 359  0
+SHEET   23  23 1 ALA B 376  ILE B 377  0
+SHEET   24  24 1 PHE B 389  ARG B 392  0
+SHEET   25  25 1 GLN B 634  ASN B 639  0
+SHEET   26  26 1 THR B 642  PRO B 646  0
+SHEET   27  27 1 TYR B 663  VAL B 668  0
+SHEET   28  28 1 LEU B 682  ALA B 687  0
+SHEET   29  29 1 SER B 713  PHE B 716  0
+SHEET   30  30 1 ASP B 742  ASP B 749  0
+SHEET   31  31 1 SER B 754  ARG B 758  0
+SHEET   32  32 1 VAL B 767  PHE B 768  0
+SHEET   33  33 1 VAL B 780  PHE B 783  0
+SHEET   34  34 1 VAL B 789  ARG B 790  0
+SHEET   35  35 1 LEU B 823  PRO B 825  0
+SHEET   36  36 1 LEU B 839  VAL B 840  0
+SHEET   37  37 1 THR B 892  TYR B 893  0
+SHEET   38  38 1 LEU B 903  HIS B 904  0
+SHEET   39  39 1 GLY B 940  MET B 941  0
+SHEET   40  40 1 TYR B1051  ASN B1052  0
+SHEET   41  41 1 ARG B1073  ARG B1076  0
+SHEET   42  42 1 ARG B1087  ALA B1094  0
+SHEET   43  43 1 ARG B1101  ALA B1105  0
+SHEET   44  44 1 ALA B1121  ASN B1125  0
+SHEET   45  45 1 GLN B1130  TRP B1132  0
+SHEET   46  46 1 SER B1136  PRO B1138  0
+SHEET   47  47 1 VAL B1148  ASP B1154  0
+SHEET   48  48 1 THR B1159  LEU B1164  0
+SHEET   49  49 1 LEU B1189  LEU B1194  0
+SHEET   50  50 1 VAL B1199  ASN B1203  0
+SHEET   51  51 1 TRP B1237  SER B1239  0
+SHEET   52  52 1 GLU B1256  ARG B1259  0
+SHEET   53  53 1 CYS B1269  ALA B1273  0
+SHEET   54  54 1 UNK B1286  UNK B1289  0
+SHEET   55  55 1 UNK B1293  UNK B1294  0
+SHEET   56  56 1 UNK B1455  UNK B1461  0
+SHEET   57  57 1 UNK B1471  UNK B1473  0
+SHEET   58  58 1 UNK B1485  UNK B1486  0
+SHEET   59  59 1 UNK B1495  UNK B1498  0
+SHEET   60  60 1 UNK B1515  UNK B1516  0
+SHEET   61  61 1 UNK B1529  UNK B1530  0
+SHEET   62  62 1 VAL B1597  MET B1599  0
+SHEET   63  63 1 TRP B1605  SER B1606  0
+SHEET   64  64 1 THR B1635  ILE B1641  0
+SHEET   65  65 1 ARG B1646  ASP B1649  0
+SHEET   66  66 1 TYR B1734  VAL B1736  0
+SHEET   67  67 1 ALA B2141  THR B2143  0
+SHEET   68  68 1 LEU B4178  ILE B4183  0
+SHEET   69  69 1 GLU B4191  GLU B4196  0
+SHEET   70  70 1 GLU G  19  VAL G  20  0
+SHEET   71  71 1 GLN G  23  THR G  27  0
+SHEET   72  72 1 GLN G  32  GLY G  41  0
+SHEET   73  73 1 ASN G  44  PRO G  51  0
+SHEET   74  74 1 PHE G  67  THR G  68  0
+SHEET   75  75 1 GLN G  71  SER G  74  0
+SHEET   76  76 1 HIS G 105  LEU G 108  0
+SHEET   77  77 1 TRP G 147  THR G 149  0
+SHEET   78  78 1 HIS G 151  PRO G 152  0
+SHEET   79  79 1 LEU G 169  ILE G 170  0
+SHEET   80  80 1 HIS G 181  THR G 184  0
+SHEET   81  81 1 LEU G 189  ASP G 192  0
+SHEET   82  82 1 VAL G 219  PHE G 223  0
+SHEET   83  83 1 CYS G 230  ILE G 233  0
+SHEET   84  84 1 VAL G 245  GLU G 248  0
+SHEET   85  85 1 TRP G 260  PRO G 264  0
+SHEET   86  86 1 LEU G 280  HIS G 284  0
+SHEET   87  87 1 TYR G 290  ALA G 292  0
+SHEET   88  88 1 VAL G 300  VAL G 302  0
+SHEET   89  89 1 PHE G 314  ARG G 317  0
+SHEET   90  90 1 PHE G 347  HIS G 350  0
+SHEET   91  91 1 THR G 358  TYR G 359  0
+SHEET   92  92 1 ALA G 376  ILE G 377  0
+SHEET   93  93 1 PHE G 389  ARG G 392  0
+SHEET   94  94 1 GLN G 634  ASN G 639  0
+SHEET   95  95 1 THR G 642  PRO G 646  0
+SHEET   96  96 1 TYR G 663  VAL G 668  0
+SHEET   97  97 1 LEU G 682  ALA G 687  0
+SHEET   98  98 1 SER G 713  PHE G 716  0
+SHEET   99  99 1 ASP G 742  ASP G 749  0
+SHEET  100 100 1 SER G 754  ARG G 758  0
+SHEET  101 101 1 VAL G 767  PHE G 768  0
+SHEET  102 102 1 VAL G 780  PHE G 783  0
+SHEET  103 103 1 VAL G 789  ARG G 790  0
+SHEET  104 104 1 LEU G 823  PRO G 825  0
+SHEET  105 105 1 LEU G 839  VAL G 840  0
+SHEET  106 106 1 THR G 892  TYR G 893  0
+SHEET  107 107 1 LEU G 903  HIS G 904  0
+SHEET  108 108 1 GLY G 940  MET G 941  0
+SHEET  109 109 1 TYR G1051  ASN G1052  0
+SHEET  110 110 1 ARG G1073  ARG G1076  0
+SHEET  111 111 1 ARG G1087  ALA G1094  0
+SHEET  112 112 1 ARG G1101  ALA G1105  0
+SHEET  113 113 1 ALA G1121  ASN G1125  0
+SHEET  114 114 1 GLN G1130  TRP G1132  0
+SHEET  115 115 1 SER G1136  PRO G1138  0
+SHEET  116 116 1 VAL G1148  ASP G1154  0
+SHEET  117 117 1 THR G1159  LEU G1164  0
+SHEET  118 118 1 LEU G1189  LEU G1194  0
+SHEET  119 119 1 VAL G1199  ASN G1203  0
+SHEET  120 120 1 TRP G1237  SER G1239  0
+SHEET  121 121 1 GLU G1256  ARG G1259  0
+SHEET  122 122 1 CYS G1269  ALA G1273  0
+SHEET  123 123 1 UNK G1286  UNK G1289  0
+SHEET  124 124 1 UNK G1293  UNK G1294  0
+SHEET  125 125 1 UNK G1455  UNK G1461  0
+SHEET  126 126 1 UNK G1471  UNK G1473  0
+SHEET  127 127 1 UNK G1485  UNK G1486  0
+SHEET  128 128 1 UNK G1495  UNK G1498  0
+SHEET  129 129 1 UNK G1515  UNK G1516  0
+SHEET  130 130 1 UNK G1529  UNK G1530  0
+SHEET  131 131 1 VAL G1597  MET G1599  0
+SHEET  132 132 1 TRP G1605  SER G1606  0
+SHEET  133 133 1 THR G1635  ILE G1641  0
+SHEET  134 134 1 ARG G1646  ASP G1649  0
+SHEET  135 135 1 TYR G1734  VAL G1736  0
+SHEET  136 136 1 ALA G2141  THR G2143  0
+SHEET  137 137 1 LEU G4178  ILE G4183  0
+SHEET  138 138 1 GLU G4191  GLU G4196  0
+SHEET  139 139 1 GLU I  19  VAL I  20  0
+SHEET  140 140 1 GLN I  23  THR I  27  0
+SHEET  141 141 1 GLN I  32  GLY I  41  0
+SHEET  142 142 1 ASN I  44  PRO I  51  0
+SHEET  143 143 1 PHE I  67  THR I  68  0
+SHEET  144 144 1 GLN I  71  SER I  74  0
+SHEET  145 145 1 HIS I 105  LEU I 108  0
+SHEET  146 146 1 TRP I 147  THR I 149  0
+SHEET  147 147 1 HIS I 151  PRO I 152  0
+SHEET  148 148 1 LEU I 169  ILE I 170  0
+SHEET  149 149 1 HIS I 181  THR I 184  0
+SHEET  150 150 1 LEU I 189  ASP I 192  0
+SHEET  151 151 1 VAL I 219  PHE I 223  0
+SHEET  152 152 1 CYS I 230  ILE I 233  0
+SHEET  153 153 1 VAL I 245  GLU I 248  0
+SHEET  154 154 1 TRP I 260  PRO I 264  0
+SHEET  155 155 1 LEU I 280  HIS I 284  0
+SHEET  156 156 1 TYR I 290  ALA I 292  0
+SHEET  157 157 1 VAL I 300  VAL I 302  0
+SHEET  158 158 1 PHE I 314  ARG I 317  0
+SHEET  159 159 1 PHE I 347  HIS I 350  0
+SHEET  160 160 1 THR I 358  TYR I 359  0
+SHEET  161 161 1 ALA I 376  ILE I 377  0
+SHEET  162 162 1 PHE I 389  ARG I 392  0
+SHEET  163 163 1 GLN I 634  ASN I 639  0
+SHEET  164 164 1 THR I 642  PRO I 646  0
+SHEET  165 165 1 TYR I 663  VAL I 668  0
+SHEET  166 166 1 LEU I 682  ALA I 687  0
+SHEET  167 167 1 SER I 713  PHE I 716  0
+SHEET  168 168 1 ASP I 742  ASP I 749  0
+SHEET  169 169 1 SER I 754  ARG I 758  0
+SHEET  170 170 1 VAL I 767  PHE I 768  0
+SHEET  171 171 1 VAL I 780  PHE I 783  0
+SHEET  172 172 1 VAL I 789  ARG I 790  0
+SHEET  173 173 1 LEU I 823  PRO I 825  0
+SHEET  174 174 1 LEU I 839  VAL I 840  0
+SHEET  175 175 1 THR I 892  TYR I 893  0
+SHEET  176 176 1 LEU I 903  HIS I 904  0
+SHEET  177 177 1 GLY I 940  MET I 941  0
+SHEET  178 178 1 TYR I1051  ASN I1052  0
+SHEET  179 179 1 ARG I1073  ARG I1076  0
+SHEET  180 180 1 ARG I1087  ALA I1094  0
+SHEET  181 181 1 ARG I1101  ALA I1105  0
+SHEET  182 182 1 ALA I1121  ASN I1125  0
+SHEET  183 183 1 GLN I1130  TRP I1132  0
+SHEET  184 184 1 SER I1136  PRO I1138  0
+SHEET  185 185 1 VAL I1148  ASP I1154  0
+SHEET  186 186 1 THR I1159  LEU I1164  0
+SHEET  187 187 1 LEU I1189  LEU I1194  0
+SHEET  188 188 1 VAL I1199  ASN I1203  0
+SHEET  189 189 1 TRP I1237  SER I1239  0
+SHEET  190 190 1 GLU I1256  ARG I1259  0
+SHEET  191 191 1 CYS I1269  ALA I1273  0
+SHEET  192 192 1 UNK I1286  UNK I1289  0
+SHEET  193 193 1 UNK I1293  UNK I1294  0
+SHEET  194 194 1 UNK I1455  UNK I1461  0
+SHEET  195 195 1 UNK I1471  UNK I1473  0
+SHEET  196 196 1 UNK I1485  UNK I1486  0
+SHEET  197 197 1 UNK I1495  UNK I1498  0
+SHEET  198 198 1 UNK I1515  UNK I1516  0
+SHEET  199 199 1 UNK I1529  UNK I1530  0
+SHEET  200 200 1 VAL I1597  MET I1599  0
+SHEET  201 201 1 TRP I1605  SER I1606  0
+SHEET  202 202 1 THR I1635  ILE I1641  0
+SHEET  203 203 1 ARG I1646  ASP I1649  0
+SHEET  204 204 1 TYR I1734  VAL I1736  0
+SHEET  205 205 1 ALA I2141  THR I2143  0
+SHEET  206 206 1 LEU I4178  ILE I4183  0
+SHEET  207 207 1 GLU I4191  GLU I4196  0
+SHEET  208 208 1 GLU E  19  VAL E  20  0
+SHEET  209 209 1 GLN E  23  THR E  27  0
+SHEET  210 210 1 GLN E  32  GLY E  41  0
+SHEET  211 211 1 ASN E  44  PRO E  51  0
+SHEET  212 212 1 PHE E  67  THR E  68  0
+SHEET  213 213 1 GLN E  71  SER E  74  0
+SHEET  214 214 1 HIS E 105  LEU E 108  0
+SHEET  215 215 1 TRP E 147  THR E 149  0
+SHEET  216 216 1 HIS E 151  PRO E 152  0
+SHEET  217 217 1 LEU E 169  ILE E 170  0
+SHEET  218 218 1 HIS E 181  THR E 184  0
+SHEET  219 219 1 LEU E 189  ASP E 192  0
+SHEET  220 220 1 VAL E 219  PHE E 223  0
+SHEET  221 221 1 CYS E 230  ILE E 233  0
+SHEET  222 222 1 VAL E 245  GLU E 248  0
+SHEET  223 223 1 TRP E 260  PRO E 264  0
+SHEET  224 224 1 LEU E 280  HIS E 284  0
+SHEET  225 225 1 TYR E 290  ALA E 292  0
+SHEET  226 226 1 VAL E 300  VAL E 302  0
+SHEET  227 227 1 PHE E 314  ARG E 317  0
+SHEET  228 228 1 PHE E 347  HIS E 350  0
+SHEET  229 229 1 THR E 358  TYR E 359  0
+SHEET  230 230 1 ALA E 376  ILE E 377  0
+SHEET  231 231 1 PHE E 389  ARG E 392  0
+SHEET  232 232 1 GLN E 634  ASN E 639  0
+SHEET  233 233 1 THR E 642  PRO E 646  0
+SHEET  234 234 1 TYR E 663  VAL E 668  0
+SHEET  235 235 1 LEU E 682  ALA E 687  0
+SHEET  236 236 1 SER E 713  PHE E 716  0
+SHEET  237 237 1 ASP E 742  ASP E 749  0
+SHEET  238 238 1 SER E 754  ARG E 758  0
+SHEET  239 239 1 VAL E 767  PHE E 768  0
+SHEET  240 240 1 VAL E 780  PHE E 783  0
+SHEET  241 241 1 VAL E 789  ARG E 790  0
+SHEET  242 242 1 LEU E 823  PRO E 825  0
+SHEET  243 243 1 LEU E 839  VAL E 840  0
+SHEET  244 244 1 THR E 892  TYR E 893  0
+SHEET  245 245 1 LEU E 903  HIS E 904  0
+SHEET  246 246 1 GLY E 940  MET E 941  0
+SHEET  247 247 1 TYR E1051  ASN E1052  0
+SHEET  248 248 1 ARG E1073  ARG E1076  0
+SHEET  249 249 1 ARG E1087  ALA E1094  0
+SHEET  250 250 1 ARG E1101  ALA E1105  0
+SHEET  251 251 1 ALA E1121  ASN E1125  0
+SHEET  252 252 1 GLN E1130  TRP E1132  0
+SHEET  253 253 1 SER E1136  PRO E1138  0
+SHEET  254 254 1 VAL E1148  ASP E1154  0
+SHEET  255 255 1 THR E1159  LEU E1164  0
+SHEET  256 256 1 LEU E1189  LEU E1194  0
+SHEET  257 257 1 VAL E1199  ASN E1203  0
+SHEET  258 258 1 TRP E1237  SER E1239  0
+SHEET  259 259 1 GLU E1256  ARG E1259  0
+SHEET  260 260 1 CYS E1269  ALA E1273  0
+SHEET  261 261 1 UNK E1286  UNK E1289  0
+SHEET  262 262 1 UNK E1293  UNK E1294  0
+SHEET  263 263 1 UNK E1455  UNK E1461  0
+SHEET  264 264 1 UNK E1471  UNK E1473  0
+SHEET  265 265 1 UNK E1485  UNK E1486  0
+SHEET  266 266 1 UNK E1495  UNK E1498  0
+SHEET  267 267 1 UNK E1515  UNK E1516  0
+SHEET  268 268 1 UNK E1529  UNK E1530  0
+SHEET  269 269 1 VAL E1597  MET E1599  0
+SHEET  270 270 1 TRP E1605  SER E1606  0
+SHEET  271 271 1 THR E1635  ILE E1641  0
+SHEET  272 272 1 ARG E1646  ASP E1649  0
+SHEET  273 273 1 TYR E1734  VAL E1736  0
+SHEET  274 274 1 ALA E2141  THR E2143  0
+SHEET  275 275 1 LEU E4178  ILE E4183  0
+SHEET  276 276 1 GLU E4191  GLU E4196  0
+SHEET  277 277 1 THR F  21  VAL F  23  0
+SHEET  278 278 1 THR F  27  LEU F  30  0
+SHEET  279 279 1 LYS F  35  SER F  38  0
+SHEET  280 280 1 LYS F  47  ARG F  49  0
+SHEET  281 281 1 ARG F  71  CYS F  76  0
+SHEET  282 282 1 LEU F  97  GLU F 102  0
+SHEET  283 283 1 THR A  21  VAL A  23  0
+SHEET  284 284 1 THR A  27  LEU A  30  0
+SHEET  285 285 1 LYS A  35  SER A  38  0
+SHEET  286 286 1 LYS A  47  ARG A  49  0
+SHEET  287 287 1 ARG A  71  CYS A  76  0
+SHEET  288 288 1 LEU A  97  GLU A 102  0
+SHEET  289 289 1 THR H  21  VAL H  23  0
+SHEET  290 290 1 THR H  27  LEU H  30  0
+SHEET  291 291 1 LYS H  35  SER H  38  0
+SHEET  292 292 1 LYS H  47  ARG H  49  0
+SHEET  293 293 1 ARG H  71  CYS H  76  0
+SHEET  294 294 1 LEU H  97  GLU H 102  0
+SHEET  295 295 1 THR J  21  VAL J  23  0
+SHEET  296 296 1 THR J  27  LEU J  30  0
+SHEET  297 297 1 LYS J  35  SER J  38  0
+SHEET  298 298 1 LYS J  47  ARG J  49  0
+SHEET  299 299 1 ARG J  71  CYS J  76  0
+SHEET  300 300 1 LEU J  97  GLU J 102  0
+SSBOND   1 CYS G 4958    CYS G 4961 
+SSBOND   2 CYS I 4958    CYS I 4961 
+LINK         CB  UNK B1297                 O   UNK B1452 
+LINK         O   UNK B1487                 CB  UNK B1551 
+LINK         O   UNK B3557                 CB  UNK B3561 
+LINK         CB  UNK G1297                 O   UNK G1452 
+LINK         O   UNK G1487                 CB  UNK G1551 
+LINK         O   UNK G3557                 CB  UNK G3561 
+LINK         CB  UNK I1297                 O   UNK I1452 
+LINK         O   UNK I1487                 CB  UNK I1551 
+LINK         O   UNK I3557                 CB  UNK I3561 
+LINK         CB  UNK E1297                 O   UNK E1452 
+LINK         O   UNK E1487                 CB  UNK E1551 
+LINK         O   UNK E3557                 CB  UNK E3561 
+CRYST1  421.680  421.680  421.680  90.00  90.00  90.00 P 1
+SCALE1      0.002371  0.000000  0.000000        0.00000
+SCALE2      0.000000  0.002371  0.000000        0.00000
+SCALE3      0.000000  0.000000  0.002371        0.00000
+TER   58433      SER G4198
+ATOM  58434  N   GLU G4199     246.846 188.350 186.093  1.00136.64           N
+ATOM  58435  CA  GLU G4199     247.262 189.446 185.233  1.00136.64           C
+ATOM  58436  C   GLU G4199     247.183 189.061 183.763  1.00136.64           C
+ATOM  58437  O   GLU G4199     246.758 189.866 182.927  1.00136.64           O
+ATOM  58438  CB  GLU G4199     248.667 189.861 185.651  1.00136.64           C
+ATOM  58439  CG  GLU G4199     249.605 188.681 185.864  1.00136.64           C
+ATOM  58440  CD  GLU G4199     250.934 189.077 186.472  1.00136.64           C
+ATOM  58441  OE1 GLU G4199     251.145 190.282 186.712  1.00136.64           O
+ATOM  58442  OE2 GLU G4199     251.762 188.180 186.732  1.00136.64           O
+ATOM  58443  N   THR G4200     247.532 187.814 183.443  1.00134.52           N
+ATOM  58444  CA  THR G4200     247.450 187.339 182.070  1.00134.52           C
+ATOM  58445  C   THR G4200     246.004 187.195 181.643  1.00134.52           C
+ATOM  58446  O   THR G4200     245.666 187.401 180.475  1.00134.52           O
+ATOM  58447  CB  THR G4200     248.149 185.996 181.953  1.00134.52           C
+ATOM  58448  OG1 THR G4200     247.365 185.012 182.636  1.00134.52           O
+ATOM  58449  CG2 THR G4200     249.503 186.075 182.617  1.00134.52           C
+ATOM  58450  N   ASN G4201     245.140 186.862 182.600  1.00135.29           N
+ATOM  58451  CA  ASN G4201     243.717 186.715 182.337  1.00135.29           C
+ATOM  58452  C   ASN G4201     243.093 188.051 181.984  1.00135.29           C
+ATOM  58453  O   ASN G4201     242.092 188.112 181.262  1.00135.29           O
+ATOM  58454  CB  ASN G4201     243.038 186.152 183.574  1.00135.29           C
+ATOM  58455  CG  ASN G4201     241.823 185.356 183.262  1.00135.29           C
+ATOM  58456  OD1 ASN G4201     241.217 184.783 184.161  1.00135.29           O
+ATOM  58457  ND2 ASN G4201     241.493 185.239 181.982  1.00135.29           N
+ATOM  58458  N   ARG G4202     243.665 189.132 182.507  1.00136.65           N
+ATOM  58459  CA  ARG G4202     243.134 190.456 182.236  1.00136.65           C
+ATOM  58460  C   ARG G4202     243.371 190.847 180.793  1.00136.65           C
+ATOM  58461  O   ARG G4202     242.447 191.280 180.097  1.00136.65           O
+ATOM  58462  CB  ARG G4202     243.767 191.465 183.185  1.00136.65           C
+ATOM  58463  CG  ARG G4202     243.171 192.840 183.127  1.00136.65           C
+ATOM  58464  CD  ARG G4202     243.811 193.682 184.188  1.00136.65           C
+ATOM  58465  NE  ARG G4202     243.306 195.045 184.200  1.00136.65           N
+ATOM  58466  CZ  ARG G4202     243.683 195.962 185.083  1.00136.65           C
+ATOM  58467  NH1 ARG G4202     244.566 195.649 186.019  1.00136.65           N
+ATOM  58468  NH2 ARG G4202     243.183 197.188 185.031  1.00136.65           N
+ATOM  58469  N   ALA G4203     244.600 190.682 180.322  1.00143.39           N
+ATOM  58470  CA  ALA G4203     244.887 190.975 178.928  1.00143.39           C
+ATOM  58471  C   ALA G4203     244.223 189.959 178.019  1.00143.39           C
+ATOM  58472  O   ALA G4203     243.882 190.272 176.873  1.00143.39           O
+ATOM  58473  CB  ALA G4203     246.395 190.994 178.703  1.00143.39           C
+ATOM  58474  N   GLN G4204     244.038 188.735 178.516  1.00148.77           N
+ATOM  58475  CA  GLN G4204     243.248 187.744 177.800  1.00148.77           C
+ATOM  58476  C   GLN G4204     241.816 188.226 177.618  1.00148.77           C
+ATOM  58477  O   GLN G4204     241.226 188.058 176.545  1.00148.77           O
+ATOM  58478  CB  GLN G4204     243.299 186.419 178.557  1.00148.77           C
+ATOM  58479  CG  GLN G4204     242.579 185.285 177.908  1.00148.77           C
+ATOM  58480  CD  GLN G4204     243.145 184.940 176.564  1.00148.77           C
+ATOM  58481  OE1 GLN G4204     244.359 184.897 176.378  1.00148.77           O
+ATOM  58482  NE2 GLN G4204     242.267 184.711 175.606  1.00148.77           N
+ATOM  58483  N   TRP G4205     241.259 188.856 178.649  1.00160.52           N
+ATOM  58484  CA  TRP G4205     240.005 189.577 178.497  1.00160.52           C
+ATOM  58485  C   TRP G4205     240.160 190.810 177.624  1.00160.52           C
+ATOM  58486  O   TRP G4205     239.217 191.193 176.922  1.00160.52           O
+ATOM  58487  CB  TRP G4205     239.477 189.971 179.871  1.00160.52           C
+ATOM  58488  CG  TRP G4205     238.267 190.823 179.845  1.00160.52           C
+ATOM  58489  CD1 TRP G4205     238.224 192.170 179.992  1.00160.52           C
+ATOM  58490  CD2 TRP G4205     236.920 190.391 179.702  1.00160.52           C
+ATOM  58491  NE1 TRP G4205     236.932 192.614 179.931  1.00160.52           N
+ATOM  58492  CE2 TRP G4205     236.109 191.537 179.757  1.00160.52           C
+ATOM  58493  CE3 TRP G4205     236.320 189.147 179.527  1.00160.52           C
+ATOM  58494  CZ2 TRP G4205     234.732 191.478 179.643  1.00160.52           C
+ATOM  58495  CZ3 TRP G4205     234.952 189.089 179.415  1.00160.52           C
+ATOM  58496  CH2 TRP G4205     234.170 190.247 179.473  1.00160.52           C
+ATOM  58497  N   GLU G4206     241.323 191.449 177.648  1.00163.03           N
+ATOM  58498  CA  GLU G4206     241.505 192.673 176.876  1.00163.03           C
+ATOM  58499  C   GLU G4206     242.056 192.367 175.485  1.00163.03           C
+ATOM  58500  O   GLU G4206     243.184 192.694 175.120  1.00163.03           O
+ATOM  58501  CB  GLU G4206     242.374 193.656 177.640  1.00163.03           C
+ATOM  58502  CG  GLU G4206     241.641 194.182 178.844  1.00163.03           C
+ATOM  58503  CD  GLU G4206     240.381 194.962 178.476  1.00163.03           C
+ATOM  58504  OE1 GLU G4206     240.368 195.656 177.435  1.00163.03           O
+ATOM  58505  OE2 GLU G4206     239.395 194.884 179.233  1.00163.03           O
+ATOM  58506  N   MET G4207     241.199 191.718 174.713  1.00164.11           N
+ATOM  58507  CA  MET G4207     241.379 191.408 173.318  1.00164.11           C
+ATOM  58508  C   MET G4207     240.187 191.946 172.544  1.00164.11           C
+ATOM  58509  O   MET G4207     239.074 191.977 173.080  1.00164.11           O
+ATOM  58510  CB  MET G4207     241.493 189.901 173.123  1.00164.11           C
+ATOM  58511  CG  MET G4207     242.770 189.324 173.640  1.00164.11           C
+ATOM  58512  SD  MET G4207     242.731 187.569 173.305  1.00164.11           S
+ATOM  58513  CE  MET G4207     242.589 187.643 171.524  1.00164.11           C
+ATOM  58514  N   PRO G4208     240.382 192.377 171.294  1.00164.52           N
+ATOM  58515  CA  PRO G4208     239.258 192.933 170.529  1.00164.52           C
+ATOM  58516  C   PRO G4208     238.211 191.901 170.207  1.00164.52           C
+ATOM  58517  O   PRO G4208     237.028 192.251 170.111  1.00164.52           O
+ATOM  58518  CB  PRO G4208     239.923 193.446 169.247  1.00164.52           C
+ATOM  58519  CG  PRO G4208     241.377 193.513 169.559  1.00164.52           C
+ATOM  58520  CD  PRO G4208     241.626 192.399 170.512  1.00164.52           C
+ATOM  58521  N   GLN G4209     238.640 190.644 170.058  1.00164.51           N
+ATOM  58522  CA  GLN G4209     237.748 189.531 169.772  1.00164.51           C
+ATOM  58523  C   GLN G4209     236.681 189.387 170.844  1.00164.51           C
+ATOM  58524  O   GLN G4209     235.493 189.236 170.538  1.00164.51           O
+ATOM  58525  CB  GLN G4209     238.574 188.251 169.658  1.00164.51           C
+ATOM  58526  CG  GLN G4209     237.760 187.029 169.356  1.00164.51           C
+ATOM  58527  CD  GLN G4209     237.017 187.154 168.049  1.00164.51           C
+ATOM  58528  OE1 GLN G4209     235.807 187.364 168.030  1.00164.51           O
+ATOM  58529  NE2 GLN G4209     237.740 187.031 166.945  1.00164.51           N
+ATOM  58530  N   VAL G4210     237.077 189.483 172.104  1.00164.50           N
+ATOM  58531  CA  VAL G4210     236.096 189.434 173.168  1.00164.50           C
+ATOM  58532  C   VAL G4210     235.405 190.779 173.293  1.00164.50           C
+ATOM  58533  O   VAL G4210     234.206 190.824 173.579  1.00164.50           O
+ATOM  58534  CB  VAL G4210     236.761 189.036 174.492  1.00164.50           C
+ATOM  58535  CG1 VAL G4210     235.709 188.697 175.549  1.00164.50           C
+ATOM  58536  CG2 VAL G4210     237.745 187.905 174.278  1.00164.50           C
+ATOM  58537  N   LYS G4211     236.155 191.864 173.066  1.00169.95           N
+ATOM  58538  CA  LYS G4211     235.627 193.221 173.156  1.00169.95           C
+ATOM  58539  C   LYS G4211     234.488 193.422 172.176  1.00169.95           C
+ATOM  58540  O   LYS G4211     233.444 193.979 172.531  1.00169.95           O
+ATOM  58541  CB  LYS G4211     236.749 194.219 172.873  1.00169.95           C
+ATOM  58542  CG  LYS G4211     236.450 195.684 173.129  1.00169.95           C
+ATOM  58543  CD  LYS G4211     236.424 195.993 174.627  1.00169.95           C
+ATOM  58544  CE  LYS G4211     236.317 197.491 174.885  1.00169.95           C
+ATOM  58545  NZ  LYS G4211     236.071 197.858 176.303  1.00169.95           N
+ATOM  58546  N   GLU G4212     234.664 192.927 170.952  1.00188.94           N
+ATOM  58547  CA  GLU G4212     233.568 192.890 169.997  1.00188.94           C
+ATOM  58548  C   GLU G4212     232.456 191.964 170.454  1.00188.94           C
+ATOM  58549  O   GLU G4212     231.282 192.352 170.425  1.00188.94           O
+ATOM  58550  CB  GLU G4212     234.074 192.432 168.638  1.00188.94           C
+ATOM  58551  CG  GLU G4212     232.994 192.424 167.594  1.00188.94           C
+ATOM  58552  CD  GLU G4212     232.536 193.818 167.237  1.00188.94           C
+ATOM  58553  OE1 GLU G4212     233.356 194.760 167.292  1.00188.94           O
+ATOM  58554  OE2 GLU G4212     231.345 193.977 166.919  1.00188.94           O
+ATOM  58555  N   SER G4213     232.809 190.747 170.877  1.00163.88           N
+ATOM  58556  CA  SER G4213     231.805 189.804 171.350  1.00163.88           C
+ATOM  58557  C   SER G4213     231.130 190.306 172.615  1.00163.88           C
+ATOM  58558  O   SER G4213     229.955 190.000 172.851  1.00163.88           O
+ATOM  58559  CB  SER G4213     232.436 188.436 171.591  1.00163.88           C
+ATOM  58560  OG  SER G4213     231.463 187.498 172.006  1.00163.88           O
+ATOM  58561  N   LYS G4214     231.850 191.081 173.428  1.00171.37           N
+ATOM  58562  CA  LYS G4214     231.175 191.902 174.419  1.00171.37           C
+ATOM  58563  C   LYS G4214     230.228 192.875 173.752  1.00171.37           C
+ATOM  58564  O   LYS G4214     229.049 192.942 174.110  1.00171.37           O
+ATOM  58565  CB  LYS G4214     232.176 192.680 175.269  1.00171.37           C
+ATOM  58566  CG  LYS G4214     231.494 193.663 176.215  1.00171.37           C
+ATOM  58567  CD  LYS G4214     232.467 194.320 177.162  1.00171.37           C
+ATOM  58568  CE  LYS G4214     233.350 195.322 176.452  1.00171.37           C
+ATOM  58569  NZ  LYS G4214     232.630 196.536 175.995  1.00171.37           N
+ATOM  58570  N   ARG G4215     230.720 193.605 172.750  1.00175.08           N
+ATOM  58571  CA  ARG G4215     230.009 194.788 172.291  1.00175.08           C
+ATOM  58572  C   ARG G4215     228.725 194.428 171.565  1.00175.08           C
+ATOM  58573  O   ARG G4215     227.751 195.188 171.610  1.00175.08           O
+ATOM  58574  CB  ARG G4215     230.919 195.623 171.409  1.00175.08           C
+ATOM  58575  CG  ARG G4215     230.402 197.001 171.194  1.00175.08           C
+ATOM  58576  CD  ARG G4215     231.435 197.847 170.484  1.00175.08           C
+ATOM  58577  NE  ARG G4215     232.680 197.937 171.241  1.00175.08           N
+ATOM  58578  CZ  ARG G4215     232.853 198.749 172.276  1.00175.08           C
+ATOM  58579  NH1 ARG G4215     231.859 199.519 172.676  1.00175.08           N
+ATOM  58580  NH2 ARG G4215     234.005 198.791 172.919  1.00175.08           N
+ATOM  58581  N   GLN G4216     228.692 193.259 170.937  1.00185.41           N
+ATOM  58582  CA  GLN G4216     227.427 192.729 170.463  1.00185.41           C
+ATOM  58583  C   GLN G4216     226.499 192.400 171.614  1.00185.41           C
+ATOM  58584  O   GLN G4216     225.326 192.791 171.593  1.00185.41           O
+ATOM  58585  CB  GLN G4216     227.660 191.469 169.656  1.00185.41           C
+ATOM  58586  CG  GLN G4216     226.394 190.876 169.114  1.00185.41           C
+ATOM  58587  CD  GLN G4216     226.651 189.533 168.496  1.00185.41           C
+ATOM  58588  OE1 GLN G4216     227.747 188.988 168.622  1.00185.41           O
+ATOM  58589  NE2 GLN G4216     225.657 188.995 167.801  1.00185.41           N
+ATOM  58590  N   PHE G4217     227.021 191.689 172.617  1.00143.32           N
+ATOM  58591  CA  PHE G4217     226.237 191.264 173.769  1.00143.32           C
+ATOM  58592  C   PHE G4217     225.655 192.442 174.520  1.00143.32           C
+ATOM  58593  O   PHE G4217     224.567 192.329 175.085  1.00143.32           O
+ATOM  58594  CB  PHE G4217     227.115 190.431 174.695  1.00143.32           C
+ATOM  58595  CG  PHE G4217     226.464 190.081 175.989  1.00143.32           C
+ATOM  58596  CD1 PHE G4217     225.454 189.150 176.034  1.00143.32           C
+ATOM  58597  CD2 PHE G4217     226.861 190.689 177.164  1.00143.32           C
+ATOM  58598  CE1 PHE G4217     224.849 188.829 177.226  1.00143.32           C
+ATOM  58599  CE2 PHE G4217     226.264 190.367 178.356  1.00143.32           C
+ATOM  58600  CZ  PHE G4217     225.252 189.427 178.384  1.00143.32           C
+ATOM  58601  N   ILE G4218     226.359 193.575 174.509  1.00165.32           N
+ATOM  58602  CA  ILE G4218     225.841 194.809 175.064  1.00165.32           C
+ATOM  58603  C   ILE G4218     224.522 195.201 174.429  1.00165.32           C
+ATOM  58604  O   ILE G4218     223.569 195.532 175.146  1.00165.32           O
+ATOM  58605  CB  ILE G4218     226.879 195.931 174.882  1.00165.32           C
+ATOM  58606  CG1 ILE G4218     228.148 195.606 175.662  1.00165.32           C
+ATOM  58607  CG2 ILE G4218     226.323 197.266 175.340  1.00165.32           C
+ATOM  58608  CD1 ILE G4218     229.283 196.558 175.411  1.00165.32           C
+ATOM  58609  N   PHE G4219     224.420 195.078 173.108  1.00192.23           N
+ATOM  58610  CA  PHE G4219     223.259 195.610 172.414  1.00192.23           C
+ATOM  58611  C   PHE G4219     222.009 194.799 172.691  1.00192.23           C
+ATOM  58612  O   PHE G4219     220.949 195.374 172.944  1.00192.23           O
+ATOM  58613  CB  PHE G4219     223.511 195.671 170.917  1.00192.23           C
+ATOM  58614  CG  PHE G4219     222.296 196.035 170.139  1.00192.23           C
+ATOM  58615  CD1 PHE G4219     221.711 197.275 170.306  1.00192.23           C
+ATOM  58616  CD2 PHE G4219     221.746 195.153 169.231  1.00192.23           C
+ATOM  58617  CE1 PHE G4219     220.583 197.627 169.598  1.00192.23           C
+ATOM  58618  CE2 PHE G4219     220.624 195.503 168.510  1.00192.23           C
+ATOM  58619  CZ  PHE G4219     220.048 196.744 168.690  1.00192.23           C
+ATOM  58620  N   ASP G4220     222.130 193.474 172.674  1.00175.80           N
+ATOM  58621  CA  ASP G4220     220.980 192.582 172.707  1.00175.80           C
+ATOM  58622  C   ASP G4220     220.208 192.700 174.005  1.00175.80           C
+ATOM  58623  O   ASP G4220     218.974 192.712 173.999  1.00175.80           O
+ATOM  58624  CB  ASP G4220     221.459 191.142 172.535  1.00175.80           C
+ATOM  58625  CG  ASP G4220     222.147 190.916 171.209  1.00175.80           C
+ATOM  58626  OD1 ASP G4220     221.788 191.606 170.240  1.00175.80           O
+ATOM  58627  OD2 ASP G4220     223.055 190.064 171.139  1.00175.80           O
+ATOM  58628  N   VAL G4221     220.928 192.874 175.105  1.00165.00           N
+ATOM  58629  CA  VAL G4221     220.352 192.638 176.415  1.00165.00           C
+ATOM  58630  C   VAL G4221     219.624 193.854 176.952  1.00165.00           C
+ATOM  58631  O   VAL G4221     218.764 193.718 177.828  1.00165.00           O
+ATOM  58632  CB  VAL G4221     221.485 192.160 177.327  1.00165.00           C
+ATOM  58633  CG1 VAL G4221     222.118 190.995 176.660  1.00165.00           C
+ATOM  58634  CG2 VAL G4221     222.521 193.253 177.546  1.00165.00           C
+ATOM  58635  N   VAL G4222     219.941 195.039 176.456  1.00175.64           N
+ATOM  58636  CA  VAL G4222     219.094 196.194 176.677  1.00175.64           C
+ATOM  58637  C   VAL G4222     218.085 196.353 175.563  1.00175.64           C
+ATOM  58638  O   VAL G4222     217.034 196.975 175.784  1.00175.64           O
+ATOM  58639  CB  VAL G4222     219.928 197.476 176.837  1.00175.64           C
+ATOM  58640  CG1 VAL G4222     220.614 197.488 178.188  1.00175.64           C
+ATOM  58641  CG2 VAL G4222     220.969 197.520 175.748  1.00175.64           C
+ATOM  58642  N   ASN G4223     218.354 195.802 174.382  1.00198.34           N
+ATOM  58643  CA  ASN G4223     217.323 195.771 173.363  1.00198.34           C
+ATOM  58644  C   ASN G4223     216.234 194.791 173.744  1.00198.34           C
+ATOM  58645  O   ASN G4223     215.057 195.036 173.473  1.00198.34           O
+ATOM  58646  CB  ASN G4223     217.913 195.381 172.019  1.00198.34           C
+ATOM  58647  CG  ASN G4223     217.070 195.849 170.882  1.00198.34           C
+ATOM  58648  OD1 ASN G4223     216.141 196.627 171.078  1.00198.34           O
+ATOM  58649  ND2 ASN G4223     217.345 195.343 169.689  1.00198.34           N
+ATOM  61947  N   GLU G4948     220.585 204.469 169.425  1.00264.16           N
+ATOM  61948  CA  GLU G4948     220.649 205.718 170.171  1.00264.16           C
+ATOM  61949  C   GLU G4948     219.934 205.618 171.510  1.00264.16           C
+ATOM  61950  O   GLU G4948     220.062 206.509 172.357  1.00264.16           O
+ATOM  61951  CB  GLU G4948     220.112 206.870 169.331  1.00264.16           C
+ATOM  61952  CG  GLU G4948     221.010 207.171 168.146  1.00264.16           C
+ATOM  61953  CD  GLU G4948     222.431 207.528 168.545  1.00264.16           C
+ATOM  61954  OE1 GLU G4948     222.632 208.230 169.555  1.00264.16           O
+ATOM  61955  OE2 GLU G4948     223.363 207.075 167.855  1.00264.16           O
+ATOM  61956  N   GLN G4949     219.195 204.541 171.737  1.00229.04           N
+ATOM  61957  CA  GLN G4949     218.667 204.343 173.075  1.00229.04           C
+ATOM  61958  C   GLN G4949     219.644 203.573 173.944  1.00229.04           C
+ATOM  61959  O   GLN G4949     219.719 203.807 175.156  1.00229.04           O
+ATOM  61960  CB  GLN G4949     217.321 203.639 173.014  1.00229.04           C
+ATOM  61961  CG  GLN G4949     216.281 204.487 172.360  1.00229.04           C
+ATOM  61962  CD  GLN G4949     216.083 205.809 173.062  1.00229.04           C
+ATOM  61963  OE1 GLN G4949     216.073 205.891 174.291  1.00229.04           O
+ATOM  61964  NE2 GLN G4949     215.924 206.862 172.278  1.00229.04           N
+ATOM  61965  N   VAL G4950     220.416 202.668 173.341  1.00212.20           N
+ATOM  61966  CA  VAL G4950     221.231 201.751 174.131  1.00212.20           C
+ATOM  61967  C   VAL G4950     222.398 202.485 174.775  1.00212.20           C
+ATOM  61968  O   VAL G4950     222.863 202.107 175.856  1.00212.20           O
+ATOM  61969  CB  VAL G4950     221.692 200.561 173.269  1.00212.20           C
+ATOM  61970  CG1 VAL G4950     220.494 199.745 172.848  1.00212.20           C
+ATOM  61971  CG2 VAL G4950     222.434 201.029 172.048  1.00212.20           C
+ATOM  61972  N   LYS G4951     222.864 203.564 174.148  1.00225.57           N
+ATOM  61973  CA  LYS G4951     223.830 204.421 174.821  1.00225.57           C
+ATOM  61974  C   LYS G4951     223.173 205.146 175.975  1.00225.57           C
+ATOM  61975  O   LYS G4951     223.741 205.230 177.069  1.00225.57           O
+ATOM  61976  CB  LYS G4951     224.436 205.424 173.838  1.00225.57           C
+ATOM  61977  CG  LYS G4951     225.523 206.341 174.422  1.00225.57           C
+ATOM  61978  CD  LYS G4951     225.005 207.726 174.804  1.00225.57           C
+ATOM  61979  CE  LYS G4951     224.554 208.486 173.589  1.00225.57           C
+ATOM  61980  NZ  LYS G4951     224.044 209.830 173.941  1.00225.57           N
+ATOM  61981  N   GLU G4952     221.982 205.694 175.735  1.00259.87           N
+ATOM  61982  CA  GLU G4952     221.280 206.441 176.769  1.00259.87           C
+ATOM  61983  C   GLU G4952     220.844 205.525 177.900  1.00259.87           C
+ATOM  61984  O   GLU G4952     220.782 205.943 179.061  1.00259.87           O
+ATOM  61985  CB  GLU G4952     220.075 207.160 176.164  1.00259.87           C
+ATOM  61986  CG  GLU G4952     219.378 208.188 177.075  1.00259.87           C
+ATOM  61987  CD  GLU G4952     218.333 207.572 178.006  1.00259.87           C
+ATOM  61988  OE1 GLU G4952     217.829 206.472 177.698  1.00259.87           O
+ATOM  61989  OE2 GLU G4952     218.011 208.193 179.036  1.00259.87           O
+ATOM  61990  N   ASP G4953     220.543 204.270 177.583  1.00265.52           N
+ATOM  61991  CA  ASP G4953     220.177 203.335 178.633  1.00265.52           C
+ATOM  61992  C   ASP G4953     221.390 203.006 179.492  1.00265.52           C
+ATOM  61993  O   ASP G4953     221.266 202.748 180.694  1.00265.52           O
+ATOM  61994  CB  ASP G4953     219.593 202.071 178.008  1.00265.52           C
+ATOM  61995  CG  ASP G4953     218.730 201.293 178.970  1.00265.52           C
+ATOM  61996  OD1 ASP G4953     217.555 201.678 179.134  1.00265.52           O
+ATOM  61997  OD2 ASP G4953     219.217 200.317 179.575  1.00265.52           O
+ATOM  61998  N   MET G4954     222.578 203.044 178.890  1.00228.94           N
+ATOM  61999  CA  MET G4954     223.796 202.732 179.621  1.00228.94           C
+ATOM  62000  C   MET G4954     224.147 203.831 180.608  1.00228.94           C
+ATOM  62001  O   MET G4954     224.574 203.553 181.732  1.00228.94           O
+ATOM  62002  CB  MET G4954     224.939 202.516 178.636  1.00228.94           C
+ATOM  62003  CG  MET G4954     226.224 202.031 179.252  1.00228.94           C
+ATOM  62004  SD  MET G4954     225.908 200.455 180.033  1.00228.94           S
+ATOM  62005  CE  MET G4954     225.367 199.506 178.611  1.00228.94           C
+ATOM  62006  N   GLU G4955     223.958 205.087 180.216  1.00213.25           N
+ATOM  62007  CA  GLU G4955     224.410 206.180 181.064  1.00213.25           C
+ATOM  62008  C   GLU G4955     223.383 206.513 182.128  1.00213.25           C
+ATOM  62009  O   GLU G4955     223.647 207.327 183.016  1.00213.25           O
+ATOM  62010  CB  GLU G4955     224.716 207.414 180.225  1.00213.25           C
+ATOM  62011  N   THR G4956     222.199 205.922 182.049  1.00211.87           N
+ATOM  62012  CA  THR G4956     221.196 206.228 183.057  1.00211.87           C
+ATOM  62013  C   THR G4956     221.018 205.090 184.051  1.00211.87           C
+ATOM  62014  O   THR G4956     221.203 205.284 185.253  1.00211.87           O
+ATOM  62015  CB  THR G4956     219.889 206.577 182.375  1.00211.87           C
+ATOM  62016  OG1 THR G4956     219.551 205.531 181.458  1.00211.87           O
+ATOM  62017  CG2 THR G4956     220.047 207.886 181.635  1.00211.87           C
+ATOM  62018  N   LYS G4957     220.675 203.898 183.578  1.00185.98           N
+ATOM  62019  CA  LYS G4957     220.416 202.765 184.454  1.00185.98           C
+ATOM  62020  C   LYS G4957     221.725 202.215 185.016  1.00185.98           C
+ATOM  62021  O   LYS G4957     222.740 202.151 184.318  1.00185.98           O
+ATOM  62022  CB  LYS G4957     219.651 201.655 183.711  1.00185.98           C
+ATOM  62023  CG  LYS G4957     219.288 200.462 184.604  1.00185.98           C
+ATOM  62024  CD  LYS G4957     218.564 199.324 183.912  1.00185.98           C
+ATOM  62025  CE  LYS G4957     217.130 199.676 183.663  1.00185.98           C
+ATOM  62026  NZ  LYS G4957     216.474 199.900 184.971  1.00185.98           N
+ATOM  62027  N   CYS G4958     221.687 201.824 186.296  1.00164.75           N
+ATOM  62028  CA  CYS G4958     222.818 201.174 186.960  1.00164.75           C
+ATOM  62029  C   CYS G4958     223.184 199.837 186.319  1.00164.75           C
+ATOM  62030  O   CYS G4958     224.305 199.343 186.496  1.00164.75           O
+ATOM  62031  CB  CYS G4958     222.458 201.003 188.431  1.00164.75           C
+ATOM  62032  SG  CYS G4958     223.408 199.956 189.525  1.00164.75           S
+ATOM  62034  CA  PHE G4959     222.287 197.980 184.850  1.00137.27           C
+ATOM  62044  N   ILE G4960     222.745 196.860 187.001  1.00135.69           N
+ATOM  62045  CA  ILE G4960     222.591 195.739 187.908  1.00135.69           C
+ATOM  62046  C   ILE G4960     221.642 196.038 189.053  1.00135.69           C
+ATOM  62047  O   ILE G4960     220.712 195.253 189.285  1.00135.69           O
+ATOM  62048  CB  ILE G4960     223.955 195.261 188.435  1.00135.69           C
+ATOM  62049  CG1 ILE G4960     224.708 194.491 187.351  1.00135.69           C
+ATOM  62050  CG2 ILE G4960     223.819 194.465 189.708  1.00135.69           C
+ATOM  62051  CD1 ILE G4960     225.669 195.325 186.557  1.00135.69           C
+ATOM  62052  N   CYS G4961     221.761 197.170 189.729  1.00151.79           N
+ATOM  62053  CA  CYS G4961     220.674 197.554 190.606  1.00151.79           C
+ATOM  62054  C   CYS G4961     219.754 198.392 189.744  1.00151.79           C
+ATOM  62055  O   CYS G4961     220.143 198.825 188.661  1.00151.79           O
+ATOM  62056  CB  CYS G4961     221.132 198.293 191.873  1.00151.79           C
+ATOM  62057  SG  CYS G4961     221.726 199.964 191.732  1.00151.79           S
+ATOM  62058  N   GLY G4962     218.509 198.554 190.179  1.00183.08           N
+ATOM  62059  CA  GLY G4962     217.513 199.144 189.295  1.00183.08           C
+ATOM  62060  C   GLY G4962     217.564 200.660 189.251  1.00183.08           C
+ATOM  62061  O   GLY G4962     216.903 201.289 188.420  1.00183.08           O
+ATOM  62062  N   ILE G4963     218.357 201.262 190.139  1.00194.83           N
+ATOM  62063  CA  ILE G4963     218.329 202.702 190.347  1.00194.83           C
+ATOM  62064  C   ILE G4963     218.969 203.409 189.162  1.00194.83           C
+ATOM  62065  O   ILE G4963     219.971 202.946 188.611  1.00194.83           O
+ATOM  62066  CB  ILE G4963     219.030 203.026 191.680  1.00194.83           C
+ATOM  62067  CG1 ILE G4963     218.164 202.611 192.876  1.00194.83           C
+ATOM  62068  CG2 ILE G4963     219.428 204.480 191.801  1.00194.83           C
+ATOM  62069  CD1 ILE G4963     218.458 201.242 193.446  1.00194.83           C
+ATOM  62070  N   GLY G4964     218.351 204.496 188.711  1.00194.89           N
+ATOM  62071  CA  GLY G4964     218.993 205.331 187.713  1.00194.89           C
+ATOM  62072  C   GLY G4964     220.268 205.955 188.254  1.00194.89           C
+ATOM  62073  O   GLY G4964     220.251 206.721 189.216  1.00194.89           O
+ATOM  62074  N   SER G4965     221.386 205.654 187.587  1.00190.48           N
+ATOM  62075  CA  SER G4965     222.700 205.978 188.136  1.00190.48           C
+ATOM  62076  C   SER G4965     223.015 207.462 188.038  1.00190.48           C
+ATOM  62077  O   SER G4965     224.076 207.901 188.496  1.00190.48           O
+ATOM  62078  CB  SER G4965     223.758 205.159 187.414  1.00190.48           C
+ATOM  62079  OG  SER G4965     223.739 205.491 186.043  1.00190.48           O
+ATOM  62080  N   ASP G4966     222.129 208.231 187.399  1.00223.64           N
+ATOM  62081  CA  ASP G4966     221.980 209.654 187.682  1.00223.64           C
+ATOM  62082  C   ASP G4966     222.005 209.957 189.169  1.00223.64           C
+ATOM  62083  O   ASP G4966     222.640 210.926 189.600  1.00223.64           O
+ATOM  62084  CB  ASP G4966     220.656 210.141 187.121  1.00223.64           C
+ATOM  62085  CG  ASP G4966     220.260 211.483 187.676  1.00223.64           C
+ATOM  62086  OD1 ASP G4966     220.815 212.502 187.240  1.00223.64           O
+ATOM  62087  OD2 ASP G4966     219.403 211.513 188.577  1.00223.64           O
+ATOM  62088  N   TYR G4967     221.262 209.177 189.954  1.00199.41           N
+ATOM  62089  CA  TYR G4967     221.266 209.329 191.402  1.00199.41           C
+ATOM  62090  C   TYR G4967     222.652 209.086 191.991  1.00199.41           C
+ATOM  62091  O   TYR G4967     223.079 209.800 192.904  1.00199.41           O
+ATOM  62092  CB  TYR G4967     220.249 208.372 192.003  1.00199.41           C
+ATOM  62093  CG  TYR G4967     220.239 208.379 193.486  1.00199.41           C
+ATOM  62094  CD1 TYR G4967     219.663 209.424 194.172  1.00199.41           C
+ATOM  62095  CD2 TYR G4967     220.804 207.336 194.206  1.00199.41           C
+ATOM  62096  CE1 TYR G4967     219.652 209.440 195.531  1.00199.41           C
+ATOM  62097  CE2 TYR G4967     220.799 207.343 195.563  1.00199.41           C
+ATOM  62098  CZ  TYR G4967     220.220 208.399 196.221  1.00199.41           C
+ATOM  62099  OH  TYR G4967     220.201 208.427 197.589  1.00199.41           O
+ATOM  62100  N   PHE G4968     223.372 208.087 191.479  1.00183.22           N
+ATOM  62101  CA  PHE G4968     224.763 207.929 191.880  1.00183.22           C
+ATOM  62102  C   PHE G4968     225.638 208.980 191.230  1.00183.22           C
+ATOM  62103  O   PHE G4968     226.702 209.316 191.752  1.00183.22           O
+ATOM  62104  CB  PHE G4968     225.285 206.544 191.526  1.00183.22           C
+ATOM  62105  CG  PHE G4968     224.641 205.457 192.299  1.00183.22           C
+ATOM  62106  CD1 PHE G4968     224.889 205.324 193.647  1.00183.22           C
+ATOM  62107  CD2 PHE G4968     223.825 204.538 191.677  1.00183.22           C
+ATOM  62108  CE1 PHE G4968     224.302 204.316 194.366  1.00183.22           C
+ATOM  62109  CE2 PHE G4968     223.206 203.549 192.402  1.00183.22           C
+ATOM  62110  CZ  PHE G4968     223.479 203.413 193.734  1.00183.22           C
+ATOM  62111  N   ASP G4969     225.216 209.501 190.085  1.00227.41           N
+ATOM  62112  CA  ASP G4969     225.947 210.607 189.489  1.00227.41           C
+ATOM  62113  C   ASP G4969     225.718 211.884 190.278  1.00227.41           C
+ATOM  62114  O   ASP G4969     226.551 212.796 190.257  1.00227.41           O
+ATOM  62115  CB  ASP G4969     225.515 210.785 188.040  1.00227.41           C
+ATOM  62116  CG  ASP G4969     226.443 211.675 187.267  1.00227.41           C
+ATOM  62117  OD1 ASP G4969     227.525 211.192 186.862  1.00227.41           O
+ATOM  62118  OD2 ASP G4969     226.100 212.858 187.074  1.00227.41           O
+ATOM  62119  N   THR G4970     224.585 211.963 190.983  1.00232.12           N
+ATOM  62120  CA  THR G4970     224.254 213.163 191.742  1.00232.12           C
+ATOM  62121  C   THR G4970     224.987 213.171 193.074  1.00232.12           C
+ATOM  62122  O   THR G4970     225.295 214.234 193.624  1.00232.12           O
+ATOM  62123  CB  THR G4970     222.746 213.242 191.946  1.00232.12           C
+ATOM  62124  OG1 THR G4970     222.102 212.904 190.715  1.00232.12           O
+ATOM  62125  CG2 THR G4970     222.340 214.662 192.276  1.00232.12           C
+ATOM  62126  N   THR G4971     225.260 212.003 193.610  1.00212.56           N
+ATOM  62127  CA  THR G4971     226.372 211.897 194.528  1.00212.56           C
+ATOM  62128  C   THR G4971     227.633 212.258 193.755  1.00212.56           C
+ATOM  62129  O   THR G4971     227.801 211.807 192.615  1.00212.56           O
+ATOM  62130  CB  THR G4971     226.485 210.492 195.117  1.00212.56           C
+ATOM  62131  OG1 THR G4971     226.773 209.553 194.073  1.00212.56           O
+ATOM  62132  CG2 THR G4971     225.184 210.104 195.832  1.00212.56           C
+ATOM  62133  N   PRO G4972     228.505 213.080 194.307  1.00189.97           N
+ATOM  62134  CA  PRO G4972     229.616 213.628 193.525  1.00189.97           C
+ATOM  62135  C   PRO G4972     230.647 212.577 193.142  1.00189.97           C
+ATOM  62136  O   PRO G4972     231.316 212.020 194.017  1.00189.97           O
+ATOM  62137  CB  PRO G4972     230.209 214.676 194.470  1.00189.97           C
+ATOM  62138  CG  PRO G4972     229.122 214.965 195.455  1.00189.97           C
+ATOM  62139  CD  PRO G4972     228.422 213.686 195.641  1.00189.97           C
+ATOM  62140  N   HIS G4973     230.709 212.283 191.832  1.00172.08           N
+ATOM  62141  CA  HIS G4973     231.604 211.306 191.181  1.00172.08           C
+ATOM  62142  C   HIS G4973     231.277 209.876 191.572  1.00172.08           C
+ATOM  62143  O   HIS G4973     232.064 208.956 191.334  1.00172.08           O
+ATOM  62144  CB  HIS G4973     233.071 211.609 191.449  1.00172.08           C
+ATOM  62145  CG  HIS G4973     233.404 213.018 191.127  1.00172.08           C
+ATOM  62146  ND1 HIS G4973     233.517 213.462 189.836  1.00172.08           N
+ATOM  62147  CD2 HIS G4973     233.529 214.104 191.914  1.00172.08           C
+ATOM  62148  CE1 HIS G4973     233.750 214.754 189.843  1.00172.08           C
+ATOM  62149  NE2 HIS G4973     233.776 215.164 191.093  1.00172.08           N
+ATOM  62150  N   GLY G4974     230.085 209.676 192.130  1.00179.45           N
+ATOM  62151  CA  GLY G4974     229.692 208.352 192.551  1.00179.45           C
+ATOM  62152  C   GLY G4974     229.201 207.510 191.395  1.00179.45           C
+ATOM  62153  O   GLY G4974     228.929 206.324 191.556  1.00179.45           O
+ATOM  62154  N   PHE G4975     229.035 208.119 190.225  1.00160.76           N
+ATOM  62155  CA  PHE G4975     228.798 207.311 189.041  1.00160.76           C
+ATOM  62156  C   PHE G4975     230.082 206.665 188.568  1.00160.76           C
+ATOM  62157  O   PHE G4975     230.090 205.494 188.180  1.00160.76           O
+ATOM  62158  CB  PHE G4975     228.199 208.142 187.918  1.00160.76           C
+ATOM  62159  CG  PHE G4975     227.959 207.354 186.675  1.00160.76           C
+ATOM  62160  CD1 PHE G4975     227.035 206.326 186.672  1.00160.76           C
+ATOM  62161  CD2 PHE G4975     228.620 207.651 185.504  1.00160.76           C
+ATOM  62162  CE1 PHE G4975     226.793 205.584 185.536  1.00160.76           C
+ATOM  62163  CE2 PHE G4975     228.370 206.909 184.357  1.00160.76           C
+ATOM  62164  CZ  PHE G4975     227.451 205.884 184.378  1.00160.76           C
+ATOM  62165  N   GLU G4976     231.175 207.420 188.572  1.00170.54           N
+ATOM  62166  CA  GLU G4976     232.442 206.861 188.120  1.00170.54           C
+ATOM  62167  C   GLU G4976     232.939 205.807 189.098  1.00170.54           C
+ATOM  62168  O   GLU G4976     233.545 204.803 188.701  1.00170.54           O
+ATOM  62169  CB  GLU G4976     233.467 207.979 187.938  1.00170.54           C
+ATOM  62170  CG  GLU G4976     234.781 207.484 187.412  1.00170.54           C
+ATOM  62171  CD  GLU G4976     234.671 206.932 186.016  1.00170.54           C
+ATOM  62172  OE1 GLU G4976     233.916 207.497 185.201  1.00170.54           O
+ATOM  62173  OE2 GLU G4976     235.301 205.891 185.750  1.00170.54           O
+ATOM  62174  N   THR G4977     232.645 206.005 190.381  1.00166.23           N
+ATOM  62175  CA  THR G4977     232.816 204.950 191.374  1.00166.23           C
+ATOM  62176  C   THR G4977     231.888 203.777 191.083  1.00166.23           C
+ATOM  62177  O   THR G4977     232.251 202.614 191.281  1.00166.23           O
+ATOM  62178  CB  THR G4977     232.554 205.534 192.768  1.00166.23           C
+ATOM  62179  OG1 THR G4977     233.433 206.642 192.986  1.00166.23           O
+ATOM  62180  CG2 THR G4977     232.770 204.518 193.858  1.00166.23           C
+ATOM  62181  N   HIS G4978     230.695 204.066 190.574  1.00147.58           N
+ATOM  62182  CA  HIS G4978     229.725 203.007 190.333  1.00147.58           C
+ATOM  62183  C   HIS G4978     230.114 202.195 189.123  1.00147.58           C
+ATOM  62184  O   HIS G4978     229.858 200.988 189.064  1.00147.58           O
+ATOM  62185  CB  HIS G4978     228.349 203.595 190.106  1.00147.58           C
+ATOM  62186  CG  HIS G4978     227.243 202.664 190.421  1.00147.58           C
+ATOM  62187  ND1 HIS G4978     226.630 202.629 191.654  1.00147.58           N
+ATOM  62188  CD2 HIS G4978     226.700 201.653 189.701  1.00147.58           C
+ATOM  62189  CE1 HIS G4978     225.720 201.667 191.659  1.00147.58           C
+ATOM  62190  NE2 HIS G4978     225.723 201.075 190.479  1.00147.58           N
+ATOM  62191  N   THR G4979     230.741 202.847 188.148  1.00144.43           N
+ATOM  62192  CA  THR G4979     231.136 202.154 186.933  1.00144.43           C
+ATOM  62193  C   THR G4979     232.341 201.270 187.164  1.00144.43           C
+ATOM  62194  O   THR G4979     232.490 200.238 186.509  1.00144.43           O
+ATOM  62195  CB  THR G4979     231.452 203.154 185.834  1.00144.43           C
+ATOM  62196  OG1 THR G4979     232.405 204.101 186.325  1.00144.43           O
+ATOM  62197  CG2 THR G4979     230.210 203.847 185.392  1.00144.43           C
+ATOM  62198  N   LEU G4980     233.239 201.674 188.049  1.00139.19           N
+ATOM  62199  CA  LEU G4980     234.440 200.883 188.249  1.00139.19           C
+ATOM  62200  C   LEU G4980     234.599 200.383 189.672  1.00139.19           C
+ATOM  62201  O   LEU G4980     234.811 199.186 189.883  1.00139.19           O
+ATOM  62202  CB  LEU G4980     235.682 201.685 187.840  1.00139.19           C
+ATOM  62203  CG  LEU G4980     235.768 201.981 186.346  1.00139.19           C
+ATOM  62204  CD1 LEU G4980     237.007 202.797 186.031  1.00139.19           C
+ATOM  62205  CD2 LEU G4980     235.737 200.689 185.562  1.00139.19           C
+ATOM  62206  N   GLU G4981     234.481 201.265 190.659  1.00181.13           N
+ATOM  62207  CA  GLU G4981     234.934 200.910 191.997  1.00181.13           C
+ATOM  62208  C   GLU G4981     233.838 200.228 192.786  1.00181.13           C
+ATOM  62209  O   GLU G4981     234.110 199.420 193.678  1.00181.13           O
+ATOM  62210  CB  GLU G4981     235.429 202.155 192.712  1.00181.13           C
+ATOM  62211  CG  GLU G4981     236.593 202.752 192.005  1.00181.13           C
+ATOM  62212  CD  GLU G4981     237.761 201.813 192.009  1.00181.13           C
+ATOM  62213  OE1 GLU G4981     237.976 201.134 193.041  1.00181.13           O
+ATOM  62214  OE2 GLU G4981     238.443 201.723 190.968  1.00181.13           O
+ATOM  62215  N   GLU G4982     232.597 200.518 192.452  1.00160.31           N
+ATOM  62216  CA  GLU G4982     231.491 199.672 192.832  1.00160.31           C
+ATOM  62217  C   GLU G4982     231.422 198.507 191.844  1.00160.31           C
+ATOM  62218  O   GLU G4982     232.430 198.108 191.254  1.00160.31           O
+ATOM  62219  CB  GLU G4982     230.200 200.468 192.871  1.00160.31           C
+ATOM  62220  CG  GLU G4982     230.209 201.764 193.714  1.00160.31           C
+ATOM  62221  CD  GLU G4982     230.365 201.607 195.222  1.00160.31           C
+ATOM  62222  OE1 GLU G4982     229.848 200.648 195.826  1.00160.31           O
+ATOM  62223  OE2 GLU G4982     231.017 202.485 195.815  1.00160.31           O
+ATOM  62224  N   HIS G4983     230.256 197.870 191.743  1.00120.25           N
+ATOM  62225  CA  HIS G4983     230.120 196.766 190.799  1.00120.25           C
+ATOM  62226  C   HIS G4983     230.328 197.240 189.370  1.00120.25           C
+ATOM  62227  O   HIS G4983     229.620 198.116 188.869  1.00120.25           O
+ATOM  62228  CB  HIS G4983     228.776 196.045 190.950  1.00120.25           C
+ATOM  62229  CG  HIS G4983     227.578 196.873 190.624  1.00120.25           C
+ATOM  62230  ND1 HIS G4983     227.123 197.036 189.338  1.00120.25           N
+ATOM  62231  CD2 HIS G4983     226.751 197.600 191.406  1.00120.25           C
+ATOM  62232  CE1 HIS G4983     226.067 197.828 189.343  1.00120.25           C
+ATOM  62233  NE2 HIS G4983     225.802 198.160 190.590  1.00120.25           N
+ATOM  62234  N   ASN G4984     231.398 196.728 188.764  1.00128.81           N
+ATOM  62235  CA  ASN G4984     231.883 197.230 187.492  1.00128.81           C
+ATOM  62236  C   ASN G4984     231.336 196.499 186.291  1.00128.81           C
+ATOM  62237  O   ASN G4984     231.655 196.893 185.163  1.00128.81           O
+ATOM  62238  CB  ASN G4984     233.412 197.158 187.426  1.00128.81           C
+ATOM  62239  CG  ASN G4984     233.948 195.743 187.584  1.00128.81           C
+ATOM  62240  OD1 ASN G4984     233.210 194.788 187.821  1.00128.81           O
+ATOM  62241  ND2 ASN G4984     235.248 195.604 187.412  1.00128.81           N
+ATOM  62242  N   LEU G4985     230.648 195.378 186.504  1.00134.36           N
+ATOM  62243  CA  LEU G4985     230.087 194.500 185.494  1.00134.36           C
+ATOM  62244  C   LEU G4985     231.206 193.860 184.673  1.00134.36           C
+ATOM  62245  O   LEU G4985     230.942 193.223 183.653  1.00134.36           O
+ATOM  62246  CB  LEU G4985     229.048 195.246 184.633  1.00134.36           C
+ATOM  62247  CG  LEU G4985     228.085 194.769 183.562  1.00134.36           C
+ATOM  62248  CD1 LEU G4985     228.637 194.931 182.162  1.00134.36           C
+ATOM  62249  CD2 LEU G4985     227.702 193.325 183.840  1.00134.36           C
+ATOM  62250  N   ALA G4986     232.449 193.944 185.137  1.00 99.94           N
+ATOM  62251  CA  ALA G4986     233.602 193.538 184.354  1.00 99.94           C
+ATOM  62252  C   ALA G4986     234.339 192.379 184.996  1.00 99.94           C
+ATOM  62253  O   ALA G4986     234.677 191.406 184.318  1.00 99.94           O
+ATOM  62254  CB  ALA G4986     234.548 194.723 184.184  1.00 99.94           C
+ATOM  62255  N   ASN G4987     234.586 192.456 186.300  1.00100.60           N
+ATOM  62256  CA  ASN G4987     235.385 191.433 186.958  1.00100.60           C
+ATOM  62257  C   ASN G4987     234.541 190.274 187.453  1.00100.60           C
+ATOM  62258  O   ASN G4987     235.040 189.426 188.195  1.00100.60           O
+ATOM  62259  CB  ASN G4987     236.145 192.027 188.138  1.00100.60           C
+ATOM  62260  CG  ASN G4987     237.264 192.935 187.711  1.00100.60           C
+ATOM  62261  OD1 ASN G4987     237.894 192.708 186.686  1.00100.60           O
+ATOM  62262  ND2 ASN G4987     237.557 193.938 188.525  1.00100.60           N
+ATOM  62263  N   TYR G4988     233.259 190.240 187.106  1.00102.95           N
+ATOM  62264  CA  TYR G4988     232.400 189.185 187.630  1.00102.95           C
+ATOM  62265  C   TYR G4988     232.733 187.840 187.018  1.00102.95           C
+ATOM  62266  O   TYR G4988     232.605 186.802 187.676  1.00102.95           O
+ATOM  62267  CB  TYR G4988     230.939 189.543 187.402  1.00102.95           C
+ATOM  62268  CG  TYR G4988     230.323 190.361 188.522  1.00102.95           C
+ATOM  62269  CD1 TYR G4988     229.515 189.758 189.474  1.00102.95           C
+ATOM  62270  CD2 TYR G4988     230.614 191.697 188.667  1.00102.95           C
+ATOM  62271  CE1 TYR G4988     228.959 190.467 190.505  1.00102.95           C
+ATOM  62272  CE2 TYR G4988     230.076 192.431 189.703  1.00102.95           C
+ATOM  62273  CZ  TYR G4988     229.234 191.807 190.612  1.00102.95           C
+ATOM  62274  OH  TYR G4988     228.698 192.531 191.661  1.00102.95           O
+ATOM  62275  N   MET G4989     233.177 187.841 185.766  1.00119.74           N
+ATOM  62276  CA  MET G4989     233.723 186.623 185.188  1.00119.74           C
+ATOM  62277  C   MET G4989     235.070 186.304 185.804  1.00119.74           C
+ATOM  62278  O   MET G4989     235.378 185.135 186.071  1.00119.74           O
+ATOM  62279  CB  MET G4989     233.874 186.775 183.679  1.00119.74           C
+ATOM  62280  CG  MET G4989     234.404 185.519 183.016  1.00119.74           C
+ATOM  62281  SD  MET G4989     234.943 185.749 181.315  1.00119.74           S
+ATOM  62282  CE  MET G4989     235.624 184.138 180.914  1.00119.74           C
+ATOM  62283  N   PHE G4990     235.898 187.339 185.987  1.00108.82           N
+ATOM  62284  CA  PHE G4990     237.152 187.206 186.714  1.00108.82           C
+ATOM  62285  C   PHE G4990     236.925 186.624 188.090  1.00108.82           C
+ATOM  62286  O   PHE G4990     237.610 185.675 188.479  1.00108.82           O
+ATOM  62287  CB  PHE G4990     237.819 188.561 186.861  1.00108.82           C
+ATOM  62288  CG  PHE G4990     238.519 189.042 185.651  1.00108.82           C
+ATOM  62289  CD1 PHE G4990     239.854 188.750 185.463  1.00108.82           C
+ATOM  62290  CD2 PHE G4990     237.846 189.782 184.701  1.00108.82           C
+ATOM  62291  CE1 PHE G4990     240.521 189.211 184.368  1.00108.82           C
+ATOM  62292  CE2 PHE G4990     238.508 190.234 183.588  1.00108.82           C
+ATOM  62293  CZ  PHE G4990     239.848 189.945 183.427  1.00108.82           C
+ATOM  62409  N   THR G5004     236.367 180.636 201.359  1.00118.17           N
+ATOM  62410  CA  THR G5004     235.811 181.297 202.520  1.00118.17           C
+ATOM  62411  C   THR G5004     234.316 181.060 202.555  1.00118.17           C
+ATOM  62412  O   THR G5004     233.719 180.574 201.593  1.00118.17           O
+ATOM  62413  CB  THR G5004     236.057 182.795 202.472  1.00118.17           C
+ATOM  62414  OG1 THR G5004     235.174 183.380 201.507  1.00118.17           O
+ATOM  62415  CG2 THR G5004     237.473 183.057 202.043  1.00118.17           C
+TER   62704      SER G5037
+HETATM62705  C1' ATP G5101     230.159 201.551 180.828  1.00248.87           C
+HETATM62706  C2  ATP G5101     226.675 201.326 183.659  1.00248.87           C
+HETATM62707  C2' ATP G5101     231.674 201.494 180.893  1.00248.87           C
+HETATM62708  C3' ATP G5101     232.142 201.342 179.465  1.00248.87           C
+HETATM62709  C4  ATP G5101     228.535 200.549 182.454  1.00248.87           C
+HETATM62710  C4' ATP G5101     230.889 201.311 178.610  1.00248.87           C
+HETATM62711  C5  ATP G5101     228.339 199.221 183.050  1.00248.87           C
+HETATM62712  C5' ATP G5101     230.852 200.088 177.713  1.00248.87           C
+HETATM62713  C6  ATP G5101     227.205 199.070 183.992  1.00248.87           C
+HETATM62714  C8  ATP G5101     230.060 199.199 181.702  1.00248.87           C
+HETATM62715  N1  ATP G5101     226.435 200.143 184.242  1.00248.87           N
+HETATM62716  N3  ATP G5101     227.681 201.539 182.794  1.00248.87           N
+HETATM62717  N6  ATP G5101     226.935 197.898 184.597  1.00248.87           N
+HETATM62718  N7  ATP G5101     229.311 198.438 182.546  1.00248.87           N
+HETATM62719  N9  ATP G5101     229.594 200.458 181.648  1.00248.87           N
+HETATM62720  O1A ATP G5101     231.138 200.675 175.037  1.00248.87           O
+HETATM62721  O1B ATP G5101     235.072 203.202 176.824  1.00248.87           O
+HETATM62722  O1G ATP G5101     237.502 200.677 173.778  1.00248.87           O
+HETATM62723  O2' ATP G5101     232.192 202.718 181.403  1.00248.87           O
+HETATM62724  O2A ATP G5101     233.447 199.375 175.236  1.00248.87           O
+HETATM62725  O2B ATP G5101     234.932 200.663 177.445  1.00248.87           O
+HETATM62726  O2G ATP G5101     237.557 202.859 175.101  1.00248.87           O
+HETATM62727  O3' ATP G5101     232.934 202.469 179.085  1.00248.87           O
+HETATM62728  O3A ATP G5101     233.254 201.780 175.883  1.00248.87           O
+HETATM62729  O3B ATP G5101     235.573 201.458 175.094  1.00248.87           O
+HETATM62730  O3G ATP G5101     237.563 200.622 176.297  1.00248.87           O
+HETATM62731  O4' ATP G5101     229.761 201.306 179.481  1.00248.87           O
+HETATM62732  O5' ATP G5101     232.159 199.908 177.216  1.00248.87           O
+HETATM62733  PA  ATP G5101     232.456 200.397 175.734  1.00248.87           P
+HETATM62734  PB  ATP G5101     234.757 201.780 176.443  1.00248.87           P
+HETATM62735  PG  ATP G5101     237.178 201.400 175.064  1.00248.87           P
+CONECT620326203162057
+CONECT620576203262056
+CONECT62705627076271962731
+CONECT627066271562716
+CONECT62707627056270862723
+CONECT62708627076271062727
+CONECT62709627116271662719
+CONECT62710627086271262731
+CONECT62711627096271362718
+CONECT627126271062732
+CONECT62713627116271562717
+CONECT627146271862719
+CONECT627156270662713
+CONECT627166270662709
+CONECT6271762713
+CONECT627186271162714
+CONECT62719627056270962714
+CONECT6272062733
+CONECT6272162734
+CONECT6272262735
+CONECT6272362707
+CONECT6272462733
+CONECT6272562734
+CONECT6272662735
+CONECT6272762708
+CONECT627286273362734
+CONECT627296273462735
+CONECT6273062735
+CONECT627316270562710
+CONECT627326271262733
+CONECT6273362720627246272862732
+CONECT6273462721627256272862729
+CONECT6273562722627266272962730
+END
