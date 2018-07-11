@@ -3,7 +3,7 @@ For an overview on the ryanodine receptor (RyR1) being a Ca+2 channel that facil
 
 In this project, we are calculating the energy landscapes using Multi-Conformer Continuum Electrostatics [(MCCE)](https://sites.google.com/site/mccewiki/home). Calculations are done with two datasets.  One set involves the RyR1 macromolecules in equilibrium with a thermal bath sans the activation of ligands; the other involves the RyR1 macromolecules in equilibrium with both a thermal bath as well as a reservoir of the activated ligands calcium, ATP, and caffeine. 
 
-## ligand_binding_sites:
+## testing/ligand_binding_sites:
 These PDB files were prepared by Danya Ben Hail.  There are 50 files labeled frame_01 to frame_50.  The structure of this data set is modified such that only residues near the binding site are calculated. Each frame_0i directory contains an input pdb, here highlighted in black. 
 
 ![ryr1(blue). Input pdb(black)](presentation/img01.png)
