@@ -46,7 +46,7 @@ for i in range(1,2):
     #pdbfile = topDir.split('-')
     mydirectory = destination_runs + "frame_" +str(i).zfill(2)
     if not os.path.exists(mydirectory):
-        sys_call = 'mkdir ' + destination_runs + pdbfile[0]
+        sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
     #sys_call = 'cd ' + destination_runs + pdbfile[0] + '/'
     #os.chdir(sys_call)
