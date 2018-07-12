@@ -9,7 +9,7 @@ from os import remove, close
 from subprocess import call # This is needed to submit jobs
  
 pdb_files = '/home/salah/amedee/ryr1_energyCalculations/input_data/activation_core/'
-destination_runs = '/home/salah/amedee/ryr1_energyCalculations/output_data/mcce_runs/amedee/ryr1_energyCalculations/output_data/mcce_runs/'
+destination_runs = '/home/salah/amedee/ryr1_energyCalculations/output_data/mcce_runs/'
 
 """
 def change_runprm(runprm,prot,str1,str2,str3,str4):
