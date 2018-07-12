@@ -55,8 +55,16 @@ for i in range(1,2):
         os.system(sys_call)
     
 
-    if not os.path.exists(mydirectory+'run.prm'):
+    if not os.path.exists(mydirectory+'run.prm'): # Make sure the run.prm file is in the directory
         sys_call = 'cp ' + destination_runs+'run.prm '+mydirectory
+        os.system(sys_call)
+
+    if not os.path.exists(mydirectory+'submit.sh'): # Make sure the submit.sh file is in the directory
+        sys_call = 'cp ' + destination_runs+'submit.sh '+mydirectory
+        os.system(sys_call)
+
+    if not os.path.exists(mydirectory+str(i).zfill(2)): # Make sure the input PDB file is in the directory
+        sys_call = 'cp ' + pdb_files+str(i).zfill(2)+' '+mydirectory
         os.system(sys_call)
     """for pdb_file in onlyfiles:
         if "_fixed_ph7.4.pdb" in pdb_file:
