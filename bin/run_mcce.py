@@ -53,8 +53,7 @@ for i in range(1,2):
     if not os.path.exists(mydirectory):
         sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
-    sys_call = 'cd ' + mydirectory + '/'
-    os.chdir(sys_call)  # Now we are inside the directory we just made
+    
 
     if not os.path.exists(mydirectory+'run.prm'):
         sys_call = 'cp ' + destination_runs+'run.prm '+mydirectory
