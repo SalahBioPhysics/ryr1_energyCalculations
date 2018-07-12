@@ -11,6 +11,7 @@ from subprocess import call # This is needed to submit jobs
 pdb_files = '/home/salah/amedee/ryr1_energyCalculations/input_data/activation_core/'
 destination_runs = '/home/salah/amedee/ryr1_energyCalculations/output_data/mcce_runs/amedee/ryr1_energyCalculations/output_data/mcce_runs/'
 
+"""
 def change_runprm(runprm,prot,str1,str2,str3,str4):
     lines_ = open(runprm).readlines()
     for line in lines_:
@@ -36,13 +37,11 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
                                         newLine = str4+'    '+line[-1]+'\n'
                                         prm.write(newLine)
                 else:
-                    prm.write(a)
+                    prm.write(a)"""
      
  
  
 for i in range(1,2):
-    
-
     #onlyfiles = [f for f in os.listdir(pdb_files+topDir) if os.path.isfile(os.path.join(pdb_files+topDir, f))]
     #pdbfile = topDir.split('-')
     mydirectory = destination_runs + "frame_" +str(i).zfill(2)
