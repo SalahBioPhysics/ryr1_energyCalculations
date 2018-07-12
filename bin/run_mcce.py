@@ -19,8 +19,8 @@ destination_runs = '/home/salah/amedee/ryr1_energyCalculations/calculations/'
 def change_runprm(runprm,prot,str1,str2,str3,str4):
     lines_ = open(runprm).readlines()
     for line in lines_:
-                a = line
-                line = line.split()
+        a = line
+        line = line.split()
         #print line[-1]
         create_new = runprm+'2'
         with open(create_new,'a') as prm:
