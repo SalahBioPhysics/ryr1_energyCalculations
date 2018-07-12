@@ -30,20 +30,22 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
                     prm.write(newLine)
                 elif line[-1] == '(DO_PREMCCE)':
                     newLine = str1+'    '+line[-1]+'\n'
-                                        prm.write(newLine)
+                    prm.write(newLine)
                 elif line[-1] == '(DO_ROTAMERS)':
-                                        newLine = str2+'    '+line[-1]+'\n'
-                                        prm.write(newLine)
+                    newLine = str2+'    '+line[-1]+'\n'
+                    prm.write(newLine)
                 elif line[-1] == '(DO_ENERGY)':
-                                        newLine = str3+'    '+line[-1]+'\n'
-                                        prm.write(newLine)
+                    newLine = str3+'    '+line[-1]+'\n'
+                    prm.write(newLine)
                 elif line[-1] == '(DO_MONTE)':
-                                        newLine = str4+'    '+line[-1]+'\n'
-                                        prm.write(newLine)
+                    newLine = str4+'    '+line[-1]+'\n'
+                    prm.write(newLine)
                 else:
                     prm.write(a)
-     
- 
+
+            prm.close()
+    sys_call = 'mv ' + create_new + ' ' + runprm
+    os.system(sys_call) 
  
 for i in range(1,2):
     #onlyfiles = [f for f in os.listdir(pdb_files+topDir) if os.path.isfile(os.path.join(pdb_files+topDir, f))]
