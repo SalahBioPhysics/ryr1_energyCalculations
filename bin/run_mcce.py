@@ -44,7 +44,7 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
 for i in range(1,2):
     #onlyfiles = [f for f in os.listdir(pdb_files+topDir) if os.path.isfile(os.path.join(pdb_files+topDir, f))]
     #pdbfile = topDir.split('-')
-    mydirectory = destination_runs + "frame_" +str(i).zfill(2)
+    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/'
     print mydirectory
     if not os.path.exists(mydirectory):
         sys_call = 'mkdir ' + mydirectory
