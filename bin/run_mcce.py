@@ -7,9 +7,13 @@ from tempfile import mkstemp
 from shutil import move
 from os import remove, close
 from subprocess import call # This is needed to submit jobs
+
+"""
+This code is used to submit mcce jobs since we have 50 systems (now, later we'll have 50*5=250 systems)
+"""
  
 pdb_files = '/home/salah/amedee/ryr1_energyCalculations/input_data/activation_core/'
-destination_runs = '/home/salah/amedee/ryr1_energyCalculations/output_data/mcce_runs/'
+destination_runs = '/home/salah/amedee/ryr1_energyCalculations/calculations/'
 
 """
 def change_runprm(runprm,prot,str1,str2,str3,str4):
@@ -49,8 +53,12 @@ for i in range(1,2):
     if not os.path.exists(mydirectory):
         sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
-    #sys_call = 'cd ' + destination_runs + pdbfile[0] + '/'
-    #os.chdir(sys_call)
+    sys_call = 'cd ' + mydirectory + '/'
+    os.chdir(sys_call)  # Now we are inside the directory we just made
+
+    if not os.path.exists(mydirectory+'run.prm'):
+        sys_call = 'cp ' + destination_runs+'run.prm '+mydirectory
+        os.system(sys_call)
     """for pdb_file in onlyfiles:
         if "_fixed_ph7.4.pdb" in pdb_file:
             #print pdb_file[:4]
