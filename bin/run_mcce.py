@@ -68,11 +68,9 @@ for i in range(1,2):
         os.system(sys_call)
 
     # Send to submit 
-    mysubmit = mydirectory + str(i).zfill(2)+'.pdb '
-    print mysubmit
-    #os.chdir(mysubmit)
-            #qsub_call = "qsub %s"
-            #call(qsub_call % "submit.sh", shell=True)
+    os.chdir(mydirectory)
+            qsub_call = "qsub %s"
+            call(qsub_call % "submit.sh", shell=True)
     """for pdb_file in onlyfiles:
         if "_fixed_ph7.4.pdb" in pdb_file:
             #print pdb_file[:4]
