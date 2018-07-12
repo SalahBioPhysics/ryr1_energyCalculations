@@ -74,7 +74,7 @@ for i in range(1,2):
     # 2. prot: the name and location of the PDB file
     # 3. str1, str2, str3 and str4 are true (T) or false (F) flags 
     runprm = mydirectory+'run.prm'
-    prot   = mydirectory+str(i).zfill(2)+'/'+str(i).zfill(2)+'.pdb'
+    prot   = mydirectory+str(i).zfill(2)+'.pdb'
     change_runprm(runprm,prot,"T","T","T","T")
 
     # Send to submit 
