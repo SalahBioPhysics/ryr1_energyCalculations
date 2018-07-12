@@ -40,17 +40,18 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
      
  
  
-for topDir in dirs_in_pdb_files:
-    #print type(topDir)
-    onlyfiles = [f for f in os.listdir(pdb_files+topDir) if os.path.isfile(os.path.join(pdb_files+topDir, f))]
-    pdbfile = topDir.split('-')
-    mydirectory = destination_runs + pdbfile[0]
+for i in range(1,2):
+    
+
+    #onlyfiles = [f for f in os.listdir(pdb_files+topDir) if os.path.isfile(os.path.join(pdb_files+topDir, f))]
+    #pdbfile = topDir.split('-')
+    mydirectory = destination_runs + "frame_" +str(i).zfill(2)
     if not os.path.exists(mydirectory):
         sys_call = 'mkdir ' + destination_runs + pdbfile[0]
         os.system(sys_call)
     #sys_call = 'cd ' + destination_runs + pdbfile[0] + '/'
     #os.chdir(sys_call)
-    for pdb_file in onlyfiles:
+    """for pdb_file in onlyfiles:
         if "_fixed_ph7.4.pdb" in pdb_file:
             #print pdb_file[:4]
             #print pdbfile[0]
@@ -75,6 +76,6 @@ for topDir in dirs_in_pdb_files:
             #print mysubmit
             os.chdir(mysubmit)
             qsub_call = "qsub %s"
-            call(qsub_call % "submit.sh", shell=True)
+            call(qsub_call % "submit.sh", shell=True)"""
  
 print 'Done'
