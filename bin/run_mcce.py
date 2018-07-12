@@ -15,7 +15,7 @@ This code is used to submit mcce jobs since we have 50 systems (now, later we'll
 pdb_files = '/home/salah/amedee/ryr1_energyCalculations/input_data/activation_core/'
 destination_runs = '/home/salah/amedee/ryr1_energyCalculations/calculations/'
 
-"""
+
 def change_runprm(runprm,prot,str1,str2,str3,str4):
     lines_ = open(runprm).readlines()
     for line in lines_:
@@ -26,7 +26,7 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
         with open(create_new,'a') as prm:
             if len(line) != 0:
                 if line[-1] == '(INPDB)':
-                    newLine = 'new'+prot+'   '+line[-1]+'\n'
+                    newLine = prot+'   '+line[-1]+'\n'
                     prm.write(newLine)
                 elif line[-1] == '(DO_PREMCCE)':
                     newLine = str1+'    '+line[-1]+'\n'
@@ -41,7 +41,7 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
                                         newLine = str4+'    '+line[-1]+'\n'
                                         prm.write(newLine)
                 else:
-                    prm.write(a)"""
+                    prm.write(a)
      
  
  
@@ -66,6 +66,14 @@ for i in range(1,2):
     if not os.path.exists(mydirectory+str(i).zfill(2)): # Make sure the input PDB file is in the directory
         sys_call = 'cp ' + pdb_files+str(i).zfill(2)+'.pdb '+mydirectory
         os.system(sys_call)
+
+    # Change the (INPUT) param in run.prm to say the correct file name (str(i).zfill(2)+'.pdb ')
+    # 1. runprm: the run.prm file that we will edit
+    # 2. prot: the name and location of the PDB file
+    # 3. str1, str2, str3 and str4 are true (T) or false (F) flags 
+    runprm = mydirectory+'run.prm'
+    prot   = mydirectory+str(i).zfill(2)+'/'+str(i).zfill(2)+'.pdb'
+    change_runprm(runprm,prot,"T","T","T","T")
 
     # Send to submit 
     os.chdir(mydirectory)
