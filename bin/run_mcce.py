@@ -81,31 +81,7 @@ for i in range(2,30):
     os.chdir(mydirectory)
     qsub_call = "qsub %s"
     call(qsub_call % "submit.sh", shell=True)
-    """for pdb_file in onlyfiles:
-        if "_fixed_ph7.4.pdb" in pdb_file:
-            #print pdb_file[:4]
-            #print pdbfile[0]
-            mydirectory = destination_runs + pdbfile[0] + '/'+ pdb_file[:4]
-            if not os.path.exists(mydirectory):
-                sys_call = 'mkdir ' + destination_runs + pdbfile[0] + '/'+ pdb_file[:4] 
-                os.system(sys_call)
-            sys_call = 'cp ' + pdb_files + topDir + '/' + pdb_file + ' ' + destination_runs + pdbfile[0] + '/'+ pdb_file[:4]
-            os.system(sys_call)
-            fname_base = destination_runs + pdbfile[0] + '/' + pdb_file[:4] + '/' + pdb_file
-            dirName =  destination_runs + pdbfile[0] + '/' + pdb_file[:4]
-            deleteHH(dirName,fname_base)
-            sys_call = 'cp /home/salah/johnChodera_project_on_github/mcce-charges/mcce_runs/quick/run.prm ' + destination_runs + pdbfile[0] + '/'+ pdb_file[:4]
-            os.system(sys_call)
-            sys_call = 'cp /home/salah/johnChodera_project_on_github/mcce-charges/mcce_runs/quick/submit.sh ' + destination_runs + pdbfile[0] + '/'+ pdb_file[:4]
-                        os.system(sys_call)
-            runprm = destination_runs+pdbfile[0]+'/'+pdb_file[:4]+'/run.prm'
-            change_runprm(runprm,pdb_file,'t','t','f','f')
-            sys_call = 'mv '+destination_runs + pdbfile[0] + '/'+ pdb_file[:4]+'/run.prm2 '+ destination_runs + pdbfile[0] + '/'+ pdb_file[:4]+'/run.prm'
-                        os.system(sys_call)
-            mysubmit = destination_runs + pdbfile[0] + '/'+ pdb_file[:4]
-            #print mysubmit
-            os.chdir(mysubmit)
-            qsub_call = "qsub %s"
-            call(qsub_call % "submit.sh", shell=True)"""
+    # Wait for 5 seconds, so we don't overwork the queue system
+    time.sleep(5)
  
 print 'Done'
