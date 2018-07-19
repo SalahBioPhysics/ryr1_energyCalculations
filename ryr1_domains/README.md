@@ -62,7 +62,7 @@ Channnel pore domain
 
 Top View | Side View
 ------------ | -------------
-![pVSD](top_view/pVSD.png) | ![pVSD](side_view/pVDS.png)
+![pVSD](top_view/pVSD.png) | ![pVSD](side_view/pVSD.png)
 
 Pseudo voltage sensor domain
 
