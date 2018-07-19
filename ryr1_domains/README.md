@@ -11,7 +11,7 @@ Bridging solenoid Top View | Bridging solenoid Side View
 ------------ | -------------
 ![Bsol](top_view/Bsol.png) | ![Bsol](side_view/Bsol.png)
 
-**Figure 2:** Bridging solenoid (Bsol) 
+**Figure 2:** Bridging solenoid (Bsol). Coupling adjacent protomers NTD-A:BSol0 (clockwise) and SPRY2:BSol0 (anti-clockwise) implicated in RyR channel gating.conformational change between open and closed classes involves concerted movement of the channel core and the cytosolic shell in which a rigid unit comprising shell residues such as JSol (Figure 7) and BSol-RY3&4 (Figure 14). The bowing in S6 coincides with displacement of a region that encompasses CTD and the BSol, JSol, and CSol solenoids away from the pore axis.
 
 Core solenoid Top View | Core solenoid Side View
 ------------ | -------------
@@ -41,7 +41,7 @@ Junctional solenoid Top View | Junctional solenoid Side View
 ------------ | -------------
 ![Jsol](top_view/Jsol.png) | ![Jsol](side_view/Jsol.png)
 
-**Figure 7:** Junctional solenoid (Jsol)
+**Figure 7:** Junctional solenoid (Jsol).  Jsol joining of the NSol (Figure 8) with BSol (Figure 2) and Csol (Figure 3)
 
 N-terminal solenoid Top View | N-terminal solenoid Side View
 ------------ | -------------
