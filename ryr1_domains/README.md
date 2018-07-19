@@ -1,5 +1,6 @@
 
 First Header | Second Header
 ------------ | -------------
-![picture](top_view/Bsol.png) | ![picture](top_view/Bsol.png)
-Content in the first column | Content in the second column
+![picture](top_view/Bsol.png) | ![picture](side_view/Bsol.png)
+ejbqefbqkej
+![picture](top_view/Bsol.png) | ![picture](side_view/Bsol.png)
