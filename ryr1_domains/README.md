@@ -2,8 +2,6 @@ Top View | Side View
 ------------ | -------------
 ![Bsol](top_view/Bsol.png) | ![Bsol](side_view/Bsol.png)
 Bridging solenoid
- | 
------------- | -------------
 ![Csol](top_view/Csol.png) | ![Csol](side_view/Csol.png)
 Core solenoid
 ![CTD](top_view/CTD.png) | ![CTD](side_view/CTD.png)
