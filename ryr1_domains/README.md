@@ -3,6 +3,7 @@ Top View | Side View
 ![Bsol](top_view/Bsol.png) | ![Bsol](side_view/Bsol.png)
 
 Bridging solenoid
+
 Top View | Side View
 ------------ | -------------
 ![Csol](top_view/Csol.png) | ![Csol](side_view/Csol.png)
