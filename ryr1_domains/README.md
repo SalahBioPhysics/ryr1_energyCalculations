@@ -5,7 +5,7 @@ ryr1 Top View | ryr1 Side View
 ------------ | -------------
 ![ryr1](top_view/ryr1.png) | ![ryr1](side_view/ryr1.png)
 
-**Figure 1:** Ryanodine Receptor 1
+**Figure 1:** Ryanodine Receptor 1 (PDBID: 5t9r)
 
 Bridging solenoid Top View | Bridging solenoid Side View
 ------------ | -------------
@@ -17,7 +17,7 @@ Core solenoid Top View | Core solenoid Side View
 ------------ | -------------
 ![Csol](top_view/Csol.png) | ![Csol](side_view/Csol.png)
 
-**Figure 3:**Core solenoid (Csol)
+**Figure 3:** Core solenoid (Csol)
 
 C-terminal Top View | C-terminal Side View
 ------------ | -------------
