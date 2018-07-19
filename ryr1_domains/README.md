@@ -1,4 +1,5 @@
-# Domains of ryr1 (using pymol)
+# Domains of ryr1 
+[pymol](https://pymol.org/2/#download) was used for the images
 
 ryr1 Top View | ryr1 Side View
 ------------ | -------------
