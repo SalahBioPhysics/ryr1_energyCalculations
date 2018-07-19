@@ -1,12 +1,5 @@
 ![picture](top_view/Bsol.png)
-Top View | Side View
+First Header | Second Header
 ------------ | -------------
-Bsol | Content from cell 2
-![Bsol](top_view/Bsol.png) | ![Bsol](top_view/Bsol.png)
------------- | -------------
-
------------- | -------------
-
------------- | -------------
-
------------- | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
