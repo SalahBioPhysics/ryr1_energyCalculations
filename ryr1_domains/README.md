@@ -136,7 +136,7 @@ Top View | Side View | Bottom View
 ------------ | ------------- | -------------
 ![Jsol](top_view/Jsol_join_Nsol_with_BsolCsol.png) | ![Jsol](side_view/Jsol_join_Nsol_with_BsolCsol.png) | ![Jsol](side_view/Jsol_join_Nsol_with_BsolCsol.png)
 
-**Figure 21:** Thumb and forefingers domain (TaF)
+**Figure 22:** Junctional solenoid (red) joining the N-terminal solenoid (blue) with Bridging solenoid (green) and Core solenoid (orange)
 
 
 
