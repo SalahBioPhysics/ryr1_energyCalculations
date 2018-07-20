@@ -12,8 +12,8 @@ from subprocess import call # This is needed to submit jobs
 This code is used to submit mcce jobs since we have 50 systems (now, later we'll have 50*5=250 systems)
 """
  
-pdb_files = '/home/salah/amedee/ryr1_energyCalculations/input_data/activation_core/'
-destination_runs = '/home/salah/amedee/ryr1_energyCalculations/calculations/'
+pdb_files = '/home/salah/ryr1_energyCalculations/input_data/activation_core/'
+destination_runs = '/home/salah/ryr1_energyCalculations/calculations/'
 
 
 def change_runprm(runprm,prot,str1,str2,str3,str4):
@@ -47,7 +47,7 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
     sys_call = 'mv ' + create_new + ' ' + runprm
     os.system(sys_call) 
  
-for i in range(2,30):
+for i in range(1,30):
     #onlyfiles = [f for f in os.listdir(pdb_files+topDir) if os.path.isfile(os.path.join(pdb_files+topDir, f))]
     #pdbfile = topDir.split('-')
     mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/'
