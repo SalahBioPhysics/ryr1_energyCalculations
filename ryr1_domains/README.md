@@ -131,6 +131,7 @@ Thumb and forefingers Top View | Thumb and forefingers Side View
 
 
 ---
+
 Top View | Side View | Bottom View
 ------------ | -------------
 ![Jsol](top_view/Jsol_join_Nsol_with_BsolCsol.png) | ![Jsol](side_view/Jsol_join_Nsol_with_BsolCsol.png) | ![Jsol](side_view/Jsol_join_Nsol_with_BsolCsol.png)
