@@ -10,8 +10,7 @@ Activation core top view | Activation core side view
 ------------ | -------------
 ![AC](input_data/actication_core_top.png) | ![AC](input_data/actication_core_side.png)
 
-**Figure 21:** Thumb and forefingers domain (TaF)
-
+**Figure 21:** Activation core (PDBID: 5t9r).  Residues B3614-B5102
 The generated output files are titled head3.lst and fort.38. 
 ### head3.lst
 * iConf:conformer ID
