@@ -10,7 +10,7 @@ Activation core top view | Activation core side view
 ------------ | -------------
 ![AC](input_data/actication_core_top.png) | ![AC](input_data/actication_core_side.png)
 
-**Figure 21:** Activation core (PDBID: 5t9r).  Residues B3614-B5102
+**Figure 1:** Activation core (PDBID: 5t9r).  Residues B3614-B5102
 The generated output files are titled head3.lst and fort.38. 
 ### head3.lst
 * iConf:conformer ID
@@ -33,6 +33,7 @@ The generated output files are titled head3.lst and fort.38.
 ### fort.38
 This file shows the occupancy of each conformer at differernt ph/eh/ch values.  In our case, we are using chemical titration (ch). The plot below shows the Ca+2 titration carve of frame01.
 ![Ca+2 titration carve](presentation/CADMG5104_002.png) 
+**Figure 2:** Ca+2 titration carve of the activation code (**Figure 1**)
 
 
  
