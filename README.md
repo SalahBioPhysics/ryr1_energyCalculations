@@ -1,7 +1,7 @@
 # ryr1
 For an overview on the ryanodine receptor (RyR1) being a Ca+2 channel that facilitates skeletal muscle excitation and contraction, we can refer to this [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5142848/).
 
-Excellent reviews on ryanodine receptors [(RYRs)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3156641/) , dihydropyridine receptors [(DHPRs)](https://www.ncbi.nlm.nih.gov/pubmed/19660468) and [Disease-causing mutations of calcium channels] (https://www.tandfonline.com/doi/abs/10.4161/chan.2.3.5950)
+Excellent reviews on ryanodine receptors [(RYRs)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3156641/) , dihydropyridine receptors [(DHPRs)](https://www.ncbi.nlm.nih.gov/pubmed/19660468) and [Disease-causing mutations of calcium channels](https://www.tandfonline.com/doi/abs/10.4161/chan.2.3.5950)
 
 In this project, we are calculating the energy landscapes using Multi-Conformer Continuum Electrostatics [(MCCE)](https://sites.google.com/site/mccewiki/home). Calculations are done with two datasets.  One set involves the RyR1 macromolecules in equilibrium with a thermal bath sans the activation of ligands; the other involves the RyR1 macromolecules in equilibrium with both a thermal bath as well as a reservoir of the activated ligands calcium, ATP, and caffeine. 
 
