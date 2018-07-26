@@ -8,7 +8,7 @@ These PDB files were prepared by Danya Ben Hail.  There are 50 files labeled fra
 
 Activation core top view | Activation core side view
 ------------ | -------------
-![AC](input_data/actication_core_top.png) | ![AC](actication_core_side.png)
+![AC](input_data/actication_core_top.png) | ![AC](input_data/actication_core_side.png)
 
 **Figure 21:** Thumb and forefingers domain (TaF)
 
