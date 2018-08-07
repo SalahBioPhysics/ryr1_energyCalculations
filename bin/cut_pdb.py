@@ -11,7 +11,7 @@ This code is to cut the refined PDB files to run mcce
 """
 
 for i in range(1,51):
-	with open("../input_data/pore_domain/"+str(i).zfill(2)+".pdb",'w') as new_pdb:
+	with open("../input_data/activation_core/"+str(i).zfill(2)+".pdb",'w') as new_pdb:
 		refined_location = "../input_data/refined/"+str(i).zfill(2)+"_5t9r_norm_psi_Class50_SVD12_bfac290_4.5A_real_space_refined.pdb"
 		# Read all PDB files from ryr1_energyCalculations/input_data/refined
 		file_name = open(refined_location).readlines() 
@@ -21,28 +21,12 @@ for i in range(1,51):
 				if fields[0] == "ATOM":
 					if len(fields) == 10: # because the the chain id and the res # are in the same columns
 						chian_id = fields[4][:1]
-<<<<<<< HEAD
 						if chian_id == 'B' and fields[4][1:] >= "3614":
 							new_pdb.write(line)
-							
 				if len(fields) == 9: # because the the chain id and the res # are in the same columns
 					chian_id = fields[3][:1]
 					if chian_id == 'B' and fields[3][1:] >= "3614":
 						new_pdb.write(line)
-					#if len(fields) == 11: # because the the chain id and the res # are in separate columns
-						#chian_id = fields[4]
-						#if chian_id == 'B' and fields[4][1:] == "3741":
-							#new_pdb.write(line)
-=======
-						if chian_id == 'I' or chian_id == 'E' or chian_id == 'G' or  chian_id == 'B': 
-							if  fields[4][1:] >= "4820" and fields[4][1:] <= "4956":
-								new_pdb.write(line)
-					if len(fields) == 9: # because the the chain id and the res # are in the same columns
-						chian_id = fields[3][:1]
-						if chian_id == 'I' or chian_id == 'E' or chian_id == 'G' or  chian_id == 'B':
-                                                        if  fields[3][1:] >= "4820" and fields[3][1:] <= "4956":
-                                                                new_pdb.write(line)
->>>>>>> ab305d0df641f64ed48878f7bd344e7668d7e8c3
 		new_pdb.close()
 
 

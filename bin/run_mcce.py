@@ -39,12 +39,6 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
                 elif line[-1] == '(DO_MONTE)':
                     newLine = str4+'    '+line[-1]+'\n'
                     prm.write(newLine)
-                """elif line[-1] == '(TITR_EX0)':
-                    newLine = str5+'    '+line[-1]+'\n'
-                    prm.write(newLine)
-                elif line[-1] == '(TITR_EX0)':
-                    newLine = str5+'    '+line[-1]+'\n'
-                    prm.write(newLine)"""
                 else:
                     prm.write(a)
 
@@ -52,59 +46,52 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
     sys_call = 'mv ' + create_new + ' ' + runprm
     os.system(sys_call) 
  
-for i in range(1,51):
+for i in range(1,26):
     #onlyfiles = [f for f in os.listdir(pdb_files+topDir) if os.path.isfile(os.path.join(pdb_files+topDir, f))]
     #pdbfile = topDir.split('-')
-    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/'
+    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/'
+    if not os.path.exists(mydirectory):
+        sys_call = 'mkdir ' + mydirectory
+        os.system(sys_call)
+    """mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/'
     if not os.path.exists(mydirectory):
 	sys_call = 'mkdir ' + mydirectory
-        os.system(sys_call)
+        os.system(sys_call)"""
     
     #mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Ca/'
     #if not os.path.exists(mydirectory): 
         #sys_call = 'mkdir ' + mydirectory
         #os.system(sys_call)
-<<<<<<< HEAD
-    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Zn/'
+    """mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Zn/'
     if not os.path.exists(mydirectory): 
         sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
     mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Zn/100_0/'
-=======
     mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Ca/'
     if not os.path.exists(mydirectory): 
         sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
     mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Ca/100_0/'
->>>>>>> ab305d0df641f64ed48878f7bd344e7668d7e8c3
     if not os.path.exists(mydirectory): 
         sys_call = 'mkdir ' + mydirectory
-        os.system(sys_call)
-    """if not os.path.exists(mydirectory+'Ca/0_100'): 
-        sys_call = 'mkdir ' + mydirectory
-        os.system(sys_call)
-    if not os.path.exists(mydirectory+'Zn/100_0'): 
-        sys_call = 'mkdir ' + mydirectory
-        os.system(sys_call)
-    if not os.path.exists(mydirectory+'Zn/0_100'): 
-        sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)"""
-    
-
     # move submit.sh and run.prm
     sys_call = 'cp ' + destination_runs+'submit.sh '+mydirectory
     os.system(sys_call)
     
     sys_call = 'cp ' + destination_runs+'run.prm '+mydirectory
     os.system(sys_call)
-
+    # move the pdb files
+    sys_call = 'cp ' + pdb_files + str(i).zfill(2)+'.pdb ' + mydirectory
+    os.system(sys_call)
+    """
     # move head3.lst, step2out, and energies.opp 
     sys_call = 'cp ' + destination_runs + "frame_" +str(i).zfill(2)+'/head3.lst '+mydirectory
     os.system(sys_call)
     sys_call = 'cp ' + destination_runs + "frame_" +str(i).zfill(2)+'/step2_out.pdb '+mydirectory
     os.system(sys_call)
     sys_call = 'cp ' + destination_runs + "frame_" +str(i).zfill(2)+'/energies.opp '+mydirectory
-    os.system(sys_call)
+    os.system(sys_call)"""
 
     # Change the (INPUT) param in run.prm to say the correct file name (str(i).zfill(2)+'.pdb ')
     # 1. runprm: the run.prm file that we will edit
@@ -112,16 +99,12 @@ for i in range(1,51):
     # 3. str1, str2, str3 and str4 are true (T) or false (F) flags 
     runprm = mydirectory+'run.prm'
     prot   = mydirectory+str(i).zfill(2)+'.pdb'
-    change_runprm(runprm,prot,"f","f","f","T")
+    change_runprm(runprm,prot,"t","t","t","f")
 
     # Send to submit 
     os.chdir(mydirectory)
     qsub_call = "qsub %s"
-<<<<<<< HEAD
-    print 'doing ' + mydirectory+'Ca/100_0'
-=======
     print 'doing ' + mydirectory
->>>>>>> ab305d0df641f64ed48878f7bd344e7668d7e8c3
     call(qsub_call % "submit.sh", shell=True)
     # Wait for 5 seconds, so we don't overwork the queue system
     time.sleep(2)
