@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import sys
 import os
 import time
@@ -9,11 +8,11 @@ from os import remove, close
 from subprocess import call # This is needed to submit jobs
 
 """
-This code is used to submit mcce jobs since we have 50 systems (now, later we'll have 50*5=250 systems)
+This code is used to submit mcce jobs since we have 50 systems 
 """
  
-pdb_files = '/home/salah/ryr1_energyCalculations/input_data/activation_core/'
-destination_runs = '/home/salah/ryr1_energyCalculations/calculations/'
+pdb_files = '/home/guest/ryr1_energyCalculations/input_data/activation_core/'
+destination_runs = '/home/guest/ryr1_energyCalculations/calculations/5t9r/'
 
 
 def change_runprm(runprm,prot,str1,str2,str3,str4):
@@ -47,27 +46,51 @@ def change_runprm(runprm,prot,str1,str2,str3,str4):
     sys_call = 'mv ' + create_new + ' ' + runprm
     os.system(sys_call) 
  
-for i in range(1,30):
+for i in range(1,51):
     #onlyfiles = [f for f in os.listdir(pdb_files+topDir) if os.path.isfile(os.path.join(pdb_files+topDir, f))]
     #pdbfile = topDir.split('-')
-    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/'
-    print mydirectory
+    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/'
     if not os.path.exists(mydirectory):
-        sys_call = 'mkdir ' + mydirectory
+	sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
     
-
-    if not os.path.exists(mydirectory+'run.prm'): # Make sure the run.prm file is in the directory
-        sys_call = 'cp ' + destination_runs+'run.prm '+mydirectory
+    #mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Ca/'
+    #if not os.path.exists(mydirectory): 
+        #sys_call = 'mkdir ' + mydirectory
+        #os.system(sys_call)
+    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Ca/'
+    if not os.path.exists(mydirectory): 
+        sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
-
-    if not os.path.exists(mydirectory+'submit.sh'): # Make sure the submit.sh file is in the directory
-        sys_call = 'cp ' + destination_runs+'submit.sh '+mydirectory
+    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Ca/100_0/'
+    if not os.path.exists(mydirectory): 
+        sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
-
-    if not os.path.exists(mydirectory+str(i).zfill(2)): # Make sure the input PDB file is in the directory
-        sys_call = 'cp ' + pdb_files+str(i).zfill(2)+'.pdb '+mydirectory
+    """if not os.path.exists(mydirectory+'Ca/0_100'): 
+        sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
+    if not os.path.exists(mydirectory+'Zn/100_0'): 
+        sys_call = 'mkdir ' + mydirectory
+        os.system(sys_call)
+    if not os.path.exists(mydirectory+'Zn/0_100'): 
+        sys_call = 'mkdir ' + mydirectory
+        os.system(sys_call)"""
+    
+
+    # move submit.sh and run.prm
+    sys_call = 'cp ' + destination_runs+'submit.sh '+mydirectory
+    os.system(sys_call)
+    
+    sys_call = 'cp ' + destination_runs+'run.prm '+mydirectory
+    os.system(sys_call)
+
+    # move head3.lst, step2out, and energies.opp 
+    sys_call = 'cp ' + destination_runs + "frame_" +str(i).zfill(2)+'/head3.lst '+mydirectory
+    os.system(sys_call)
+    sys_call = 'cp ' + destination_runs + "frame_" +str(i).zfill(2)+'/step2_out.pdb '+mydirectory
+    os.system(sys_call)
+    sys_call = 'cp ' + destination_runs + "frame_" +str(i).zfill(2)+'/energies.opp '+mydirectory
+    os.system(sys_call)
 
     # Change the (INPUT) param in run.prm to say the correct file name (str(i).zfill(2)+'.pdb ')
     # 1. runprm: the run.prm file that we will edit
@@ -75,13 +98,15 @@ for i in range(1,30):
     # 3. str1, str2, str3 and str4 are true (T) or false (F) flags 
     runprm = mydirectory+'run.prm'
     prot   = mydirectory+str(i).zfill(2)+'.pdb'
-    change_runprm(runprm,prot,"T","T","T","T")
+    change_runprm(runprm,prot,"f","f","f","T")
 
     # Send to submit 
     os.chdir(mydirectory)
     qsub_call = "qsub %s"
+    print 'doing ' + mydirectory
     call(qsub_call % "submit.sh", shell=True)
     # Wait for 5 seconds, so we don't overwork the queue system
-    time.sleep(5)
+    time.sleep(2)
  
 print 'Done'
+
