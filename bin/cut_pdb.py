@@ -23,6 +23,11 @@ for i in range(1,51):
 						chian_id = fields[4][:1]
 						if chian_id == 'B' and fields[4][1:] >= "3614":
 							new_pdb.write(line)
+							
+				if len(fields) == 9: # because the the chain id and the res # are in the same columns
+					chian_id = fields[3][:1]
+					if chian_id == 'B' and fields[3][1:] >= "3614":
+						new_pdb.write(line)
 					#if len(fields) == 11: # because the the chain id and the res # are in separate columns
 						#chian_id = fields[4]
 						#if chian_id == 'B' and fields[4][1:] == "3741":
