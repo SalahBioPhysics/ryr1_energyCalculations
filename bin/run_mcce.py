@@ -64,11 +64,19 @@ for i in range(1,51):
     #if not os.path.exists(mydirectory): 
         #sys_call = 'mkdir ' + mydirectory
         #os.system(sys_call)
+<<<<<<< HEAD
     mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Zn/'
     if not os.path.exists(mydirectory): 
         sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
     mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Zn/100_0/'
+=======
+    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Ca/'
+    if not os.path.exists(mydirectory): 
+        sys_call = 'mkdir ' + mydirectory
+        os.system(sys_call)
+    mydirectory = destination_runs + "frame_" +str(i).zfill(2)+'/binding/Ca/100_0/'
+>>>>>>> ab305d0df641f64ed48878f7bd344e7668d7e8c3
     if not os.path.exists(mydirectory): 
         sys_call = 'mkdir ' + mydirectory
         os.system(sys_call)
@@ -109,10 +117,14 @@ for i in range(1,51):
     # Send to submit 
     os.chdir(mydirectory)
     qsub_call = "qsub %s"
+<<<<<<< HEAD
     print 'doing ' + mydirectory+'Ca/100_0'
+=======
+    print 'doing ' + mydirectory
+>>>>>>> ab305d0df641f64ed48878f7bd344e7668d7e8c3
     call(qsub_call % "submit.sh", shell=True)
     # Wait for 5 seconds, so we don't overwork the queue system
-    time.sleep(5)
+    time.sleep(2)
  
 print 'Done'
 
