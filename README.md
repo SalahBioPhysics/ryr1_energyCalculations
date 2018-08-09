@@ -37,5 +37,12 @@ This file shows the occupancy of each conformer at differernt ph/eh/ch values.  
 ![Ca+2 titration carve](presentation/CADMG5104_002.png) 
 **Figure 2:** Ca+2 titration carve of the activation code (**Figure 1**)
 
+---
+
+
+### All 50 frames
+![binding_energy](output_data/binding_energy.png) 
+**Figure 3:** Raw binding energy (kCal/mol) data between Ca+2 and the activation core of ryr1
+
 
  
