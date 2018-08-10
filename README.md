@@ -16,12 +16,13 @@ Activation core top view | Activation core side view
 The generated output files are titled head3.lst and fort.38. 
 
 
+
 ---
 
 
 ### All 50 frames
 ![binding_energy](output_data/binding_energy.png) 
-**Figure 3:** Binding energy (kCal/mol) data between Ca+2 and the activation core of ryr1
+**Figure 2:** Binding energy (kCal/mol) data between Ca+2 and the activation core of ryr1
 
 
  
