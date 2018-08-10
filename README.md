@@ -42,7 +42,7 @@ This file shows the occupancy of each conformer at differernt ph/eh/ch values.  
 
 ### All 50 frames
 ![binding_energy](output_data/binding_energy.png) 
-**Figure 3:** Raw binding energy (kCal/mol) data between Ca+2 and the activation core of ryr1
+**Figure 3:** Binding energy (kCal/mol) data between Ca+2 and the activation core of ryr1
 
 
  
