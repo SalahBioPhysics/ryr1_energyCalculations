@@ -23,5 +23,5 @@ Output: Energy per charged residue
 
 ### fort.38
 Output: This file shows the occupancy of each conformer at differernt ph/eh/ch values.  In our case, we are using chemical titration (ch). The plot below shows the Ca+2 titration carve of frame01.
-![Ca+2 titration carve](output_data/frame_01.png) 
+![Ca+2 titration carve](frame_01.png) 
 **Figure 2:** Ca+2 titration carve of the activation code (**Figure 1**)
