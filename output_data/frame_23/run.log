@@ -49,16 +49,20 @@ Last Updates:
 Step 0. Initialize enviroment
    Load run control file "run.prm"...
    Done
+
    Tentatively load local param file "new.tpl"...   No such file, ignore.
    Done
+
    Load parameters from directory "/home/mcce/mcce2.5.1//param04" ... 
 
    In file /home/mcce/mcce2.5.1//param04/hmc.tpl, parameter "CONNECT  HMC01  CAB sp2       0     C3B 0     CBB LIG   SG" is already loaded somewhere else.
    Try delete this entry and run MCCE again
    Done
+
    Load linear free energy correction parameters from "/home/mcce/mcce2.5.1/extra.tpl".../home/mcce/mcce2.5.1/extra.tpl
    File loaded.
    Done
+
 Step 0 Done.
 
 Step 1. Test and format structral file
@@ -457,15 +461,15 @@ Step 2. Make multi side chain conformers
 
 
    Tuning exposed rotamers...
-   Done. Time spent = 16
+   Done. Time spent = 18
 
 
    Repack side chains 5000 times, remove inaccessible conformers...
    Computing pairwise LJ potential. This may take a while.
       Estimated time on AMD 1.6GHz is 63 seconds.
-      Actual time is 27
+      Actual time is 32
    Repacking in progress, see progress.log for details...
-   Done. Time spent = 30
+   Done. Time spent = 35
 
 
    Skip writing heavy atome rotamer pdb file hvrot.pdb
@@ -480,7 +484,7 @@ Step 2. Make multi side chain conformers
    Warning! assign_crg():      missing parameter(s), default value is used and saved in debug.log.
    Done
 
-      169 conformers deleted in this cycle at    2.000    2.000    2.000
+      154 conformers deleted in this cycle at    2.000    2.000    2.000
 
    NOT optimizing hydroxyl and water.
 
@@ -489,14 +493,14 @@ Step 2. Make multi side chain conformers
 
    Skip writing full rotamer file step2_out.full.
    Delete duplicate conformers ...
-      23 conformers deleted in this cycle at    2.000    2.000    2.000
-   Done. Time spent = 46
+      37 conformers deleted in this cycle at    2.000    2.000    2.000
+   Done. Time spent = 55
 
 
    Write output...
    Done
 
-   Total time for step2 (rotamer making) is 193 seconds.
+   Total time for step2 (rotamer making) is 228 seconds.
 
    Output files:
       step2_out.pdb   : mcce pdb file, the input of step 3
@@ -523,7 +527,7 @@ Step 3. Compute energy lookup table
 
 Running delphi surface calculations ...
 
-   Computing pairwise from conformer 1 to 2314 of 2314 total conformers
+   Computing pairwise from conformer 1 to 2315 of 2315 total conformers
       see progress.log for progress...
 
    WARNING: Delphi failed at focusing depth 1 of ASN01B3643_001, retry
@@ -550,9 +554,13 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of HIS+1B3647_006, retry
    Trying changing scale on trial 3
 
+   WARNING: Delphi failed at focusing depth 1 of ARG03B3648_003, retry
+
    WARNING: Delphi failed at focusing depth 2 of CYS01B3650_003, retry
 
    WARNING: Delphi failed at focusing depth 3 of ASN01B3651_002, retry
+
+   WARNING: Delphi failed at focusing depth 1 of SER01B3656_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of LYS+1B3658_002, retry
 
@@ -572,7 +580,7 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of ASP02B3671_003, retry
 
-   WARNING: Delphi failed at focusing depth 3 of ARG02B3672_002, retry
+   WARNING: Delphi failed at focusing depth 1 of ARG03B3672_003, retry
 
    WARNING: Delphi failed at focusing depth 2 of ARG+1B3672_004, retry
 
@@ -580,9 +588,9 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 3 of SER01B3678_001, retry
 
-   WARNING: Delphi failed at focusing depth 1 of SER01B3678_002, retry
+   WARNING: Delphi failed at focusing depth 1 of SER01B3678_003, retry
 
-   WARNING: Delphi failed at focusing depth 1 of SER01B3678_002, retry
+   WARNING: Delphi failed at focusing depth 1 of SER01B3678_003, retry
    Trying changing scale on trial 2
 
    WARNING: Delphi failed at focusing depth 1 of GLU01B3684_002, retry
@@ -721,6 +729,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of ARG01B3773_001, retry
 
+   WARNING: Delphi failed at focusing depth 2 of ARG02B3773_002, retry
+
    WARNING: Delphi failed at focusing depth 2 of ARG03B3773_003, retry
 
    WARNING: Delphi failed at focusing depth 2 of GLU01B3777_002, retry
@@ -728,6 +738,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of GLU02B3777_003, retry
 
    WARNING: Delphi failed at focusing depth 1 of SER01B3784_001, retry
+
+   WARNING: Delphi failed at focusing depth 1 of SER01B3784_002, retry
 
    WARNING: Delphi failed at focusing depth 2 of CYS01B3786_003, retry
 
@@ -835,6 +847,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of ARG02B3886_002, retry
 
+   WARNING: Delphi failed at focusing depth 2 of ARG03B3886_003, retry
+
    WARNING: Delphi failed at focusing depth 1 of GLN01B3889_001, retry
 
    WARNING: Delphi failed at focusing depth 2 of GLU02B3893_003, retry
@@ -852,7 +866,7 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of ASP02B3898_003, retry
 
-   WARNING: Delphi failed at focusing depth 1 of TYR-1B3902_002, retry
+   WARNING: Delphi failed at focusing depth 1 of TYR-1B3902_003, retry
 
    WARNING: Delphi failed at focusing depth 2 of ARG02B3904_002, retry
 
@@ -867,11 +881,7 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of GLN01B3906_002, retry
 
-   WARNING: Delphi failed at focusing depth 1 of THR01B3907_002, retry
-
    WARNING: Delphi failed at focusing depth 2 of THR01B3911_001, retry
-
-   WARNING: Delphi failed at focusing depth 1 of CYS01B3918_001, retry
 
    WARNING: Delphi failed at focusing depth 2 of CYS01B3918_002, retry
 
@@ -908,12 +918,12 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of ASP-1B3932_005, retry
    Trying changing scale on trial 2
 
-   WARNING: Delphi failed at focusing depth 2 of TYR-1B3934_003, retry
+   WARNING: Delphi failed at focusing depth 2 of TYR-1B3934_002, retry
 
-   WARNING: Delphi failed at focusing depth 2 of TYR-1B3934_003, retry
+   WARNING: Delphi failed at focusing depth 2 of TYR-1B3934_002, retry
    Trying changing scale on trial 2
 
-   WARNING: Delphi failed at focusing depth 2 of TYR-1B3934_003, retry
+   WARNING: Delphi failed at focusing depth 2 of TYR-1B3934_002, retry
    Trying changing scale on trial 3
 
    WARNING: Delphi failed at focusing depth 1 of TYR01B3937_001, retry
@@ -925,6 +935,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of LYS+1B3948_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of ARG01B3949_001, retry
+
+   WARNING: Delphi failed at focusing depth 1 of ARG02B3949_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of ARG+1B3949_004, retry
 
@@ -948,9 +960,6 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of CYS01B3973_001, retry
    Trying changing scale on trial 3
 
-   WARNING: Delphi failed at focusing depth 2 of CYS01B3973_001, retry
-   Trying changing scale on trial 4
-
    WARNING: Delphi failed at focusing depth 1 of CYS01B3973_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of GLN01B3977_001, retry
@@ -967,7 +976,7 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of SER01B4007_001, retry
 
-   WARNING: Delphi failed at focusing depth 3 of SER01B4007_002, retry
+   WARNING: Delphi failed at focusing depth 2 of SER01B4007_002, retry
 
    WARNING: Delphi failed at focusing depth 2 of GLU01B4011_002, retry
 
@@ -1045,6 +1054,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of ASP01B4079_002, retry
    Trying changing scale on trial 2
 
+   WARNING: Delphi failed at focusing depth 1 of TYR01B4080_002, retry
+
    WARNING: Delphi failed at focusing depth 2 of THR01B4082_001, retry
 
    WARNING: Delphi failed at focusing depth 2 of THR01B4082_001, retry
@@ -1099,7 +1110,11 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of GLU01B4107_001, retry
 
+   WARNING: Delphi failed at focusing depth 1 of GLU-1B4107_005, retry
+
    WARNING: Delphi failed at focusing depth 2 of SER01B4113_001, retry
+
+   WARNING: Delphi failed at focusing depth 1 of SER01B4113_002, retry
 
    WARNING: Delphi failed at focusing depth 2 of CYS01B4114_003, retry
 
@@ -1132,6 +1147,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of GLU-1B4127_005, retry
 
+   WARNING: Delphi failed at focusing depth 2 of ASN01B4130_001, retry
+
    WARNING: Delphi failed at focusing depth 1 of ARG02B4137_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of ASP01B4138_002, retry
@@ -1160,8 +1177,6 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of ASP01B4157_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of ARG01B4159_001, retry
-
-   WARNING: Delphi failed at focusing depth 2 of ARG02B4161_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of ASN01B4162_002, retry
 
@@ -1202,6 +1217,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of ARG01B4189_001, retry
    Trying changing scale on trial 2
 
+   WARNING: Delphi failed at focusing depth 2 of ARG02B4189_002, retry
+
    WARNING: Delphi failed at focusing depth 1 of GLU01B4191_001, retry
 
    WARNING: Delphi failed at focusing depth 2 of GLU01B4191_002, retry
@@ -1229,7 +1246,7 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of ARG01B4202_001, retry
 
-   WARNING: Delphi failed at focusing depth 1 of ARG03B4202_003, retry
+   WARNING: Delphi failed at focusing depth 2 of ARG02B4202_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of MET01B4207_001, retry
 
@@ -1295,6 +1312,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of MET01B4245_001, retry
    Trying changing scale on trial 2
 
+   WARNING: Delphi failed at focusing depth 2 of SER01B4252_002, retry
+
    WARNING: Delphi failed at focusing depth 2 of CTR-1B4253_005, retry
 
    WARNING: Delphi failed at focusing depth 1 of GLU01B4543_001, retry
@@ -1313,8 +1332,6 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of TYR01B4554_001, retry
 
    WARNING: Delphi failed at focusing depth 1 of ARG+1B4557_004, retry
-
-   WARNING: Delphi failed at focusing depth 2 of TYR01B4560_002, retry
 
    WARNING: Delphi failed at focusing depth 2 of ARG02B4563_003, retry
 
@@ -1335,6 +1352,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of CTR01B4587_001, retry
 
    WARNING: Delphi failed at focusing depth 2 of CTR-1B4587_005, retry
+
+   WARNING: Delphi failed at focusing depth 1 of TYR01B4629_002, retry
 
    WARNING: Delphi failed at focusing depth 2 of GLU01B4633_002, retry
 
@@ -1394,8 +1413,6 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of ASP01B4696_001, retry
 
-   WARNING: Delphi failed at focusing depth 1 of ASP01B4696_002, retry
-
    WARNING: Delphi failed at focusing depth 2 of ASP-1B4696_005, retry
 
    WARNING: Delphi failed at focusing depth 2 of LYS+1B4698_002, retry
@@ -1428,10 +1445,6 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of LYS+1B4718_002, retry
 
-   WARNING: Delphi failed at focusing depth 2 of ARG02B4722_002, retry
-
-   WARNING: Delphi failed at focusing depth 2 of ARG03B4722_003, retry
-
    WARNING: Delphi failed at focusing depth 1 of ASP01B4726_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of ASP-1B4726_005, retry
@@ -1441,6 +1454,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of HIS02B4728_003, retry
 
    WARNING: Delphi failed at focusing depth 1 of ASP-1B4730_005, retry
+
+   WARNING: Delphi failed at focusing depth 1 of ARG03B4736_003, retry
 
    WARNING: Delphi failed at focusing depth 2 of ASP02B4744_004, retry
 
@@ -1456,6 +1471,9 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of HIS02B4753_002, retry
    Trying changing scale on trial 2
+
+   WARNING: Delphi failed at focusing depth 2 of HIS02B4753_002, retry
+   Trying changing scale on trial 3
 
    WARNING: Delphi failed at focusing depth 1 of HIS+1B4753_003, retry
 
@@ -1502,8 +1520,6 @@ Running delphi surface calculations ...
    Trying changing scale on trial 2
 
    WARNING: Delphi failed at focusing depth 2 of HIS+1B4803_005, retry
-
-   WARNING: Delphi failed at focusing depth 1 of TYR01B4804_001, retry
 
    WARNING: Delphi failed at focusing depth 2 of HIS+1B4812_003, retry
 
@@ -1591,6 +1607,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of TYR-1B4883_003, retry
 
+   WARNING: Delphi failed at focusing depth 2 of ARG02B4892_002, retry
+
    WARNING: Delphi failed at focusing depth 1 of ARG+1B4892_004, retry
 
    WARNING: Delphi failed at focusing depth 2 of ASP01B4899_001, retry
@@ -1615,14 +1633,14 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of GLU02B4910_004, retry
    Trying changing scale on trial 2
 
-   WARNING: Delphi failed at focusing depth 2 of TYR-1B4912_002, retry
+   WARNING: Delphi failed at focusing depth 2 of TYR01B4912_002, retry
 
-   WARNING: Delphi failed at focusing depth 2 of TYR-1B4912_002, retry
+   WARNING: Delphi failed at focusing depth 2 of TYR-1B4912_003, retry
+
+   WARNING: Delphi failed at focusing depth 2 of TYR-1B4912_003, retry
    Trying changing scale on trial 2
 
    WARNING: Delphi failed at focusing depth 1 of ARG01B4913_001, retry
-
-   WARNING: Delphi failed at focusing depth 1 of ARG02B4913_002, retry
 
    WARNING: Delphi failed at focusing depth 2 of ARG+1B4913_004, retry
 
@@ -1648,14 +1666,14 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of ARG01B4944_001, retry
    Trying changing scale on trial 2
 
-   WARNING: Delphi failed at focusing depth 2 of ARG03B4944_003, retry
-
    WARNING: Delphi failed at focusing depth 2 of ASP02B4945_003, retry
 
    WARNING: Delphi failed at focusing depth 2 of ASP02B4945_003, retry
    Trying changing scale on trial 2
 
    WARNING: Delphi failed at focusing depth 2 of GLU01B4948_001, retry
+
+   WARNING: Delphi failed at focusing depth 1 of GLU01B4948_002, retry
 
    WARNING: Delphi failed at focusing depth 2 of LYS01B4951_001, retry
 
@@ -1668,11 +1686,11 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of THR01B4956_001, retry
 
+   WARNING: Delphi failed at focusing depth 2 of THR01B4956_002, retry
+
    WARNING: Delphi failed at focusing depth 2 of CYS01B4961_001, retry
 
    WARNING: Delphi failed at focusing depth 2 of SER01B4965_001, retry
-
-   WARNING: Delphi failed at focusing depth 2 of SER01B4965_003, retry
 
    WARNING: Delphi failed at focusing depth 2 of ASP02B4966_004, retry
 
@@ -1685,9 +1703,12 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of ASP02B4969_004, retry
 
-   WARNING: Delphi failed at focusing depth 1 of THR01B4971_001, retry
+   WARNING: Delphi failed at focusing depth 2 of THR01B4970_002, retry
 
-   WARNING: Delphi failed at focusing depth 1 of THR01B4971_002, retry
+   WARNING: Delphi failed at focusing depth 2 of THR01B4970_002, retry
+   Trying changing scale on trial 2
+
+   WARNING: Delphi failed at focusing depth 1 of THR01B4971_001, retry
 
    WARNING: Delphi failed at focusing depth 2 of GLU01B4976_001, retry
 
@@ -1741,7 +1762,7 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of ASP-1B4999_005, retry
 
-   WARNING: Delphi failed at focusing depth 3 of GLU01B5000_001, retry
+   WARNING: Delphi failed at focusing depth 2 of THR01B5001_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of GLU01B5002_001, retry
 
@@ -1772,16 +1793,13 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 3 of GLU01B5016_002, retry
 
-   WARNING: Delphi failed at focusing depth 2 of ARG03B5017_004, retry
-
-   WARNING: Delphi failed at focusing depth 2 of ARG03B5017_004, retry
-   Trying changing scale on trial 2
-
    WARNING: Delphi failed at focusing depth 2 of ASP02B5020_004, retry
 
    WARNING: Delphi failed at focusing depth 1 of ASP-1B5020_005, retry
 
    WARNING: Delphi failed at focusing depth 2 of ASP02B5026_004, retry
+
+   WARNING: Delphi failed at focusing depth 2 of ARG02B5029_002, retry
 
    WARNING: Delphi failed at focusing depth 1 of LYS+1B5030_002, retry
 
@@ -1857,7 +1875,7 @@ Running delphi surface calculations ...
    Trying changing scale on trial 15
    Done
 
-   Computing RXN from conformer 1 to 2314 of 2314 total conformers
+   Computing RXN from conformer 1 to 2315 of 2315 total conformers
       see progress.log for progress...
 
    WARNING: Delphi failed at focusing depth 1 of ASN01B3643_001
@@ -1874,6 +1892,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of HIS+1B3647_006
 
+   WARNING: Delphi failed at focusing depth 1 of ARG03B3648_003
+
    WARNING: Delphi failed at focusing depth 2 of CYS01B3650_003
 
    WARNING: Delphi failed at focusing depth 3 of GLU-1B3655_005
@@ -1885,6 +1905,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of SER01B3668_002
 
    WARNING: Delphi failed at focusing depth 1 of ASP01B3671_001
+
+   WARNING: Delphi failed at focusing depth 1 of ARG03B3672_003
 
    WARNING: Delphi failed at focusing depth 2 of ARG+1B3672_004
 
@@ -1909,8 +1931,6 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of HIS+1B3704_006
 
    WARNING: Delphi failed at focusing depth 2 of ARG01B3707_001
-
-   WARNING: Delphi failed at focusing depth 3 of THR01B3708_002
 
    WARNING: Delphi failed at focusing depth 1 of LYS01B3715_001
 
@@ -1966,6 +1986,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of HIS+1B3771_006
 
+   WARNING: Delphi failed at focusing depth 2 of ARG02B3773_002
+
    WARNING: Delphi failed at focusing depth 1 of GLN01B3781_002
 
    WARNING: Delphi failed at focusing depth 1 of CYS01B3786_001
@@ -1998,8 +2020,6 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 3 of MET01B3836_001
 
-   WARNING: Delphi failed at focusing depth 1 of THR01B3838_003
-
    WARNING: Delphi failed at focusing depth 2 of CYS01B3839_003
 
    WARNING: Delphi failed at focusing depth 2 of CYS01B3839_003
@@ -2009,6 +2029,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of ASP02B3843_003
 
    WARNING: Delphi failed at focusing depth 1 of ASP-1B3843_005
+
+   WARNING: Delphi failed at focusing depth 2 of ARG03B3849_003
 
    WARNING: Delphi failed at focusing depth 1 of LYS01B3852_001
 
@@ -2058,8 +2080,6 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of GLN01B3906_002
 
-   WARNING: Delphi failed at focusing depth 1 of THR01B3907_002
-
    WARNING: Delphi failed at focusing depth 2 of THR01B3911_001
 
    WARNING: Delphi failed at focusing depth 3 of THR01B3919_002
@@ -2095,8 +2115,6 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of HIS02B3982_003
 
    WARNING: Delphi failed at focusing depth 1 of SER01B3983_003
-
-   WARNING: Delphi failed at focusing depth 3 of ARG03B3984_004
 
    WARNING: Delphi failed at focusing depth 1 of ARG+1B3984_005
 
@@ -2134,8 +2152,6 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of GLU02B4050_003
 
-   WARNING: Delphi failed at focusing depth 1 of SER01B4053_002
-
    WARNING: Delphi failed at focusing depth 2 of LYS+1B4060_002
 
    WARNING: Delphi failed at focusing depth 1 of CTR-1B4062_005
@@ -2147,6 +2163,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of LYS+1B4069_002
 
    WARNING: Delphi failed at focusing depth 2 of GLU02B4075_003
+
+   WARNING: Delphi failed at focusing depth 1 of TYR01B4080_002
 
    WARNING: Delphi failed at focusing depth 2 of ASP01B4083_002
 
@@ -2230,9 +2248,7 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of ARG01B4159_001
 
-   WARNING: Delphi failed at focusing depth 2 of ARG02B4161_002
-
-   WARNING: Delphi failed at focusing depth 1 of ARG03B4161_003
+   WARNING: Delphi failed at focusing depth 1 of ARG02B4161_002
 
    WARNING: Delphi failed at focusing depth 1 of GLU01B4168_002
 
@@ -2266,10 +2282,6 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of ARG02B4189_002
 
-   WARNING: Delphi failed at focusing depth 2 of ARG02B4189_002
-
-   WARNING: Delphi failed at focusing depth 2 of ARG02B4189_002
-
    WARNING: Delphi failed at focusing depth 1 of GLU01B4191_001
 
    WARNING: Delphi failed at focusing depth 2 of GLU01B4191_002
@@ -2284,11 +2296,9 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of GLU02B4199_003
 
-   WARNING: Delphi failed at focusing depth 1 of THR01B4200_002
-
    WARNING: Delphi failed at focusing depth 1 of ARG01B4202_001
 
-   WARNING: Delphi failed at focusing depth 1 of ARG03B4202_003
+   WARNING: Delphi failed at focusing depth 1 of ARG02B4202_002
 
    WARNING: Delphi failed at focusing depth 1 of GLU01B4206_001
 
@@ -2320,6 +2330,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of GLU01B4244_001
 
+   WARNING: Delphi failed at focusing depth 2 of SER01B4252_002
+
    WARNING: Delphi failed at focusing depth 2 of GLU02B4543_003
 
    WARNING: Delphi failed at focusing depth 2 of GLU-1B4543_005
@@ -2332,8 +2344,6 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of TYR01B4554_001
 
-   WARNING: Delphi failed at focusing depth 2 of TYR01B4560_002
-
    WARNING: Delphi failed at focusing depth 1 of THR01B4561_001
 
    WARNING: Delphi failed at focusing depth 2 of ARG02B4563_003
@@ -2343,6 +2353,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of ASN01B4574_002
 
    WARNING: Delphi failed at focusing depth 2 of CTR-1B4587_005
+
+   WARNING: Delphi failed at focusing depth 1 of TYR01B4629_002
 
    WARNING: Delphi failed at focusing depth 1 of GLU-1B4633_005
 
@@ -2398,6 +2410,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of ARG02B4703_002
 
+   WARNING: Delphi failed at focusing depth 1 of ARG03B4703_003
+
    WARNING: Delphi failed at focusing depth 2 of ASN01B4714_002
 
    WARNING: Delphi failed at focusing depth 3 of ASP01B4717_001
@@ -2409,6 +2423,10 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of ASP-1B4730_005
 
    WARNING: Delphi failed at focusing depth 3 of ARG02B4736_002
+
+   WARNING: Delphi failed at focusing depth 2 of ARG03B4736_003
+
+   WARNING: Delphi failed at focusing depth 2 of ARG03B4736_003
 
    WARNING: Delphi failed at focusing depth 3 of GLU01B4749_002
 
@@ -2432,6 +2450,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of THR01B4785_001
 
+   WARNING: Delphi failed at focusing depth 3 of SER01B4788_002
+
    WARNING: Delphi failed at focusing depth 2 of TYR01B4791_001
 
    WARNING: Delphi failed at focusing depth 2 of TYR01B4795_001
@@ -2447,6 +2467,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 2 of ASP02B4815_003
 
    WARNING: Delphi failed at focusing depth 1 of ASP-1B4815_005
+
+   WARNING: Delphi failed at focusing depth 2 of ARG03B4824_003
 
    WARNING: Delphi failed at focusing depth 2 of THR01B4831_001
 
@@ -2488,6 +2510,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of HIS01B4886_001
 
+   WARNING: Delphi failed at focusing depth 2 of ARG02B4892_002
+
    WARNING: Delphi failed at focusing depth 1 of ARG+1B4892_004
 
    WARNING: Delphi failed at focusing depth 2 of GLU-1B4902_005
@@ -2502,9 +2526,11 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of GLU02B4910_004
 
-   WARNING: Delphi failed at focusing depth 2 of TYR-1B4912_002
+   WARNING: Delphi failed at focusing depth 2 of TYR01B4912_002
 
-   WARNING: Delphi failed at focusing depth 2 of TYR-1B4912_002
+   WARNING: Delphi failed at focusing depth 2 of TYR-1B4912_003
+
+   WARNING: Delphi failed at focusing depth 2 of TYR-1B4912_003
 
    WARNING: Delphi failed at focusing depth 1 of ARG01B4913_001
 
@@ -2532,6 +2558,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 1 of THR01B4956_001
 
+   WARNING: Delphi failed at focusing depth 2 of THR01B4956_002
+
    WARNING: Delphi failed at focusing depth 2 of CYS01B4961_001
 
    WARNING: Delphi failed at focusing depth 1 of ASP01B4966_002
@@ -2550,6 +2578,8 @@ Running delphi surface calculations ...
 
    WARNING: Delphi failed at focusing depth 2 of HIS+1B4978_003
 
+   WARNING: Delphi failed at focusing depth 1 of THR01B4979_003
+
    WARNING: Delphi failed at focusing depth 2 of MET01B4993_001
 
    WARNING: Delphi failed at focusing depth 2 of MET01B4993_001
@@ -2563,6 +2593,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of TYR-1B4994_003
 
    WARNING: Delphi failed at focusing depth 1 of ASP01B4999_002
+
+   WARNING: Delphi failed at focusing depth 2 of THR01B5001_002
 
    WARNING: Delphi failed at focusing depth 2 of GLN01B5006_001
 
@@ -2593,6 +2625,8 @@ Running delphi surface calculations ...
    WARNING: Delphi failed at focusing depth 1 of GLN01B5031_002
 
    WARNING: Delphi failed at focusing depth 1 of TYR01B5032_001
+
+   WARNING: Delphi failed at focusing depth 1 of TYR01B5032_002
 
    WARNING: Delphi failed at focusing depth 2 of GLU02B5033_003
 
@@ -2653,84 +2687,13 @@ energies.opp not found
    Done
 
    Skiping writing step 3 rotamer file step3_out.pdb.
-   Total time for step3 (energy calculation) is 17323 seconds.
+   Total time for step3 (energy calculation) is 18475 seconds.
 
    Output files (epsilon = 4.00):
       energies.opp    : energy lookup table, use opp to decode the file
       head3.lst       : conformer summary
 
 Step 3 Done.
-
-Not doing "Step 4. Monte Carlo Sampling"
-
-===========================================================
-<<< MCCE Multi-Conformation Continuum Electrostatics >>>   
- Marilyn Gunner's Lab at City College of New York, 2005    
------------------------------------------------------------
-Version:        2.5.1                                      
-MCCE Home Page: http://www.sci.ccny.cuny.edu/~gunner/mcce  
-Support:        gunner@sci.ccny.cuny.edu                   
-Developed by:   Junjun Mao, Yifan Song, Marilyn Gunner     
-Reference MCCE: If you publish data calculated with MCCE,  
-                you need to cite papers suggested in MCCE  
-                Home Page.                                 
-===========================================================
-
-Last Updates:                                              
-   04/10, Added Pascal Comte's GA/SA algorithm for sidechain
-          packing and sampling.     			      
-   04/10, Added APBS electrostatic calculation option      
-   08/08, Total pairwise is set to be 999.0 if vdw is 999.0
-   08/02, step 3, zero interaction bug fixed               
-   07/23, step 1 changes the policy on AltLoc backbone atoms
-          now it is warning instead of fatal error.        
-   06/22, step 1 recognizes FME and ACE as NTR caps        
-   05/27, step 2 reduces rotation steps for surface residues
-          The run.prm.default uses 0.25 SAS to decide suface
-          residues.                                        
-   05/04, Program doesn't stop at duplicate parameters,    
-          it issues a warning message. This fixes the deadlock
-          caused by multiple new cofactors                 
-   04/24, Energy lookup table compressed, size is reduced  
-          to about 1/12                                    
-   04/24, Opp files are compressed. Temporary files are    
-          stored under local directory.                    
-   04/14, Step 2 rotamer pruning by pairwise corrected.    
-   04/08, Step 2 repacking now ses better H bnd correction.
-   01/26, Step 3 fixed incorrect errno message.            
-   01/14, Step 3 dielectric boundary condition improved.   
-   12/07, Step 3 dielectric boundary condition is corrected.
-   11/17, pKa fitting writes "pKa titration curve too sharp"
-          when occ jumps from 0.015 to 0.985.              
-   11/17, Exposed conformer is marked as E in history.     
-   11/02, Optional quick step 3 included.                  
-   11/02, Pruning fuction is added at the end of step 2.   
-          Parameter lines were added to run.prm.           
-   10/29, Temporary gdbm files have file names.            
-   10/11, Use biggest rxn energy from the last 3 delphi    
-          focusing runs.                                   
-===========================================================
-
-Step 0. Initialize enviroment
-   Load run control file "run.prm"...
-   Done
-   Tentatively load local param file "new.tpl"...   No such file, ignore.
-   Done
-   Load parameters from directory "/home/mcce/mcce2.5.1//param04" ... 
-
-   In file /home/mcce/mcce2.5.1//param04/hmc.tpl, parameter "CONNECT  HMC01  CAB sp2       0     C3B 0     CBB LIG   SG" is already loaded somewhere else.
-   Try delete this entry and run MCCE again
-   Done
-   Load linear free energy correction parameters from "/home/mcce/mcce2.5.1/extra.tpl".../home/mcce/mcce2.5.1/extra.tpl
-   File loaded.
-   Done
-Step 0 Done.
-
-Not doing "Step 1. Test and format structral file"
-
-Not doing "Step 2. Make multi side chain conformers"
-
-Not doing "Step 3. Compute energy lookup table"
 
 Step 4. Monte Carlo Sampling
    Load conformer list from file "head3.lst" ...
@@ -2742,18 +2705,20 @@ Step 4. Monte Carlo Sampling
    ELE   = 1.000:
    DSOLV = 1.000:
    Done
+
    Load pairwise interactions ...
    Done
+
    Verify self consistancy of conformer flag ...
    PRO01B3640_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B3641_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B3644_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PRO01B3645_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3646_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ALA01B3649_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    MET01B3652_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PHE01B3653_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B3654_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   SER01B3656_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ALA01B3659_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ALA01B3660_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    TRP01B3661_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -2774,6 +2739,7 @@ Step 4. Monte Carlo Sampling
    VAL01B3702_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B3703_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PHE01B3705_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B3706_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ALA01B3709_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B3710_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    THR01B3711_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -2804,6 +2770,7 @@ Step 4. Monte Carlo Sampling
    MET01B3782_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B3783_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ALA01B3785_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3790_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ALA01B3792_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    MET01B3793_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B3794_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -2836,7 +2803,6 @@ Step 4. Monte Carlo Sampling
    MET01B3858_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B3859_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ASN01B3860_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   THR01B3864_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B3865_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B3866_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ASN01B3867_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -2857,8 +2823,8 @@ Step 4. Monte Carlo Sampling
    ASN01B3901_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B3903_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    THR01B3905_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3907_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    THR01B3910_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   THR01B3911_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    THR01B3912_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B3913_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B3915_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -2868,6 +2834,7 @@ Step 4. Monte Carlo Sampling
    LEU01B3923_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B3924_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B3926_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B3929_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B3930_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PHE01B3933_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    TRP01B3935_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -2927,6 +2894,7 @@ Step 4. Monte Carlo Sampling
    LEU01B4048_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B4049_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    SER01B4051_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4053_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B4055_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    MET01B4057_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B4058_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -2956,7 +2924,6 @@ Step 4. Monte Carlo Sampling
    PHE01B4110_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4111_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4112_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   SER01B4113_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    SER01B4115_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ALA01B4117_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    MET01B4122_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -3028,7 +2995,6 @@ Step 4. Monte Carlo Sampling
    PHE01B4551_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4552_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4555_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   SER01B4556_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ASN01B4558_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PHE01B4559_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    THR01B4561_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -3085,6 +3051,7 @@ Step 4. Monte Carlo Sampling
    PHE01B4683_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4686_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B4688_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B4689_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PRO01B4692_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B4697_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    TRP01B4701_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -3134,7 +3101,6 @@ Step 4. Monte Carlo Sampling
    VAL01B4782_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B4783_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PHE01B4784_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   THR01B4785_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PHE01B4789_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4790_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4792_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -3155,10 +3121,10 @@ Step 4. Monte Carlo Sampling
    ALA01B4817_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    MET01B4818_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B4820_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   THR01B4822_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4823_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B4826_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4827_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4828_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B4830_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4837_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B4838_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -3224,7 +3190,7 @@ Step 4. Monte Carlo Sampling
    ILE01B4960_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B4963_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PHE01B4968_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   THR01B4970_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B4971_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PRO01B4972_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    PHE01B4975_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4980_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -3238,7 +3204,6 @@ Step 4. Monte Carlo Sampling
    MET01B4993_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B4995_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    ILE01B4996_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
-   THR01B5001_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    VAL01B5010_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    TRP01B5011_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    MET01B5013_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
@@ -3251,314 +3216,1232 @@ Step 4. Monte Carlo Sampling
    GLN01B5035_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    LEU01B5036_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
    Conformer flags updated due to self consistancy.
+
    Do titration at 300 points...
    Detailed progress is in file "mc_out"
-   Monte Carlo set up time: 1 seconds.
-   Titration  1:    57 seconds, biggest stdev of conformer occ = 0.060
-   Titration  2:    81 seconds, biggest stdev of conformer occ = 0.061
-   Titration  3:    61 seconds, biggest stdev of conformer occ = 0.065
-   Titration  4:    47 seconds, biggest stdev of conformer occ = 0.071
-   Titration  5:    60 seconds, biggest stdev of conformer occ = 0.068
-   Titration  6:    53 seconds, biggest stdev of conformer occ = 0.074
-   Titration  7:    60 seconds, biggest stdev of conformer occ = 0.067
-   Titration  8:    64 seconds, biggest stdev of conformer occ = 0.069
-   Titration  9:    54 seconds, biggest stdev of conformer occ = 0.060
-   Titration 10:    59 seconds, biggest stdev of conformer occ = 0.059
-   Titration 11:    54 seconds, biggest stdev of conformer occ = 0.055
-   Titration 12:    71 seconds, biggest stdev of conformer occ = 0.059
-   Titration 13:    48 seconds, biggest stdev of conformer occ = 0.066
-   Titration 14:    68 seconds, biggest stdev of conformer occ = 0.059
-   Titration 15:    48 seconds, biggest stdev of conformer occ = 0.071
-   Titration 16:    48 seconds, biggest stdev of conformer occ = 0.076
-   Titration 17:    67 seconds, biggest stdev of conformer occ = 0.068
-   Titration 18:    70 seconds, biggest stdev of conformer occ = 0.061
-   Titration 19:    59 seconds, biggest stdev of conformer occ = 0.055
-   Titration 20:    59 seconds, biggest stdev of conformer occ = 0.063
-   Titration 21:    71 seconds, biggest stdev of conformer occ = 0.041
-   Titration 22:   109 seconds, biggest stdev of conformer occ = 0.038
-   Titration 23:    63 seconds, biggest stdev of conformer occ = 0.068
-   Titration 24:    71 seconds, biggest stdev of conformer occ = 0.060
-   Titration 25:    97 seconds, biggest stdev of conformer occ = 0.058
-   Titration 26:    57 seconds, biggest stdev of conformer occ = 0.057
-   Titration 27:    54 seconds, biggest stdev of conformer occ = 0.064
-   Titration 28:    59 seconds, biggest stdev of conformer occ = 0.056
-   Titration 29:    90 seconds, biggest stdev of conformer occ = 0.060
-   Titration 30:    58 seconds, biggest stdev of conformer occ = 0.055
-   Titration 31:    76 seconds, biggest stdev of conformer occ = 0.060
-   Titration 32:    69 seconds, biggest stdev of conformer occ = 0.058
-   Titration 33:    82 seconds, biggest stdev of conformer occ = 0.054
-   Titration 34:    58 seconds, biggest stdev of conformer occ = 0.041
-   Titration 35:    66 seconds, biggest stdev of conformer occ = 0.055
-   Titration 36:    57 seconds, biggest stdev of conformer occ = 0.041
-   Titration 37:    58 seconds, biggest stdev of conformer occ = 0.035
-   Titration 38:    79 seconds, biggest stdev of conformer occ = 0.061
-   Titration 39:    61 seconds, biggest stdev of conformer occ = 0.072
-   Titration 40:    59 seconds, biggest stdev of conformer occ = 0.058
-   Titration 41:    56 seconds, biggest stdev of conformer occ = 0.052
-   Titration 42:    61 seconds, biggest stdev of conformer occ = 0.059
-   Titration 43:    63 seconds, biggest stdev of conformer occ = 0.045
-   Titration 44:    86 seconds, biggest stdev of conformer occ = 0.059
-   Titration 45:    58 seconds, biggest stdev of conformer occ = 0.055
-   Titration 46:    63 seconds, biggest stdev of conformer occ = 0.049
-   Titration 47:    58 seconds, biggest stdev of conformer occ = 0.056
-   Titration 48:    64 seconds, biggest stdev of conformer occ = 0.052
-   Titration 49:    73 seconds, biggest stdev of conformer occ = 0.068
-   Titration 50:    58 seconds, biggest stdev of conformer occ = 0.058
-   Titration 51:    60 seconds, biggest stdev of conformer occ = 0.055
-   Titration 52:    57 seconds, biggest stdev of conformer occ = 0.045
-   Titration 53:    67 seconds, biggest stdev of conformer occ = 0.066
-   Titration 54:    72 seconds, biggest stdev of conformer occ = 0.049
-   Titration 55:    65 seconds, biggest stdev of conformer occ = 0.056
-   Titration 56:    64 seconds, biggest stdev of conformer occ = 0.039
-   Titration 57:    59 seconds, biggest stdev of conformer occ = 0.041
-   Titration 58:    61 seconds, biggest stdev of conformer occ = 0.048
-   Titration 59:    67 seconds, biggest stdev of conformer occ = 0.042
-   Titration 60:    57 seconds, biggest stdev of conformer occ = 0.063
-   Titration 61:    63 seconds, biggest stdev of conformer occ = 0.070
-   Titration 62:    56 seconds, biggest stdev of conformer occ = 0.048
-   Titration 63:    65 seconds, biggest stdev of conformer occ = 0.061
-   Titration 64:    57 seconds, biggest stdev of conformer occ = 0.070
-   Titration 65:    79 seconds, biggest stdev of conformer occ = 0.053
-   Titration 66:    61 seconds, biggest stdev of conformer occ = 0.040
-   Titration 67:    58 seconds, biggest stdev of conformer occ = 0.061
-   Titration 68:    55 seconds, biggest stdev of conformer occ = 0.074
-   Titration 69:    63 seconds, biggest stdev of conformer occ = 0.053
-   Titration 70:    55 seconds, biggest stdev of conformer occ = 0.057
-   Titration 71:    59 seconds, biggest stdev of conformer occ = 0.069
-   Titration 72:    59 seconds, biggest stdev of conformer occ = 0.087
-   Titration 73:    60 seconds, biggest stdev of conformer occ = 0.059
-   Titration 74:    60 seconds, biggest stdev of conformer occ = 0.052
-   Titration 75:    63 seconds, biggest stdev of conformer occ = 0.057
-   Titration 76:    53 seconds, biggest stdev of conformer occ = 0.044
-   Titration 77:    62 seconds, biggest stdev of conformer occ = 0.079
-   Titration 78:    73 seconds, biggest stdev of conformer occ = 0.056
-   Titration 79:    55 seconds, biggest stdev of conformer occ = 0.048
-   Titration 80:    54 seconds, biggest stdev of conformer occ = 0.055
-   Titration 81:    59 seconds, biggest stdev of conformer occ = 0.079
-   Titration 82:    70 seconds, biggest stdev of conformer occ = 0.067
-   Titration 83:    58 seconds, biggest stdev of conformer occ = 0.050
-   Titration 84:    51 seconds, biggest stdev of conformer occ = 0.058
-   Titration 85:    99 seconds, biggest stdev of conformer occ = 0.061
-   Titration 86:    53 seconds, biggest stdev of conformer occ = 0.071
-   Titration 87:    55 seconds, biggest stdev of conformer occ = 0.072
-   Titration 88:    51 seconds, biggest stdev of conformer occ = 0.054
-   Titration 89:    60 seconds, biggest stdev of conformer occ = 0.054
-   Titration 90:    58 seconds, biggest stdev of conformer occ = 0.044
-   Titration 91:    68 seconds, biggest stdev of conformer occ = 0.044
-   Titration 92:    54 seconds, biggest stdev of conformer occ = 0.058
-   Titration 93:    54 seconds, biggest stdev of conformer occ = 0.049
-   Titration 94:    64 seconds, biggest stdev of conformer occ = 0.055
-   Titration 95:    54 seconds, biggest stdev of conformer occ = 0.066
-   Titration 96:    77 seconds, biggest stdev of conformer occ = 0.054
-   Titration 97:    57 seconds, biggest stdev of conformer occ = 0.068
-   Titration 98:    62 seconds, biggest stdev of conformer occ = 0.064
-   Titration 99:    52 seconds, biggest stdev of conformer occ = 0.051
-   Titration 100:    52 seconds, biggest stdev of conformer occ = 0.063
-   Titration 101:    69 seconds, biggest stdev of conformer occ = 0.060
-   Titration 102:    86 seconds, biggest stdev of conformer occ = 0.059
-   Titration 103:    56 seconds, biggest stdev of conformer occ = 0.045
-   Titration 104:    90 seconds, biggest stdev of conformer occ = 0.051
-   Titration 105:    55 seconds, biggest stdev of conformer occ = 0.043
-   Titration 106:    55 seconds, biggest stdev of conformer occ = 0.071
-   Titration 107:    69 seconds, biggest stdev of conformer occ = 0.040
-   Titration 108:    55 seconds, biggest stdev of conformer occ = 0.062
-   Titration 109:    84 seconds, biggest stdev of conformer occ = 0.042
-   Titration 110:    89 seconds, biggest stdev of conformer occ = 0.056
-   Titration 111:    73 seconds, biggest stdev of conformer occ = 0.053
-   Titration 112:    52 seconds, biggest stdev of conformer occ = 0.067
-   Titration 113:    54 seconds, biggest stdev of conformer occ = 0.039
-   Titration 114:    56 seconds, biggest stdev of conformer occ = 0.065
-   Titration 115:    61 seconds, biggest stdev of conformer occ = 0.076
-   Titration 116:    56 seconds, biggest stdev of conformer occ = 0.044
-   Titration 117:    53 seconds, biggest stdev of conformer occ = 0.047
-   Titration 118:    54 seconds, biggest stdev of conformer occ = 0.072
-   Titration 119:    59 seconds, biggest stdev of conformer occ = 0.036
-   Titration 120:    55 seconds, biggest stdev of conformer occ = 0.040
-   Titration 121:    54 seconds, biggest stdev of conformer occ = 0.047
-   Titration 122:    57 seconds, biggest stdev of conformer occ = 0.063
-   Titration 123:    78 seconds, biggest stdev of conformer occ = 0.054
-   Titration 124:    55 seconds, biggest stdev of conformer occ = 0.067
-   Titration 125:    55 seconds, biggest stdev of conformer occ = 0.055
-   Titration 126:    69 seconds, biggest stdev of conformer occ = 0.069
-   Titration 127:    59 seconds, biggest stdev of conformer occ = 0.072
-   Titration 128:    62 seconds, biggest stdev of conformer occ = 0.050
-   Titration 129:    54 seconds, biggest stdev of conformer occ = 0.057
-   Titration 130:    53 seconds, biggest stdev of conformer occ = 0.046
-   Titration 131:    60 seconds, biggest stdev of conformer occ = 0.057
-   Titration 132:    59 seconds, biggest stdev of conformer occ = 0.049
-   Titration 133:    57 seconds, biggest stdev of conformer occ = 0.046
-   Titration 134:    61 seconds, biggest stdev of conformer occ = 0.063
-   Titration 135:    82 seconds, biggest stdev of conformer occ = 0.051
-   Titration 136:    80 seconds, biggest stdev of conformer occ = 0.063
-   Titration 137:    67 seconds, biggest stdev of conformer occ = 0.059
-   Titration 138:    59 seconds, biggest stdev of conformer occ = 0.054
-   Titration 139:    54 seconds, biggest stdev of conformer occ = 0.047
-   Titration 140:    53 seconds, biggest stdev of conformer occ = 0.063
-   Titration 141:    64 seconds, biggest stdev of conformer occ = 0.075
-   Titration 142:    59 seconds, biggest stdev of conformer occ = 0.049
-   Titration 143:    71 seconds, biggest stdev of conformer occ = 0.067
-   Titration 144:   116 seconds, biggest stdev of conformer occ = 0.055
-   Titration 145:    53 seconds, biggest stdev of conformer occ = 0.061
-   Titration 146:    53 seconds, biggest stdev of conformer occ = 0.061
-   Titration 147:    71 seconds, biggest stdev of conformer occ = 0.052
-   Titration 148:    69 seconds, biggest stdev of conformer occ = 0.058
-   Titration 149:    55 seconds, biggest stdev of conformer occ = 0.043
-   Titration 150:    54 seconds, biggest stdev of conformer occ = 0.070
-   Titration 151:    85 seconds, biggest stdev of conformer occ = 0.048
-   Titration 152:    56 seconds, biggest stdev of conformer occ = 0.089
-   Titration 153:    59 seconds, biggest stdev of conformer occ = 0.044
-   Titration 154:    55 seconds, biggest stdev of conformer occ = 0.048
-   Titration 155:    59 seconds, biggest stdev of conformer occ = 0.070
-   Titration 156:    78 seconds, biggest stdev of conformer occ = 0.054
-   Titration 157:    54 seconds, biggest stdev of conformer occ = 0.071
-   Titration 158:    61 seconds, biggest stdev of conformer occ = 0.090
-   Titration 159:    56 seconds, biggest stdev of conformer occ = 0.046
-   Titration 160:    63 seconds, biggest stdev of conformer occ = 0.060
-   Titration 161:    56 seconds, biggest stdev of conformer occ = 0.063
-   Titration 162:    54 seconds, biggest stdev of conformer occ = 0.058
-   Titration 163:    69 seconds, biggest stdev of conformer occ = 0.043
-   Titration 164:    77 seconds, biggest stdev of conformer occ = 0.043
-   Titration 165:    59 seconds, biggest stdev of conformer occ = 0.070
-   Titration 166:    57 seconds, biggest stdev of conformer occ = 0.072
-   Titration 167:    61 seconds, biggest stdev of conformer occ = 0.062
-   Titration 168:    67 seconds, biggest stdev of conformer occ = 0.071
-   Titration 169:    57 seconds, biggest stdev of conformer occ = 0.050
-   Titration 170:    55 seconds, biggest stdev of conformer occ = 0.043
-   Titration 171:    55 seconds, biggest stdev of conformer occ = 0.057
-   Titration 172:    55 seconds, biggest stdev of conformer occ = 0.047
-   Titration 173:    53 seconds, biggest stdev of conformer occ = 0.062
-   Titration 174:    60 seconds, biggest stdev of conformer occ = 0.071
-   Titration 175:    56 seconds, biggest stdev of conformer occ = 0.050
-   Titration 176:    55 seconds, biggest stdev of conformer occ = 0.072
-   Titration 177:    61 seconds, biggest stdev of conformer occ = 0.068
-   Titration 178:    73 seconds, biggest stdev of conformer occ = 0.043
-   Titration 179:    76 seconds, biggest stdev of conformer occ = 0.041
-   Titration 180:    51 seconds, biggest stdev of conformer occ = 0.066
-   Titration 181:    75 seconds, biggest stdev of conformer occ = 0.054
-   Titration 182:    55 seconds, biggest stdev of conformer occ = 0.042
-   Titration 183:    75 seconds, biggest stdev of conformer occ = 0.037
-   Titration 184:    57 seconds, biggest stdev of conformer occ = 0.056
-   Titration 185:    54 seconds, biggest stdev of conformer occ = 0.062
-   Titration 186:    64 seconds, biggest stdev of conformer occ = 0.034
-   Titration 187:    53 seconds, biggest stdev of conformer occ = 0.059
-   Titration 188:    58 seconds, biggest stdev of conformer occ = 0.058
-   Titration 189:    82 seconds, biggest stdev of conformer occ = 0.038
-   Titration 190:    67 seconds, biggest stdev of conformer occ = 0.075
-   Titration 191:    58 seconds, biggest stdev of conformer occ = 0.046
-   Titration 192:    54 seconds, biggest stdev of conformer occ = 0.055
-   Titration 193:    78 seconds, biggest stdev of conformer occ = 0.037
-   Titration 194:    59 seconds, biggest stdev of conformer occ = 0.037
-   Titration 195:    56 seconds, biggest stdev of conformer occ = 0.050
-   Titration 196:    54 seconds, biggest stdev of conformer occ = 0.054
-   Titration 197:    50 seconds, biggest stdev of conformer occ = 0.073
-   Titration 198:    61 seconds, biggest stdev of conformer occ = 0.067
-   Titration 199:    53 seconds, biggest stdev of conformer occ = 0.059
-   Titration 200:    58 seconds, biggest stdev of conformer occ = 0.072
-   Titration 201:    58 seconds, biggest stdev of conformer occ = 0.043
-   Titration 202:    58 seconds, biggest stdev of conformer occ = 0.062
-   Titration 203:    55 seconds, biggest stdev of conformer occ = 0.055
-   Titration 204:    61 seconds, biggest stdev of conformer occ = 0.042
-   Titration 205:   107 seconds, biggest stdev of conformer occ = 0.066
-   Titration 206:    50 seconds, biggest stdev of conformer occ = 0.045
-   Titration 207:    48 seconds, biggest stdev of conformer occ = 0.076
-   Titration 208:    63 seconds, biggest stdev of conformer occ = 0.037
-   Titration 209:    49 seconds, biggest stdev of conformer occ = 0.072
-   Titration 210:    67 seconds, biggest stdev of conformer occ = 0.054
-   Titration 211:    56 seconds, biggest stdev of conformer occ = 0.065
-   Titration 212:    47 seconds, biggest stdev of conformer occ = 0.075
-   Titration 213:    55 seconds, biggest stdev of conformer occ = 0.054
-   Titration 214:    49 seconds, biggest stdev of conformer occ = 0.060
-   Titration 215:    47 seconds, biggest stdev of conformer occ = 0.072
-   Titration 216:    52 seconds, biggest stdev of conformer occ = 0.049
-   Titration 217:   103 seconds, biggest stdev of conformer occ = 0.055
-   Titration 218:    52 seconds, biggest stdev of conformer occ = 0.041
-   Titration 219:    50 seconds, biggest stdev of conformer occ = 0.042
-   Titration 220:    52 seconds, biggest stdev of conformer occ = 0.045
-   Titration 221:    60 seconds, biggest stdev of conformer occ = 0.067
-   Titration 222:    50 seconds, biggest stdev of conformer occ = 0.038
-   Titration 223:    49 seconds, biggest stdev of conformer occ = 0.069
-   Titration 224:    47 seconds, biggest stdev of conformer occ = 0.055
-   Titration 225:    58 seconds, biggest stdev of conformer occ = 0.046
-   Titration 226:    63 seconds, biggest stdev of conformer occ = 0.058
-   Titration 227:    51 seconds, biggest stdev of conformer occ = 0.040
-   Titration 228:    50 seconds, biggest stdev of conformer occ = 0.055
-   Titration 229:    52 seconds, biggest stdev of conformer occ = 0.044
-   Titration 230:    55 seconds, biggest stdev of conformer occ = 0.067
-   Titration 231:    52 seconds, biggest stdev of conformer occ = 0.048
-   Titration 232:    48 seconds, biggest stdev of conformer occ = 0.084
-   Titration 233:    60 seconds, biggest stdev of conformer occ = 0.066
-   Titration 234:    53 seconds, biggest stdev of conformer occ = 0.044
-   Titration 235:    47 seconds, biggest stdev of conformer occ = 0.063
-   Titration 236:    56 seconds, biggest stdev of conformer occ = 0.055
-   Titration 237:    48 seconds, biggest stdev of conformer occ = 0.063
-   Titration 238:    60 seconds, biggest stdev of conformer occ = 0.041
-   Titration 239:    55 seconds, biggest stdev of conformer occ = 0.043
-   Titration 240:    51 seconds, biggest stdev of conformer occ = 0.044
-   Titration 241:    57 seconds, biggest stdev of conformer occ = 0.037
-   Titration 242:    56 seconds, biggest stdev of conformer occ = 0.073
-   Titration 243:    52 seconds, biggest stdev of conformer occ = 0.043
-   Titration 244:    49 seconds, biggest stdev of conformer occ = 0.072
-   Titration 245:    49 seconds, biggest stdev of conformer occ = 0.052
-   Titration 246:    65 seconds, biggest stdev of conformer occ = 0.045
-   Titration 247:    48 seconds, biggest stdev of conformer occ = 0.082
-   Titration 248:    50 seconds, biggest stdev of conformer occ = 0.063
-   Titration 249:    53 seconds, biggest stdev of conformer occ = 0.042
-   Titration 250:    57 seconds, biggest stdev of conformer occ = 0.043
-   Titration 251:    51 seconds, biggest stdev of conformer occ = 0.040
-   Titration 252:    60 seconds, biggest stdev of conformer occ = 0.047
-   Titration 253:    56 seconds, biggest stdev of conformer occ = 0.059
-   Titration 254:    85 seconds, biggest stdev of conformer occ = 0.077
-   Titration 255:    46 seconds, biggest stdev of conformer occ = 0.037
-   Titration 256:    47 seconds, biggest stdev of conformer occ = 0.061
-   Titration 257:    77 seconds, biggest stdev of conformer occ = 0.040
-   Titration 258:    52 seconds, biggest stdev of conformer occ = 0.051
-   Titration 259:    54 seconds, biggest stdev of conformer occ = 0.049
-   Titration 260:    53 seconds, biggest stdev of conformer occ = 0.074
-   Titration 261:    58 seconds, biggest stdev of conformer occ = 0.063
-   Titration 262:    54 seconds, biggest stdev of conformer occ = 0.068
-   Titration 263:    48 seconds, biggest stdev of conformer occ = 0.074
-   Titration 264:    52 seconds, biggest stdev of conformer occ = 0.071
-   Titration 265:    47 seconds, biggest stdev of conformer occ = 0.044
-   Titration 266:    52 seconds, biggest stdev of conformer occ = 0.069
-   Titration 267:    52 seconds, biggest stdev of conformer occ = 0.059
-   Titration 268:    53 seconds, biggest stdev of conformer occ = 0.056
-   Titration 269:    50 seconds, biggest stdev of conformer occ = 0.038
-   Titration 270:    54 seconds, biggest stdev of conformer occ = 0.047
-   Titration 271:    46 seconds, biggest stdev of conformer occ = 0.050
-   Titration 272:    61 seconds, biggest stdev of conformer occ = 0.072
-   Titration 273:    69 seconds, biggest stdev of conformer occ = 0.041
-   Titration 274:    47 seconds, biggest stdev of conformer occ = 0.050
-   Titration 275:    65 seconds, biggest stdev of conformer occ = 0.044
-   Titration 276:    51 seconds, biggest stdev of conformer occ = 0.041
-   Titration 277:    48 seconds, biggest stdev of conformer occ = 0.066
-   Titration 278:    47 seconds, biggest stdev of conformer occ = 0.040
-   Titration 279:    56 seconds, biggest stdev of conformer occ = 0.062
-   Titration 280:    76 seconds, biggest stdev of conformer occ = 0.058
-   Titration 281:    54 seconds, biggest stdev of conformer occ = 0.069
-   Titration 282:    64 seconds, biggest stdev of conformer occ = 0.052
-   Titration 283:    57 seconds, biggest stdev of conformer occ = 0.044
-   Titration 284:    89 seconds, biggest stdev of conformer occ = 0.035
-   Titration 285:    47 seconds, biggest stdev of conformer occ = 0.049
-   Titration 286:    52 seconds, biggest stdev of conformer occ = 0.038
-   Titration 287:    84 seconds, biggest stdev of conformer occ = 0.043
-   Titration 288:    47 seconds, biggest stdev of conformer occ = 0.045
-   Titration 289:    46 seconds, biggest stdev of conformer occ = 0.074
-   Titration 290:    67 seconds, biggest stdev of conformer occ = 0.043
-   Titration 291:    52 seconds, biggest stdev of conformer occ = 0.069
-   Titration 292:    61 seconds, biggest stdev of conformer occ = 0.074
-   Titration 293:    47 seconds, biggest stdev of conformer occ = 0.063
-   Titration 294:    59 seconds, biggest stdev of conformer occ = 0.046
-   Titration 295:    48 seconds, biggest stdev of conformer occ = 0.075
-   Titration 296:    73 seconds, biggest stdev of conformer occ = 0.059
-   Titration 297:    66 seconds, biggest stdev of conformer occ = 0.061
-   Titration 298:    53 seconds, biggest stdev of conformer occ = 0.072
-   Titration 299:    51 seconds, biggest stdev of conformer occ = 0.057
-   Titration 300:    58 seconds, biggest stdev of conformer occ = 0.056
+   Monte Carlo set up time: 0 seconds.
+   Titration  1:    70 seconds, biggest stdev of conformer occ = 0.045
+   Titration  2:    68 seconds, biggest stdev of conformer occ = 0.052
+   Titration  3:    71 seconds, biggest stdev of conformer occ = 0.056
+   Titration  4:    64 seconds, biggest stdev of conformer occ = 0.046
+   Titration  5:    94 seconds, biggest stdev of conformer occ = 0.053
+   Titration  6:    81 seconds, biggest stdev of conformer occ = 0.041
+   Titration  7:    70 seconds, biggest stdev of conformer occ = 0.057
+   Titration  8:    95 seconds, biggest stdev of conformer occ = 0.048
+   Titration  9:    88 seconds, biggest stdev of conformer occ = 0.059
+   Titration 10:    65 seconds, biggest stdev of conformer occ = 0.051
+   Titration 11:    63 seconds, biggest stdev of conformer occ = 0.061
+   Titration 12:    78 seconds, biggest stdev of conformer occ = 0.062
+   Titration 13:    66 seconds, biggest stdev of conformer occ = 0.063
+   Titration 14:    70 seconds, biggest stdev of conformer occ = 0.055
+   Titration 15:    63 seconds, biggest stdev of conformer occ = 0.057
+   Titration 16:    78 seconds, biggest stdev of conformer occ = 0.044
+   Titration 17:    70 seconds, biggest stdev of conformer occ = 0.066
+   Titration 18:    63 seconds, biggest stdev of conformer occ = 0.054
+   Titration 19:    79 seconds, biggest stdev of conformer occ = 0.047
+   Titration 20:    70 seconds, biggest stdev of conformer occ = 0.078
+   Titration 21:    74 seconds, biggest stdev of conformer occ = 0.050
+   Titration 22:    95 seconds, biggest stdev of conformer occ = 0.052
+   Titration 23:    67 seconds, biggest stdev of conformer occ = 0.064
+   Titration 24:    63 seconds, biggest stdev of conformer occ = 0.049
+   Titration 25:    77 seconds, biggest stdev of conformer occ = 0.047
+   Titration 26:    66 seconds, biggest stdev of conformer occ = 0.050
+   Titration 27:    66 seconds, biggest stdev of conformer occ = 0.058
+   Titration 28:    71 seconds, biggest stdev of conformer occ = 0.066
+   Titration 29:    72 seconds, biggest stdev of conformer occ = 0.055
+   Titration 30:    62 seconds, biggest stdev of conformer occ = 0.058
+   Titration 31:    60 seconds, biggest stdev of conformer occ = 0.068
+   Titration 32:    79 seconds, biggest stdev of conformer occ = 0.054
+   Titration 33:    64 seconds, biggest stdev of conformer occ = 0.056
+   Titration 34:    62 seconds, biggest stdev of conformer occ = 0.048
+   Titration 35:    61 seconds, biggest stdev of conformer occ = 0.056
+   Titration 36:    71 seconds, biggest stdev of conformer occ = 0.062
+   Titration 37:    79 seconds, biggest stdev of conformer occ = 0.038
+   Titration 38:    69 seconds, biggest stdev of conformer occ = 0.073
+   Titration 39:    77 seconds, biggest stdev of conformer occ = 0.051
+   Titration 40:    68 seconds, biggest stdev of conformer occ = 0.046
+   Titration 41:    71 seconds, biggest stdev of conformer occ = 0.045
+   Titration 42:    71 seconds, biggest stdev of conformer occ = 0.063
+   Titration 43:    72 seconds, biggest stdev of conformer occ = 0.062
+   Titration 44:    70 seconds, biggest stdev of conformer occ = 0.048
+   Titration 45:   120 seconds, biggest stdev of conformer occ = 0.038
+   Titration 46:    88 seconds, biggest stdev of conformer occ = 0.050
+   Titration 47:    68 seconds, biggest stdev of conformer occ = 0.051
+   Titration 48:    63 seconds, biggest stdev of conformer occ = 0.069
+   Titration 49:    64 seconds, biggest stdev of conformer occ = 0.048
+   Titration 50:    72 seconds, biggest stdev of conformer occ = 0.048
+   Titration 51:    64 seconds, biggest stdev of conformer occ = 0.052
+   Titration 52:    72 seconds, biggest stdev of conformer occ = 0.044
+   Titration 53:    84 seconds, biggest stdev of conformer occ = 0.048
+   Titration 54:    63 seconds, biggest stdev of conformer occ = 0.058
+   Titration 55:    64 seconds, biggest stdev of conformer occ = 0.048
+   Titration 56:    65 seconds, biggest stdev of conformer occ = 0.075
+   Titration 57:    76 seconds, biggest stdev of conformer occ = 0.050
+   Titration 58:    63 seconds, biggest stdev of conformer occ = 0.042
+   Titration 59:    64 seconds, biggest stdev of conformer occ = 0.065
+   Titration 60:    72 seconds, biggest stdev of conformer occ = 0.045
+   Titration 61:    61 seconds, biggest stdev of conformer occ = 0.071
+   Titration 62:    75 seconds, biggest stdev of conformer occ = 0.057
+   Titration 63:    61 seconds, biggest stdev of conformer occ = 0.057
+   Titration 64:   122 seconds, biggest stdev of conformer occ = 0.060
+   Titration 65:    75 seconds, biggest stdev of conformer occ = 0.056
+   Titration 66:    65 seconds, biggest stdev of conformer occ = 0.066
+   Titration 67:    63 seconds, biggest stdev of conformer occ = 0.042
+   Titration 68:    73 seconds, biggest stdev of conformer occ = 0.063
+   Titration 69:    66 seconds, biggest stdev of conformer occ = 0.057
+   Titration 70:    69 seconds, biggest stdev of conformer occ = 0.058
+   Titration 71:    68 seconds, biggest stdev of conformer occ = 0.076
+   Titration 72:    69 seconds, biggest stdev of conformer occ = 0.045
+   Titration 73:    90 seconds, biggest stdev of conformer occ = 0.056
+   Titration 74:    88 seconds, biggest stdev of conformer occ = 0.053
+   Titration 75:    84 seconds, biggest stdev of conformer occ = 0.059
+   Titration 76:    69 seconds, biggest stdev of conformer occ = 0.041
+   Titration 77:    85 seconds, biggest stdev of conformer occ = 0.037
+   Titration 78:    91 seconds, biggest stdev of conformer occ = 0.062
+   Titration 79:    67 seconds, biggest stdev of conformer occ = 0.065
+   Titration 80:    76 seconds, biggest stdev of conformer occ = 0.062
+   Titration 81:    66 seconds, biggest stdev of conformer occ = 0.058
+   Titration 82:    65 seconds, biggest stdev of conformer occ = 0.047
+   Titration 83:    63 seconds, biggest stdev of conformer occ = 0.060
+   Titration 84:    62 seconds, biggest stdev of conformer occ = 0.047
+   Titration 85:    71 seconds, biggest stdev of conformer occ = 0.052
+   Titration 86:    88 seconds, biggest stdev of conformer occ = 0.054
+   Titration 87:    75 seconds, biggest stdev of conformer occ = 0.049
+   Titration 88:    78 seconds, biggest stdev of conformer occ = 0.037
+   Titration 89:    68 seconds, biggest stdev of conformer occ = 0.064
+   Titration 90:   106 seconds, biggest stdev of conformer occ = 0.084
+   Titration 91:    70 seconds, biggest stdev of conformer occ = 0.045
+   Titration 92:    62 seconds, biggest stdev of conformer occ = 0.063
+   Titration 93:    62 seconds, biggest stdev of conformer occ = 0.062
+   Titration 94:    76 seconds, biggest stdev of conformer occ = 0.039
+   Titration 95:    64 seconds, biggest stdev of conformer occ = 0.059
+   Titration 96:    73 seconds, biggest stdev of conformer occ = 0.047
+   Titration 97:    62 seconds, biggest stdev of conformer occ = 0.046
+   Titration 98:    69 seconds, biggest stdev of conformer occ = 0.054
+   Titration 99:   100 seconds, biggest stdev of conformer occ = 0.047
+   Titration 100:    59 seconds, biggest stdev of conformer occ = 0.065
+   Titration 101:    62 seconds, biggest stdev of conformer occ = 0.062
+   Titration 102:    92 seconds, biggest stdev of conformer occ = 0.061
+   Titration 103:    64 seconds, biggest stdev of conformer occ = 0.050
+   Titration 104:    70 seconds, biggest stdev of conformer occ = 0.067
+   Titration 105:    80 seconds, biggest stdev of conformer occ = 0.045
+   Titration 106:    66 seconds, biggest stdev of conformer occ = 0.064
+   Titration 107:    95 seconds, biggest stdev of conformer occ = 0.038
+   Titration 108:    69 seconds, biggest stdev of conformer occ = 0.068
+   Titration 109:    77 seconds, biggest stdev of conformer occ = 0.055
+   Titration 110:    76 seconds, biggest stdev of conformer occ = 0.041
+   Titration 111:    65 seconds, biggest stdev of conformer occ = 0.070
+   Titration 112:    73 seconds, biggest stdev of conformer occ = 0.070
+   Titration 113:    70 seconds, biggest stdev of conformer occ = 0.052
+   Titration 114:    82 seconds, biggest stdev of conformer occ = 0.051
+   Titration 115:    67 seconds, biggest stdev of conformer occ = 0.062
+   Titration 116:    87 seconds, biggest stdev of conformer occ = 0.048
+   Titration 117:    79 seconds, biggest stdev of conformer occ = 0.055
+   Titration 118:    61 seconds, biggest stdev of conformer occ = 0.056
+   Titration 119:    92 seconds, biggest stdev of conformer occ = 0.056
+   Titration 120:    72 seconds, biggest stdev of conformer occ = 0.039
+   Titration 121:    80 seconds, biggest stdev of conformer occ = 0.046
+   Titration 122:    64 seconds, biggest stdev of conformer occ = 0.036
+   Titration 123:    61 seconds, biggest stdev of conformer occ = 0.056
+   Titration 124:    62 seconds, biggest stdev of conformer occ = 0.069
+   Titration 125:    74 seconds, biggest stdev of conformer occ = 0.064
+   Titration 126:    62 seconds, biggest stdev of conformer occ = 0.047
+   Titration 127:    71 seconds, biggest stdev of conformer occ = 0.041
+   Titration 128:    68 seconds, biggest stdev of conformer occ = 0.061
+   Titration 129:    62 seconds, biggest stdev of conformer occ = 0.063
+   Titration 130:    69 seconds, biggest stdev of conformer occ = 0.072
+   Titration 131:    80 seconds, biggest stdev of conformer occ = 0.033
+   Titration 132:    92 seconds, biggest stdev of conformer occ = 0.057
+   Titration 133:    74 seconds, biggest stdev of conformer occ = 0.065
+   Titration 134:    76 seconds, biggest stdev of conformer occ = 0.079
+   Titration 135:    62 seconds, biggest stdev of conformer occ = 0.048
+   Titration 136:    63 seconds, biggest stdev of conformer occ = 0.057
+   Titration 137:    81 seconds, biggest stdev of conformer occ = 0.039
+   Titration 138:    87 seconds, biggest stdev of conformer occ = 0.074
+   Titration 139:    82 seconds, biggest stdev of conformer occ = 0.042
+   Titration 140:    64 seconds, biggest stdev of conformer occ = 0.044
+   Titration 141:    88 seconds, biggest stdev of conformer occ = 0.037
+   Titration 142:    71 seconds, biggest stdev of conformer occ = 0.055
+   Titration 143:    67 seconds, biggest stdev of conformer occ = 0.045
+   Titration 144:    59 seconds, biggest stdev of conformer occ = 0.044
+   Titration 145:    59 seconds, biggest stdev of conformer occ = 0.064
+   Titration 146:    72 seconds, biggest stdev of conformer occ = 0.054
+   Titration 147:    76 seconds, biggest stdev of conformer occ = 0.041
+   Titration 148:    79 seconds, biggest stdev of conformer occ = 0.047
+   Titration 149:    80 seconds, biggest stdev of conformer occ = 0.047
+   Titration 150:    97 seconds, biggest stdev of conformer occ = 0.046
+   Titration 151:    87 seconds, biggest stdev of conformer occ = 0.062
+   Titration 152:    82 seconds, biggest stdev of conformer occ = 0.046
+   Titration 153:   100 seconds, biggest stdev of conformer occ = 0.043
+   Titration 154:    95 seconds, biggest stdev of conformer occ = 0.076
+   Titration 155:    69 seconds, biggest stdev of conformer occ = 0.042
+   Titration 156:    65 seconds, biggest stdev of conformer occ = 0.040
+   Titration 157:    65 seconds, biggest stdev of conformer occ = 0.041
+   Titration 158:    78 seconds, biggest stdev of conformer occ = 0.075
+   Titration 159:    66 seconds, biggest stdev of conformer occ = 0.047
+   Titration 160:    62 seconds, biggest stdev of conformer occ = 0.054
+   Titration 161:    76 seconds, biggest stdev of conformer occ = 0.071
+   Titration 162:    78 seconds, biggest stdev of conformer occ = 0.045
+   Titration 163:    62 seconds, biggest stdev of conformer occ = 0.050
+   Titration 164:    64 seconds, biggest stdev of conformer occ = 0.043
+   Titration 165:    65 seconds, biggest stdev of conformer occ = 0.036
+   Titration 166:    76 seconds, biggest stdev of conformer occ = 0.076
+   Titration 167:    69 seconds, biggest stdev of conformer occ = 0.053
+   Titration 168:    65 seconds, biggest stdev of conformer occ = 0.056
+   Titration 169:    64 seconds, biggest stdev of conformer occ = 0.055
+   Titration 170:    62 seconds, biggest stdev of conformer occ = 0.055
+   Titration 171:    95 seconds, biggest stdev of conformer occ = 0.076
+   Titration 172:    60 seconds, biggest stdev of conformer occ = 0.040
+   Titration 173:    78 seconds, biggest stdev of conformer occ = 0.057
+   Titration 174:    66 seconds, biggest stdev of conformer occ = 0.062
+   Titration 175:    73 seconds, biggest stdev of conformer occ = 0.042
+   Titration 176:    72 seconds, biggest stdev of conformer occ = 0.063
+   Titration 177:    62 seconds, biggest stdev of conformer occ = 0.050
+   Titration 178:    72 seconds, biggest stdev of conformer occ = 0.042
+   Titration 179:    69 seconds, biggest stdev of conformer occ = 0.075
+   Titration 180:    87 seconds, biggest stdev of conformer occ = 0.043
+   Titration 181:    70 seconds, biggest stdev of conformer occ = 0.051
+   Titration 182:    71 seconds, biggest stdev of conformer occ = 0.041
+   Titration 183:    68 seconds, biggest stdev of conformer occ = 0.060
+   Titration 184:    69 seconds, biggest stdev of conformer occ = 0.046
+   Titration 185:    67 seconds, biggest stdev of conformer occ = 0.072
+   Titration 186:    60 seconds, biggest stdev of conformer occ = 0.050
+   Titration 187:    61 seconds, biggest stdev of conformer occ = 0.051
+   Titration 188:    60 seconds, biggest stdev of conformer occ = 0.072
+   Titration 189:    60 seconds, biggest stdev of conformer occ = 0.062
+   Titration 190:    62 seconds, biggest stdev of conformer occ = 0.056
+   Titration 191:    61 seconds, biggest stdev of conformer occ = 0.061
+   Titration 192:    75 seconds, biggest stdev of conformer occ = 0.078
+   Titration 193:    83 seconds, biggest stdev of conformer occ = 0.054
+   Titration 194:    61 seconds, biggest stdev of conformer occ = 0.044
+   Titration 195:    64 seconds, biggest stdev of conformer occ = 0.059
+   Titration 196:    83 seconds, biggest stdev of conformer occ = 0.055
+   Titration 197:    78 seconds, biggest stdev of conformer occ = 0.068
+   Titration 198:    85 seconds, biggest stdev of conformer occ = 0.044
+   Titration 199:    77 seconds, biggest stdev of conformer occ = 0.072
+   Titration 200:    82 seconds, biggest stdev of conformer occ = 0.047
+   Titration 201:    60 seconds, biggest stdev of conformer occ = 0.063
+   Titration 202:   102 seconds, biggest stdev of conformer occ = 0.039
+   Titration 203:    60 seconds, biggest stdev of conformer occ = 0.048
+   Titration 204:    87 seconds, biggest stdev of conformer occ = 0.070
+   Titration 205:   103 seconds, biggest stdev of conformer occ = 0.050
+   Titration 206:    60 seconds, biggest stdev of conformer occ = 0.063
+   Titration 207:    63 seconds, biggest stdev of conformer occ = 0.064
+   Titration 208:    91 seconds, biggest stdev of conformer occ = 0.078
+   Titration 209:    59 seconds, biggest stdev of conformer occ = 0.062
+   Titration 210:    60 seconds, biggest stdev of conformer occ = 0.074
+   Titration 211:    81 seconds, biggest stdev of conformer occ = 0.058
+   Titration 212:    58 seconds, biggest stdev of conformer occ = 0.063
+   Titration 213:    62 seconds, biggest stdev of conformer occ = 0.051
+   Titration 214:    59 seconds, biggest stdev of conformer occ = 0.051
+   Titration 215:    64 seconds, biggest stdev of conformer occ = 0.055
+   Titration 216:    59 seconds, biggest stdev of conformer occ = 0.073
+   Titration 217:    67 seconds, biggest stdev of conformer occ = 0.042
+   Titration 218:    70 seconds, biggest stdev of conformer occ = 0.041
+   Titration 219:    62 seconds, biggest stdev of conformer occ = 0.056
+   Titration 220:    67 seconds, biggest stdev of conformer occ = 0.036
+   Titration 221:    75 seconds, biggest stdev of conformer occ = 0.044
+   Titration 222:    61 seconds, biggest stdev of conformer occ = 0.062
+   Titration 223:    67 seconds, biggest stdev of conformer occ = 0.079
+   Titration 224:    67 seconds, biggest stdev of conformer occ = 0.048
+   Titration 225:    63 seconds, biggest stdev of conformer occ = 0.039
+   Titration 226:    61 seconds, biggest stdev of conformer occ = 0.054
+   Titration 227:    75 seconds, biggest stdev of conformer occ = 0.060
+   Titration 228:    81 seconds, biggest stdev of conformer occ = 0.083
+   Titration 229:    74 seconds, biggest stdev of conformer occ = 0.046
+   Titration 230:    58 seconds, biggest stdev of conformer occ = 0.068
+   Titration 231:    66 seconds, biggest stdev of conformer occ = 0.048
+   Titration 232:    60 seconds, biggest stdev of conformer occ = 0.046
+   Titration 233:    64 seconds, biggest stdev of conformer occ = 0.060
+   Titration 234:    60 seconds, biggest stdev of conformer occ = 0.047
+   Titration 235:    90 seconds, biggest stdev of conformer occ = 0.067
+   Titration 236:    59 seconds, biggest stdev of conformer occ = 0.071
+   Titration 237:    63 seconds, biggest stdev of conformer occ = 0.070
+   Titration 238:    79 seconds, biggest stdev of conformer occ = 0.051
+   Titration 239:    60 seconds, biggest stdev of conformer occ = 0.064
+   Titration 240:    60 seconds, biggest stdev of conformer occ = 0.072
+   Titration 241:    66 seconds, biggest stdev of conformer occ = 0.041
+   Titration 242:    82 seconds, biggest stdev of conformer occ = 0.050
+   Titration 243:    77 seconds, biggest stdev of conformer occ = 0.076
+   Titration 244:    61 seconds, biggest stdev of conformer occ = 0.049
+   Titration 245:    71 seconds, biggest stdev of conformer occ = 0.072
+   Titration 246:    71 seconds, biggest stdev of conformer occ = 0.057
+   Titration 247:    68 seconds, biggest stdev of conformer occ = 0.047
+   Titration 248:    65 seconds, biggest stdev of conformer occ = 0.071
+   Titration 249:    54 seconds, biggest stdev of conformer occ = 0.042
+   Titration 250:    53 seconds, biggest stdev of conformer occ = 0.061
+   Titration 251:    61 seconds, biggest stdev of conformer occ = 0.062
+   Titration 252:    63 seconds, biggest stdev of conformer occ = 0.045
+   Titration 253:    55 seconds, biggest stdev of conformer occ = 0.058
+   Titration 254:    55 seconds, biggest stdev of conformer occ = 0.049
+   Titration 255:    62 seconds, biggest stdev of conformer occ = 0.048
+   Titration 256:    52 seconds, biggest stdev of conformer occ = 0.056
+   Titration 257:    82 seconds, biggest stdev of conformer occ = 0.073
+   Titration 258:    55 seconds, biggest stdev of conformer occ = 0.051
+   Titration 259:    55 seconds, biggest stdev of conformer occ = 0.050
+   Titration 260:    60 seconds, biggest stdev of conformer occ = 0.070
+   Titration 261:    59 seconds, biggest stdev of conformer occ = 0.051
+   Titration 262:    55 seconds, biggest stdev of conformer occ = 0.046
+   Titration 263:    58 seconds, biggest stdev of conformer occ = 0.075
+   Titration 264:    88 seconds, biggest stdev of conformer occ = 0.058
+   Titration 265:    64 seconds, biggest stdev of conformer occ = 0.065
+   Titration 266:    87 seconds, biggest stdev of conformer occ = 0.048
+   Titration 267:    54 seconds, biggest stdev of conformer occ = 0.049
+   Titration 268:    54 seconds, biggest stdev of conformer occ = 0.065
+   Titration 269:    56 seconds, biggest stdev of conformer occ = 0.072
+   Titration 270:    63 seconds, biggest stdev of conformer occ = 0.041
+   Titration 271:    58 seconds, biggest stdev of conformer occ = 0.074
+   Titration 272:    52 seconds, biggest stdev of conformer occ = 0.058
+   Titration 273:    59 seconds, biggest stdev of conformer occ = 0.087
+   Titration 274:    53 seconds, biggest stdev of conformer occ = 0.054
+   Titration 275:    89 seconds, biggest stdev of conformer occ = 0.039
+   Titration 276:    66 seconds, biggest stdev of conformer occ = 0.047
+   Titration 277:    72 seconds, biggest stdev of conformer occ = 0.045
+   Titration 278:    59 seconds, biggest stdev of conformer occ = 0.069
+   Titration 279:    68 seconds, biggest stdev of conformer occ = 0.058
+   Titration 280:    58 seconds, biggest stdev of conformer occ = 0.054
+   Titration 281:    51 seconds, biggest stdev of conformer occ = 0.043
+   Titration 282:    74 seconds, biggest stdev of conformer occ = 0.059
+   Titration 283:    69 seconds, biggest stdev of conformer occ = 0.037
+   Titration 284:    51 seconds, biggest stdev of conformer occ = 0.034
+   Titration 285:    58 seconds, biggest stdev of conformer occ = 0.053
+   Titration 286:    55 seconds, biggest stdev of conformer occ = 0.046
+   Titration 287:    60 seconds, biggest stdev of conformer occ = 0.060
+   Titration 288:    57 seconds, biggest stdev of conformer occ = 0.051
+   Titration 289:    57 seconds, biggest stdev of conformer occ = 0.054
+   Titration 290:    65 seconds, biggest stdev of conformer occ = 0.041
+   Titration 291:    57 seconds, biggest stdev of conformer occ = 0.072
+   Titration 292:    49 seconds, biggest stdev of conformer occ = 0.048
+   Titration 293:    52 seconds, biggest stdev of conformer occ = 0.042
+   Titration 294:    52 seconds, biggest stdev of conformer occ = 0.044
+   Titration 295:    60 seconds, biggest stdev of conformer occ = 0.040
+   Titration 296:    60 seconds, biggest stdev of conformer occ = 0.039
+   Titration 297:    52 seconds, biggest stdev of conformer occ = 0.041
+   Titration 298:    55 seconds, biggest stdev of conformer occ = 0.042
+   Titration 299:    52 seconds, biggest stdev of conformer occ = 0.042
+   Titration 300:    71 seconds, biggest stdev of conformer occ = 0.043
    Done
+
    Fit titration curves to get pKa/Em ...
    MFE: didn't specify mfe point, do mfe at pKa or Em 
    Done
-   Total time on MC: 18134 seconds
+
+   Total time on MC: 20985 seconds
+
+   Output files:
+      mc_out          : MC progress and convergence.
+      fort.38         : Occupancy table.
+      entropy.out     : Entropy correction table
+      pK.out          : pKa or Em from titration curve fitting.
+      sum_crg.out     : Summary of residue charges.
+Step 4 Done.
+
+===========================================================
+<<< MCCE Multi-Conformation Continuum Electrostatics >>>   
+ Marilyn Gunner's Lab at City College of New York, 2005    
+-----------------------------------------------------------
+Version:        2.5.1                                      
+MCCE Home Page: http://www.sci.ccny.cuny.edu/~gunner/mcce  
+Support:        gunner@sci.ccny.cuny.edu                   
+Developed by:   Junjun Mao, Yifan Song, Marilyn Gunner     
+Reference MCCE: If you publish data calculated with MCCE,  
+                you need to cite papers suggested in MCCE  
+                Home Page.                                 
+===========================================================
+
+Last Updates:                                              
+   04/10, Added Pascal Comte's GA/SA algorithm for sidechain
+          packing and sampling.     			      
+   04/10, Added APBS electrostatic calculation option      
+   08/08, Total pairwise is set to be 999.0 if vdw is 999.0
+   08/02, step 3, zero interaction bug fixed               
+   07/23, step 1 changes the policy on AltLoc backbone atoms
+          now it is warning instead of fatal error.        
+   06/22, step 1 recognizes FME and ACE as NTR caps        
+   05/27, step 2 reduces rotation steps for surface residues
+          The run.prm.default uses 0.25 SAS to decide suface
+          residues.                                        
+   05/04, Program doesn't stop at duplicate parameters,    
+          it issues a warning message. This fixes the deadlock
+          caused by multiple new cofactors                 
+   04/24, Energy lookup table compressed, size is reduced  
+          to about 1/12                                    
+   04/24, Opp files are compressed. Temporary files are    
+          stored under local directory.                    
+   04/14, Step 2 rotamer pruning by pairwise corrected.    
+   04/08, Step 2 repacking now ses better H bnd correction.
+   01/26, Step 3 fixed incorrect errno message.            
+   01/14, Step 3 dielectric boundary condition improved.   
+   12/07, Step 3 dielectric boundary condition is corrected.
+   11/17, pKa fitting writes "pKa titration curve too sharp"
+          when occ jumps from 0.015 to 0.985.              
+   11/17, Exposed conformer is marked as E in history.     
+   11/02, Optional quick step 3 included.                  
+   11/02, Pruning fuction is added at the end of step 2.   
+          Parameter lines were added to run.prm.           
+   10/29, Temporary gdbm files have file names.            
+   10/11, Use biggest rxn energy from the last 3 delphi    
+          focusing runs.                                   
+===========================================================
+
+Step 0. Initialize enviroment
+   Load run control file "run.prm"...
+   Done
+
+   Tentatively load local param file "new.tpl"...   No such file, ignore.
+   Done
+
+   Load parameters from directory "/home/mcce/mcce2.5.1//param04" ... 
+
+   In file /home/mcce/mcce2.5.1//param04/hmc.tpl, parameter "CONNECT  HMC01  CAB sp2       0     C3B 0     CBB LIG   SG" is already loaded somewhere else.
+   Try delete this entry and run MCCE again
+   Done
+
+   Load linear free energy correction parameters from "/home/mcce/mcce2.5.1/extra.tpl".../home/mcce/mcce2.5.1/extra.tpl
+   File loaded.
+   Done
+
+Step 0 Done.
+
+Not doing "Step 1. Test and format structral file"
+
+Not doing "Step 2. Make multi side chain conformers"
+
+Not doing "Step 3. Compute energy lookup table"
+
+Step 4. Monte Carlo Sampling
+   Load conformer list from file "head3.lst" ...
+   Scaling factors:
+   VDW0  = 1.000:
+   VDW1  = 1.000:
+   VDW   = 1.000:
+   TORS  = 1.000:
+   ELE   = 1.000:
+   DSOLV = 1.000:
+   Done
+
+   Load pairwise interactions ...
+   Done
+
+   Verify self consistancy of conformer flag ...
+   PRO01B3640_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3641_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3644_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B3645_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3646_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3649_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3652_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3653_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3654_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3659_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3660_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B3661_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3662_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3663_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3664_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3669_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3673_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3674_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3677_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3680_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B3683_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3690_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B3695_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B3697_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3698_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3701_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3702_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3703_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3705_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B3706_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3709_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3710_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3711_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B3714_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3716_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3721_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3723_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3724_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3726_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3728_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3729_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3730_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3735_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B3741_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3749_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3751_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3753_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3758_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3763_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3764_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B3767_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3770_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3775_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3776_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3778_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3779_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3780_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3782_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3783_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3785_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3790_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3792_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3793_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3794_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3798_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3800_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3802_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3804_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3805_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3810_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3812_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3816_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3817_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3820_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3826_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3828_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3829_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B3831_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3832_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3834_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3835_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3836_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3841_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3842_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3844_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3846_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3847_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B3850_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3853_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3856_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3858_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3859_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B3860_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3865_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3866_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B3867_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B3869_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B3870_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3874_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3875_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3876_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3880_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3884_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3885_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3887_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3888_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B3889_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3890_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3891_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3899_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B3901_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3903_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3905_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3907_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3910_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3912_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3913_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3915_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3916_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3917_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3920_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3923_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3924_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3926_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B3929_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3930_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3933_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B3935_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3942_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3943_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B3946_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3951_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3954_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3955_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3957_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3958_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3961_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3962_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3965_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B3969_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B3972_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B3974_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3980_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3981_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3985_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B3986_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3988_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3989_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3990_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3992_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B3993_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B3995_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B3996_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B3997_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B3999_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4000_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4001_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4003_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4004_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4010_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4012_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4013_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4016_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4017_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4019_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4023_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4024_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4025_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4026_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4027_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4028_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4030_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4031_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4035_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4036_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4039_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4040_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4041_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4044_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4045_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4047_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4048_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4049_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4051_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4053_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4055_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4057_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4058_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4059_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4061_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4062_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4064_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4065_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4066_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4068_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4071_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4072_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4074_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4076_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4077_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4081_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4084_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4087_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4088_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4093_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4096_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4097_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B4100_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4103_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4106_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4108_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4110_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4111_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4112_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4115_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4117_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4122_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4123_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4125_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4128_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4129_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4132_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4135_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4136_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4139_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4141_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4143_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4144_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4145_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4146_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4147_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B4148_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4150_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4154_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4155_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4158_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4160_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4163_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4164_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4166_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4167_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4170_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4171_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4174_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4176_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4178_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4181_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4183_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4184_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4186_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4190_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4193_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4195_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4197_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4203_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B4205_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4207_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4208_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4210_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4217_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4218_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4219_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4221_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4222_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4228_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4231_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4233_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4234_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4235_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4237_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4242_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4243_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4245_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4247_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4248_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4249_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4251_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4540_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B4541_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4544_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4546_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4549_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4551_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4552_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4555_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B4558_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4559_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B4561_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4562_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4564_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4565_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4566_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4567_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4568_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4569_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4570_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4571_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4572_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4573_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4575_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4576_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4577_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4578_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4579_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4582_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4586_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4587_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B4626_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4627_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4628_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4631_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4632_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4635_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4639_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4641_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4642_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4643_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B4644_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4646_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4648_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4649_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4652_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4653_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4654_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4655_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4656_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4658_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4659_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4664_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4666_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4667_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4668_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4669_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4670_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4671_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4677_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4678_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4681_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4683_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4686_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4688_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B4689_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4692_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4697_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B4701_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4704_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4705_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4706_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B4707_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4709_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4711_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4712_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B4716_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4719_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4720_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4724_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4725_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4731_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4732_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4737_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4738_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4740_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4741_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4743_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4745_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4746_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4747_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4748_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4750_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B4751_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4752_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B4754_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4758_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4760_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4761_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4762_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4764_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4765_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B4767_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4768_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4769_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4770_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4771_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4773_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B4776_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4777_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B4778_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4780_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4782_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4783_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4784_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4789_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4790_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4792_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B4794_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4796_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4797_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4798_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4800_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4801_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4807_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4808_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4809_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4810_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4811_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4813_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4814_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4816_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4817_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4818_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4820_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4823_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4826_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4827_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4828_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4830_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4837_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4838_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4839_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4841_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4843_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4844_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4845_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4846_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4847_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4848_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4850_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4853_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4854_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4855_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4856_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4858_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4859_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4862_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B4866_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4872_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4874_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4879_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4880_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4884_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4885_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4887_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4889_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4891_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4893_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4897_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4901_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4904_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4905_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4911_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4914_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4915_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4916_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4918_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4920_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4921_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4922_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4923_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4924_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4925_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4926_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4927_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4928_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4929_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4930_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4931_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4932_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4935_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4936_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4937_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4939_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4940_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4943_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B4949_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B4950_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4954_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4959_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4960_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4963_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4968_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B4971_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B4972_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4975_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4980_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4985_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B4986_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B4987_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4989_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4990_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B4991_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4992_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B4993_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B4995_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B4996_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B5010_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B5011_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B5013_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B5019_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B5021_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B5022_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B5023_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B5024_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B5028_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B5035_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B5036_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   Conformer flags updated due to self consistancy.
+
+   Do titration at 300 points...
+   Detailed progress is in file "mc_out"
+   Monte Carlo set up time: 1 seconds.
+   Titration  1:   118 seconds, biggest stdev of conformer occ = 0.077
+   Titration  2:   102 seconds, biggest stdev of conformer occ = 0.041
+   Titration  3:    93 seconds, biggest stdev of conformer occ = 0.040
+   Titration  4:    72 seconds, biggest stdev of conformer occ = 0.044
+   Titration  5:    77 seconds, biggest stdev of conformer occ = 0.071
+   Titration  6:   101 seconds, biggest stdev of conformer occ = 0.048
+   Titration  7:    79 seconds, biggest stdev of conformer occ = 0.071
+   Titration  8:    94 seconds, biggest stdev of conformer occ = 0.064
+   Titration  9:    62 seconds, biggest stdev of conformer occ = 0.042
+   Titration 10:    70 seconds, biggest stdev of conformer occ = 0.069
+   Titration 11:    70 seconds, biggest stdev of conformer occ = 0.068
+   Titration 12:    68 seconds, biggest stdev of conformer occ = 0.068
+   Titration 13:    60 seconds, biggest stdev of conformer occ = 0.066
+   Titration 14:    70 seconds, biggest stdev of conformer occ = 0.053
+   Titration 15:    58 seconds, biggest stdev of conformer occ = 0.050
+   Titration 16:    67 seconds, biggest stdev of conformer occ = 0.060
+   Titration 17:    77 seconds, biggest stdev of conformer occ = 0.064
+   Titration 18:    62 seconds, biggest stdev of conformer occ = 0.054
+   Titration 19:    77 seconds, biggest stdev of conformer occ = 0.056
+   Titration 20:    61 seconds, biggest stdev of conformer occ = 0.052
+   Titration 21:    64 seconds, biggest stdev of conformer occ = 0.043
+   Titration 22:    70 seconds, biggest stdev of conformer occ = 0.068
+   Titration 23:    63 seconds, biggest stdev of conformer occ = 0.045
+   Titration 24:    70 seconds, biggest stdev of conformer occ = 0.036
+   Titration 25:    61 seconds, biggest stdev of conformer occ = 0.063
+   Titration 26:    60 seconds, biggest stdev of conformer occ = 0.050
+   Titration 27:    62 seconds, biggest stdev of conformer occ = 0.062
+   Titration 28:    76 seconds, biggest stdev of conformer occ = 0.058
+   Titration 29:    60 seconds, biggest stdev of conformer occ = 0.073
+   Titration 30:    67 seconds, biggest stdev of conformer occ = 0.071
+   Titration 31:    68 seconds, biggest stdev of conformer occ = 0.064
+   Titration 32:    82 seconds, biggest stdev of conformer occ = 0.058
+   Titration 33:    75 seconds, biggest stdev of conformer occ = 0.056
+   Titration 34:    62 seconds, biggest stdev of conformer occ = 0.040
+   Titration 35:    60 seconds, biggest stdev of conformer occ = 0.056
+   Titration 36:    68 seconds, biggest stdev of conformer occ = 0.050
+   Titration 37:    60 seconds, biggest stdev of conformer occ = 0.042
+   Titration 38:    69 seconds, biggest stdev of conformer occ = 0.047
+   Titration 39:    69 seconds, biggest stdev of conformer occ = 0.049
+   Titration 40:    59 seconds, biggest stdev of conformer occ = 0.057
+   Titration 41:    58 seconds, biggest stdev of conformer occ = 0.070
+   Titration 42:    69 seconds, biggest stdev of conformer occ = 0.041
+   Titration 43:    62 seconds, biggest stdev of conformer occ = 0.087
+   Titration 44:    70 seconds, biggest stdev of conformer occ = 0.046
+   Titration 45:    68 seconds, biggest stdev of conformer occ = 0.055
+   Titration 46:    76 seconds, biggest stdev of conformer occ = 0.057
+   Titration 47:    68 seconds, biggest stdev of conformer occ = 0.043
+   Titration 48:    63 seconds, biggest stdev of conformer occ = 0.054
+   Titration 49:    69 seconds, biggest stdev of conformer occ = 0.066
+   Titration 50:    64 seconds, biggest stdev of conformer occ = 0.051
+   Titration 51:    71 seconds, biggest stdev of conformer occ = 0.061
+   Titration 52:    71 seconds, biggest stdev of conformer occ = 0.062
+   Titration 53:    61 seconds, biggest stdev of conformer occ = 0.042
+   Titration 54:    63 seconds, biggest stdev of conformer occ = 0.058
+   Titration 55:    63 seconds, biggest stdev of conformer occ = 0.058
+   Titration 56:    60 seconds, biggest stdev of conformer occ = 0.054
+   Titration 57:    57 seconds, biggest stdev of conformer occ = 0.071
+   Titration 58:    76 seconds, biggest stdev of conformer occ = 0.045
+   Titration 59:    61 seconds, biggest stdev of conformer occ = 0.045
+   Titration 60:    73 seconds, biggest stdev of conformer occ = 0.045
+   Titration 61:   118 seconds, biggest stdev of conformer occ = 0.047
+   Titration 62:    61 seconds, biggest stdev of conformer occ = 0.060
+   Titration 63:    63 seconds, biggest stdev of conformer occ = 0.045
+   Titration 64:    59 seconds, biggest stdev of conformer occ = 0.078
+   Titration 65:    87 seconds, biggest stdev of conformer occ = 0.045
+   Titration 66:    63 seconds, biggest stdev of conformer occ = 0.047
+   Titration 67:    59 seconds, biggest stdev of conformer occ = 0.073
+   Titration 68:    69 seconds, biggest stdev of conformer occ = 0.052
+   Titration 69:    76 seconds, biggest stdev of conformer occ = 0.062
+   Titration 70:    69 seconds, biggest stdev of conformer occ = 0.048
+   Titration 71:    60 seconds, biggest stdev of conformer occ = 0.045
+   Titration 72:    70 seconds, biggest stdev of conformer occ = 0.057
+   Titration 73:    63 seconds, biggest stdev of conformer occ = 0.048
+   Titration 74:    75 seconds, biggest stdev of conformer occ = 0.060
+   Titration 75:    68 seconds, biggest stdev of conformer occ = 0.043
+   Titration 76:   103 seconds, biggest stdev of conformer occ = 0.041
+   Titration 77:    61 seconds, biggest stdev of conformer occ = 0.060
+   Titration 78:    85 seconds, biggest stdev of conformer occ = 0.036
+   Titration 79:    77 seconds, biggest stdev of conformer occ = 0.055
+   Titration 80:    77 seconds, biggest stdev of conformer occ = 0.041
+   Titration 81:    70 seconds, biggest stdev of conformer occ = 0.064
+   Titration 82:    75 seconds, biggest stdev of conformer occ = 0.045
+   Titration 83:    71 seconds, biggest stdev of conformer occ = 0.070
+   Titration 84:    62 seconds, biggest stdev of conformer occ = 0.040
+   Titration 85:    70 seconds, biggest stdev of conformer occ = 0.064
+   Titration 86:    61 seconds, biggest stdev of conformer occ = 0.064
+   Titration 87:    95 seconds, biggest stdev of conformer occ = 0.066
+   Titration 88:    85 seconds, biggest stdev of conformer occ = 0.045
+   Titration 89:    70 seconds, biggest stdev of conformer occ = 0.068
+   Titration 90:    73 seconds, biggest stdev of conformer occ = 0.049
+   Titration 91:    59 seconds, biggest stdev of conformer occ = 0.043
+   Titration 92:   100 seconds, biggest stdev of conformer occ = 0.042
+   Titration 93:    77 seconds, biggest stdev of conformer occ = 0.060
+   Titration 94:    82 seconds, biggest stdev of conformer occ = 0.066
+   Titration 95:    68 seconds, biggest stdev of conformer occ = 0.045
+   Titration 96:    62 seconds, biggest stdev of conformer occ = 0.053
+   Titration 97:    60 seconds, biggest stdev of conformer occ = 0.074
+   Titration 98:    61 seconds, biggest stdev of conformer occ = 0.054
+   Titration 99:   115 seconds, biggest stdev of conformer occ = 0.066
+   Titration 100:    61 seconds, biggest stdev of conformer occ = 0.041
+   Titration 101:    80 seconds, biggest stdev of conformer occ = 0.036
+   Titration 102:    76 seconds, biggest stdev of conformer occ = 0.063
+   Titration 103:    64 seconds, biggest stdev of conformer occ = 0.066
+   Titration 104:    63 seconds, biggest stdev of conformer occ = 0.036
+   Titration 105:    71 seconds, biggest stdev of conformer occ = 0.046
+   Titration 106:    62 seconds, biggest stdev of conformer occ = 0.054
+   Titration 107:    59 seconds, biggest stdev of conformer occ = 0.050
+   Titration 108:    60 seconds, biggest stdev of conformer occ = 0.060
+   Titration 109:    59 seconds, biggest stdev of conformer occ = 0.072
+   Titration 110:    68 seconds, biggest stdev of conformer occ = 0.052
+   Titration 111:    63 seconds, biggest stdev of conformer occ = 0.065
+   Titration 112:    82 seconds, biggest stdev of conformer occ = 0.048
+   Titration 113:    64 seconds, biggest stdev of conformer occ = 0.043
+   Titration 114:    76 seconds, biggest stdev of conformer occ = 0.047
+   Titration 115:    59 seconds, biggest stdev of conformer occ = 0.072
+   Titration 116:    60 seconds, biggest stdev of conformer occ = 0.075
+   Titration 117:    62 seconds, biggest stdev of conformer occ = 0.051
+   Titration 118:    79 seconds, biggest stdev of conformer occ = 0.068
+   Titration 119:    60 seconds, biggest stdev of conformer occ = 0.044
+   Titration 120:    61 seconds, biggest stdev of conformer occ = 0.069
+   Titration 121:    82 seconds, biggest stdev of conformer occ = 0.062
+   Titration 122:    73 seconds, biggest stdev of conformer occ = 0.049
+   Titration 123:    58 seconds, biggest stdev of conformer occ = 0.070
+   Titration 124:    60 seconds, biggest stdev of conformer occ = 0.071
+   Titration 125:    61 seconds, biggest stdev of conformer occ = 0.064
+   Titration 126:    61 seconds, biggest stdev of conformer occ = 0.060
+   Titration 127:    59 seconds, biggest stdev of conformer occ = 0.045
+   Titration 128:    97 seconds, biggest stdev of conformer occ = 0.063
+   Titration 129:    62 seconds, biggest stdev of conformer occ = 0.045
+   Titration 130:   101 seconds, biggest stdev of conformer occ = 0.038
+   Titration 131:    76 seconds, biggest stdev of conformer occ = 0.051
+   Titration 132:    75 seconds, biggest stdev of conformer occ = 0.063
+   Titration 133:    68 seconds, biggest stdev of conformer occ = 0.059
+   Titration 134:    60 seconds, biggest stdev of conformer occ = 0.043
+   Titration 135:    62 seconds, biggest stdev of conformer occ = 0.058
+   Titration 136:    63 seconds, biggest stdev of conformer occ = 0.073
+   Titration 137:    63 seconds, biggest stdev of conformer occ = 0.052
+   Titration 138:    70 seconds, biggest stdev of conformer occ = 0.057
+   Titration 139:    61 seconds, biggest stdev of conformer occ = 0.048
+   Titration 140:    68 seconds, biggest stdev of conformer occ = 0.068
+   Titration 141:    72 seconds, biggest stdev of conformer occ = 0.066
+   Titration 142:    68 seconds, biggest stdev of conformer occ = 0.067
+   Titration 143:    71 seconds, biggest stdev of conformer occ = 0.066
+   Titration 144:    61 seconds, biggest stdev of conformer occ = 0.042
+   Titration 145:    60 seconds, biggest stdev of conformer occ = 0.047
+   Titration 146:    61 seconds, biggest stdev of conformer occ = 0.066
+   Titration 147:   104 seconds, biggest stdev of conformer occ = 0.063
+   Titration 148:    61 seconds, biggest stdev of conformer occ = 0.052
+   Titration 149:    74 seconds, biggest stdev of conformer occ = 0.057
+   Titration 150:    69 seconds, biggest stdev of conformer occ = 0.050
+   Titration 151:    58 seconds, biggest stdev of conformer occ = 0.067
+   Titration 152:    62 seconds, biggest stdev of conformer occ = 0.074
+   Titration 153:    63 seconds, biggest stdev of conformer occ = 0.069
+   Titration 154:    75 seconds, biggest stdev of conformer occ = 0.070
+   Titration 155:    70 seconds, biggest stdev of conformer occ = 0.046
+   Titration 156:    83 seconds, biggest stdev of conformer occ = 0.055
+   Titration 157:    63 seconds, biggest stdev of conformer occ = 0.060
+   Titration 158:    63 seconds, biggest stdev of conformer occ = 0.053
+   Titration 159:    61 seconds, biggest stdev of conformer occ = 0.074
+   Titration 160:    75 seconds, biggest stdev of conformer occ = 0.057
+   Titration 161:    64 seconds, biggest stdev of conformer occ = 0.044
+   Titration 162:    68 seconds, biggest stdev of conformer occ = 0.058
+   Titration 163:    92 seconds, biggest stdev of conformer occ = 0.045
+   Titration 164:    75 seconds, biggest stdev of conformer occ = 0.044
+   Titration 165:    78 seconds, biggest stdev of conformer occ = 0.062
+   Titration 166:   151 seconds, biggest stdev of conformer occ = 0.060
+   Titration 167:    63 seconds, biggest stdev of conformer occ = 0.053
+   Titration 168:    62 seconds, biggest stdev of conformer occ = 0.049
+   Titration 169:    67 seconds, biggest stdev of conformer occ = 0.073
+   Titration 170:    63 seconds, biggest stdev of conformer occ = 0.045
+   Titration 171:    63 seconds, biggest stdev of conformer occ = 0.067
+   Titration 172:    59 seconds, biggest stdev of conformer occ = 0.076
+   Titration 173:    62 seconds, biggest stdev of conformer occ = 0.070
+   Titration 174:    68 seconds, biggest stdev of conformer occ = 0.055
+   Titration 175:    68 seconds, biggest stdev of conformer occ = 0.068
+   Titration 176:    61 seconds, biggest stdev of conformer occ = 0.049
+   Titration 177:    61 seconds, biggest stdev of conformer occ = 0.059
+   Titration 178:    61 seconds, biggest stdev of conformer occ = 0.064
+   Titration 179:    62 seconds, biggest stdev of conformer occ = 0.049
+   Titration 180:    61 seconds, biggest stdev of conformer occ = 0.061
+   Titration 181:    64 seconds, biggest stdev of conformer occ = 0.051
+   Titration 182:    63 seconds, biggest stdev of conformer occ = 0.069
+   Titration 183:    74 seconds, biggest stdev of conformer occ = 0.070
+   Titration 184:    61 seconds, biggest stdev of conformer occ = 0.070
+   Titration 185:    67 seconds, biggest stdev of conformer occ = 0.066
+   Titration 186:    62 seconds, biggest stdev of conformer occ = 0.063
+   Titration 187:    71 seconds, biggest stdev of conformer occ = 0.055
+   Titration 188:    60 seconds, biggest stdev of conformer occ = 0.042
+   Titration 189:    63 seconds, biggest stdev of conformer occ = 0.063
+   Titration 190:    60 seconds, biggest stdev of conformer occ = 0.050
+   Titration 191:    85 seconds, biggest stdev of conformer occ = 0.055
+   Titration 192:    67 seconds, biggest stdev of conformer occ = 0.055
+   Titration 193:    78 seconds, biggest stdev of conformer occ = 0.046
+   Titration 194:    78 seconds, biggest stdev of conformer occ = 0.041
+   Titration 195:    85 seconds, biggest stdev of conformer occ = 0.060
+   Titration 196:    90 seconds, biggest stdev of conformer occ = 0.046
+   Titration 197:    75 seconds, biggest stdev of conformer occ = 0.062
+   Titration 198:    67 seconds, biggest stdev of conformer occ = 0.040
+   Titration 199:    63 seconds, biggest stdev of conformer occ = 0.041
+   Titration 200:    66 seconds, biggest stdev of conformer occ = 0.070
+   Titration 201:    63 seconds, biggest stdev of conformer occ = 0.066
+   Titration 202:    62 seconds, biggest stdev of conformer occ = 0.046
+   Titration 203:    77 seconds, biggest stdev of conformer occ = 0.065
+   Titration 204:    68 seconds, biggest stdev of conformer occ = 0.060
+   Titration 205:    82 seconds, biggest stdev of conformer occ = 0.071
+   Titration 206:    62 seconds, biggest stdev of conformer occ = 0.053
+   Titration 207:    65 seconds, biggest stdev of conformer occ = 0.048
+   Titration 208:    72 seconds, biggest stdev of conformer occ = 0.060
+   Titration 209:    61 seconds, biggest stdev of conformer occ = 0.050
+   Titration 210:    63 seconds, biggest stdev of conformer occ = 0.062
+   Titration 211:    70 seconds, biggest stdev of conformer occ = 0.056
+   Titration 212:    60 seconds, biggest stdev of conformer occ = 0.058
+   Titration 213:    58 seconds, biggest stdev of conformer occ = 0.063
+   Titration 214:    87 seconds, biggest stdev of conformer occ = 0.050
+   Titration 215:    74 seconds, biggest stdev of conformer occ = 0.036
+   Titration 216:   115 seconds, biggest stdev of conformer occ = 0.063
+   Titration 217:    78 seconds, biggest stdev of conformer occ = 0.068
+   Titration 218:    69 seconds, biggest stdev of conformer occ = 0.052
+   Titration 219:    89 seconds, biggest stdev of conformer occ = 0.070
+   Titration 220:    60 seconds, biggest stdev of conformer occ = 0.069
+   Titration 221:    63 seconds, biggest stdev of conformer occ = 0.056
+   Titration 222:    76 seconds, biggest stdev of conformer occ = 0.042
+   Titration 223:    68 seconds, biggest stdev of conformer occ = 0.047
+   Titration 224:    67 seconds, biggest stdev of conformer occ = 0.052
+   Titration 225:    83 seconds, biggest stdev of conformer occ = 0.050
+   Titration 226:    63 seconds, biggest stdev of conformer occ = 0.049
+   Titration 227:    84 seconds, biggest stdev of conformer occ = 0.060
+   Titration 228:    70 seconds, biggest stdev of conformer occ = 0.044
+   Titration 229:    68 seconds, biggest stdev of conformer occ = 0.050
+   Titration 230:    61 seconds, biggest stdev of conformer occ = 0.047
+   Titration 231:    76 seconds, biggest stdev of conformer occ = 0.049
+   Titration 232:    60 seconds, biggest stdev of conformer occ = 0.066
+   Titration 233:    63 seconds, biggest stdev of conformer occ = 0.063
+   Titration 234:    63 seconds, biggest stdev of conformer occ = 0.068
+   Titration 235:    63 seconds, biggest stdev of conformer occ = 0.081
+   Titration 236:   105 seconds, biggest stdev of conformer occ = 0.055
+   Titration 237:    78 seconds, biggest stdev of conformer occ = 0.081
+   Titration 238:    67 seconds, biggest stdev of conformer occ = 0.044
+   Titration 239:   111 seconds, biggest stdev of conformer occ = 0.043
+   Titration 240:    81 seconds, biggest stdev of conformer occ = 0.036
+   Titration 241:    75 seconds, biggest stdev of conformer occ = 0.058
+   Titration 242:    70 seconds, biggest stdev of conformer occ = 0.061
+   Titration 243:    96 seconds, biggest stdev of conformer occ = 0.059
+   Titration 244:    68 seconds, biggest stdev of conformer occ = 0.065
+   Titration 245:   115 seconds, biggest stdev of conformer occ = 0.037
+   Titration 246:    69 seconds, biggest stdev of conformer occ = 0.047
+   Titration 247:    71 seconds, biggest stdev of conformer occ = 0.070
+   Titration 248:    66 seconds, biggest stdev of conformer occ = 0.073
+   Titration 249:    75 seconds, biggest stdev of conformer occ = 0.061
+   Titration 250:    67 seconds, biggest stdev of conformer occ = 0.049
+   Titration 251:    67 seconds, biggest stdev of conformer occ = 0.042
+   Titration 252:    64 seconds, biggest stdev of conformer occ = 0.046
+   Titration 253:    75 seconds, biggest stdev of conformer occ = 0.057
+   Titration 254:    63 seconds, biggest stdev of conformer occ = 0.065
+   Titration 255:    68 seconds, biggest stdev of conformer occ = 0.063
+   Titration 256:    71 seconds, biggest stdev of conformer occ = 0.045
+   Titration 257:    77 seconds, biggest stdev of conformer occ = 0.069
+   Titration 258:    65 seconds, biggest stdev of conformer occ = 0.044
+   Titration 259:    61 seconds, biggest stdev of conformer occ = 0.043
+   Titration 260:    62 seconds, biggest stdev of conformer occ = 0.046
+   Titration 261:    64 seconds, biggest stdev of conformer occ = 0.067
+   Titration 262:    57 seconds, biggest stdev of conformer occ = 0.079
+   Titration 263:    61 seconds, biggest stdev of conformer occ = 0.044
+   Titration 264:    56 seconds, biggest stdev of conformer occ = 0.054
+   Titration 265:    60 seconds, biggest stdev of conformer occ = 0.042
+   Titration 266:    59 seconds, biggest stdev of conformer occ = 0.046
+   Titration 267:    95 seconds, biggest stdev of conformer occ = 0.041
+   Titration 268:    65 seconds, biggest stdev of conformer occ = 0.074
+   Titration 269:    77 seconds, biggest stdev of conformer occ = 0.048
+   Titration 270:    59 seconds, biggest stdev of conformer occ = 0.059
+   Titration 271:    64 seconds, biggest stdev of conformer occ = 0.053
+   Titration 272:    65 seconds, biggest stdev of conformer occ = 0.049
+   Titration 273:    72 seconds, biggest stdev of conformer occ = 0.045
+   Titration 274:    58 seconds, biggest stdev of conformer occ = 0.071
+   Titration 275:    58 seconds, biggest stdev of conformer occ = 0.054
+   Titration 276:    68 seconds, biggest stdev of conformer occ = 0.067
+   Titration 277:    81 seconds, biggest stdev of conformer occ = 0.062
+   Titration 278:    61 seconds, biggest stdev of conformer occ = 0.052
+   Titration 279:    60 seconds, biggest stdev of conformer occ = 0.050
+   Titration 280:    79 seconds, biggest stdev of conformer occ = 0.058
+   Titration 281:    66 seconds, biggest stdev of conformer occ = 0.046
+   Titration 282:    58 seconds, biggest stdev of conformer occ = 0.064
+   Titration 283:    70 seconds, biggest stdev of conformer occ = 0.056
+   Titration 284:    61 seconds, biggest stdev of conformer occ = 0.040
+   Titration 285:    65 seconds, biggest stdev of conformer occ = 0.045
+   Titration 286:    59 seconds, biggest stdev of conformer occ = 0.050
+   Titration 287:    74 seconds, biggest stdev of conformer occ = 0.056
+   Titration 288:    65 seconds, biggest stdev of conformer occ = 0.064
+   Titration 289:    57 seconds, biggest stdev of conformer occ = 0.056
+   Titration 290:    64 seconds, biggest stdev of conformer occ = 0.058
+   Titration 291:    69 seconds, biggest stdev of conformer occ = 0.054
+   Titration 292:    55 seconds, biggest stdev of conformer occ = 0.071
+   Titration 293:    60 seconds, biggest stdev of conformer occ = 0.052
+   Titration 294:    66 seconds, biggest stdev of conformer occ = 0.072
+   Titration 295:    58 seconds, biggest stdev of conformer occ = 0.052
+   Titration 296:    71 seconds, biggest stdev of conformer occ = 0.044
+   Titration 297:    71 seconds, biggest stdev of conformer occ = 0.068
+   Titration 298:    66 seconds, biggest stdev of conformer occ = 0.067
+   Titration 299:    70 seconds, biggest stdev of conformer occ = 0.055
+   Titration 300:    94 seconds, biggest stdev of conformer occ = 0.042
+   Done
+
+   Fit titration curves to get pKa/Em ...
+   MFE: didn't specify mfe point, do mfe at pKa or Em 
+   Done
+
+   Total time on MC: 21023 seconds
+
    Output files:
       mc_out          : MC progress and convergence.
       fort.38         : Occupancy table.
