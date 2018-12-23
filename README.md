@@ -29,3 +29,4 @@ The generated output files are titled head3.lst and fort.38.
 
 
  
+**Note:** special thanks for [Ashley Roperts](https://github.com/awefiown) who helped me edit some of the work in here.
